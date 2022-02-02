@@ -1,0 +1,72 @@
+//==================================
+//  1. nav
+//  2. breadcrumb
+//==================================
+.burger {
+    width: 22px;
+    height: 16px;
+    position: relative;
+
+    span {
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .3s;
+
+        &:nth-child(2) {
+            top: 6px;
+        }
+
+        &:last-child {
+            top: 12px;
+        }
+
+    }
+}
+
+.show--nav {
+    overflow: hidden;
+
+    .sidebar {
+        height: 100vh;
+    }
+
+    .mobile-nav {
+        display: block;
+        z-index: -1;
+    }
+
+    .burger {
+        span:nth-child(2) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        span:first-child, span:last-child {
+            top: 8px;
+        }
+
+        span:first-child {
+            transform: rotate(45deg);
+        }
+
+        span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.breadcrumb {
+    li, a {
+        font-weight: normal;
+    }
+
+    a {
+        color: #fff;
+        font-size: 15px;
+    }
+}
+

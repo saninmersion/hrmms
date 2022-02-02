@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:hover {
+    @apply opacity-80;
+}
+.multiselect.error .multiselect__tags {
+    border-color: red;
+}

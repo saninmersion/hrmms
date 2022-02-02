@@ -1,0 +1,59 @@
+:root {
+    --color-base-1: #5C6265;
+    --color-base-2: #2E3133;
+    --color-base-3: #8B9498;
+
+    --color-primary-1: #3b82f6;
+}
+
+body {
+    font: 500 16px/1.5 'Baloo 2', cursive;
+}
+
+.auth-layout .logo__text {
+    margin-left: 8px;
+}
+
+.form-input:focus, input:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: #a4cafe;
+}
+
+input[type="checkbox"] {
+    border-radius: 3px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+input[type="password"] {
+    font-family: Arial, sans-serif;
+    height: 42px;
+    font-size: 24px;
+}
+
+.forgot-password {
+    a {
+        color: var(--color-base-3);
+        text-decoration: none;
+        opacity: 1;
+    }
+
+    a:hover {
+        opacity: 1;
+        text-decoration: underline;
+        color: var(--color-base-1);
+    }
+}
+
+.monitoring a {
+    text-decoration: none;
+    color: var(--color-primary-1);
+
+    &:hover {
+        color: var(--color-primary-1);
+        text-decoration: underline
+    }
+}

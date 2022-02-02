@@ -1,0 +1,141 @@
+.header {
+    background: var(--color-primary);
+
+    &__logo {
+        color: var(--color-white);
+        font-size: 12px;
+    }
+
+    &__logo .logo__text {
+        margin-left: 5px;
+    }
+
+    &__logo img {
+        min-width: 50px;
+    }
+
+    &__title-wrap {
+        border-left: 1px solid rgba(255, 255, 255, .2);
+        @include respond(sm) {
+            border-left: 0;
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+    }
+
+    &__title-desc {
+        font-size: 20px;
+    }
+
+    .btn:not(.nav .btn) {
+        background: var(--color-white);
+        color: var(--color-primary);
+    }
+
+    .btn svg {
+        height: 18px;
+        width: 14px;
+        fill: currentColor;
+    }
+
+    .lang-switcher {
+        position: relative;
+        padding: 0 24px;
+        @include respond(sm) {
+            padding: 0 16px 0 0;
+        }
+    }
+
+    .dropdown {
+        @include respond(sm) {
+            left: -12px;
+        }
+    }
+}
+
+body.en {
+    .header__title {
+        font-size: 21px;
+    }
+
+    .header__title-desc {
+        font-size: 18px;
+    }
+}
+
+.burger {
+    width: 18px;
+    height: 16px;
+    position: relative;
+
+    span {
+        height: 2px;
+        width: 100%;
+        background: var(--color-white);
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:nth-child(2) {
+            top: 6px;
+            left: auto;
+            right: 0;
+            width: 12px;
+        }
+
+        &:last-child {
+            top: 12px;
+        }
+
+    }
+
+}
+
+.show--nav {
+    overflow: hidden;
+
+    .nav {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+.nav {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-white);
+    transform: translateX(-100%);
+    transition: .2s;
+    z-index: 999;
+
+    .header__title {
+        font-size: 20px;
+    }
+
+    .header__title-desc {
+        font-size: 14px;
+    }
+
+    &-content {
+        height: calc(100% - 70px);
+    }
+
+    .text-days-remaining span {
+        @include respond(sm) {
+            font-size: 40px;
+        }
+    }
+
+    .ic-close:before, .ic-close:after {
+        background: var(--color-white);
+        height: 20px;
+        top: 6px;
+    }
+}
+

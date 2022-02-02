@@ -1,0 +1,174 @@
+.stats-cards-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 260px;
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.data-block {
+    padding: 16px 0;
+
+    .data-block-item {
+        display: flex;
+        gap: 32px;
+        padding: 12px 0;
+
+        &:not(:first-child) {
+            border-top: 1px solid #E7F6FD;
+        }
+
+        @include respond(sm) {
+            gap: 24px;
+        }
+    }
+
+    .data-block-label {
+        width: 300px;
+        @include respond(sm) {
+            width: auto;
+        }
+    }
+
+    .data-block-value {
+        color: var(--color-base-2);
+    }
+}
+
+
+.hiring-preview {
+    .data-block {
+        width: 100%;
+    }
+
+    .data-block-label {
+        width: 240px;
+    }
+
+    .data-block-position {
+        .data-block-item {
+            flex-wrap: nowrap;
+        }
+
+        .data-block-label {
+            width: 60px;
+            min-width: 60px;
+        }
+    }
+}
+
+.slider-doc {
+    width: 153px;
+    padding: 24px 0;
+
+    .slick-slide img {
+        width: 153px;
+        height: 190px;
+    }
+
+}
+
+#verification-show .slider-doc,
+#verification-form .slider-doc {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 0;
+
+    .slick-slide {
+        padding: 16px;
+    }
+
+    .slick-slide img {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 6px;
+    }
+
+}
+
+.slick-slide, .slick-slide * {
+    outline: none !important;
+}
+
+.data-file {
+    margin-left: auto;
+}
+
+.slider-doc {
+    width: 140px;
+
+    .slick-slide img {
+        width: 153px;
+        height: 160px;
+    }
+
+}
+
+.slider-citizen {
+    width: 176px;
+
+    img {
+        width: 130px;
+        height: 150px;
+    }
+}
+
+.slick-dots {
+    text-align: center;
+    font-size: 0;
+    padding-top: 12px;
+
+    li {
+        height: 12px;
+        width: 12px;
+        background: #B9C5CA;
+        margin: 0 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+
+        &.slick-active {
+            background: var(--color-base-2);
+        }
+    }
+}
+
+.slick-track:focus {
+    outline: 0;
+    border: 0;
+}
+
+.slick-slide {
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.slick-list {
+    box-shadow: 0 2px 4px 0 rgba(46, 49, 51, .24);
+    border-radius: 6px;
+}
+
+.reset-btn {
+    font-size: 14px;
+}
+
+.applicant-table {
+    thead {
+        th:first-child {
+            width: 72px;
+        }
+
+        th:nth-child(2) {
+            width: 20%;
+        }
+
+        th:nth-child(6), th:nth-child(5) {
+            width: 108px;
+        }
+
+        th:nth-child(7) {
+            width: 118px;
+        }
+    }
+}

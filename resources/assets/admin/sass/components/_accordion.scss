@@ -1,0 +1,52 @@
+.accordion {
+    font-size: 16px;
+
+    &:not(:first-child) {
+        border-top: 1px solid var(--color-border-2);
+    }
+
+    &__title {
+        padding: 10px 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s all;
+    }
+
+    &:hover, &--active {
+        .accordion__title {
+            background: #f5f5f5;
+        }
+    }
+
+    &__content-wrap {
+        background: #f9f9f9;
+        overflow: hidden;
+        transition: 0.3s all linear;
+        max-height: 0;
+    }
+
+    &__content {
+        padding: 24px;
+    }
+
+    // arrow pointing down
+    &__arrow {
+        transition: 0.2s;
+    }
+
+    // -------------------------------
+    // active accordion
+    // -------------------------------
+
+    &--active &__arrow {
+        transform: rotate(-180deg);
+    }
+}
+
+
+.c-tr:last-child {
+    border-bottom: 0;
+}
+

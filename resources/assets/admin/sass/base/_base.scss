@@ -1,0 +1,46 @@
+:root {
+    --color-primary: #278bed;
+
+    --color-base-1: #5C6265;
+    --color-base-2: #2E3133;
+    --color-base-3: #8B9498;
+
+    --color-bg-1: #FAFDFF;
+    --color-bg-2: #F9F9F9;
+    --color-bg-3: #F1FAFE;
+
+
+    --color-border-1: #b9c5ca;
+    --color-border-2: #e5e7eb;
+    --color-border-3: #B9BFCA;
+
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+body {
+    font: 500 16px/1.5 'Baloo 2', cursive;
+    color: var(--color-base-1);
+}
+
+svg {
+    fill: currentColor;
+}
+
+hr {
+    border-bottom: 1px solid #fafdff;
+}
+
+input[type="password"] {
+    font-family: Arial, sans-serif;
+    height: 40px;
+    font-size: 24px;
+}
+
+input, button, textarea {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: var(--color-primary);
+    }
+}

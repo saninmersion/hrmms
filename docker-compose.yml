@@ -1,0 +1,184 @@
+version: "3.8"
+
+networks:
+  public:
+    name: traefik_web
+    driver: bridge
+  laravel:
+    name: ${DOCKER_NAME}_laravel
+    driver: bridge
+  database:
+    name: ${DOCKER_NAME}_postgres
+    driver: bridge
+  redis:
+    name: ${DOCKER_NAME}_redis
+    driver: bridge
+  mail:
+    name: ${DOCKER_NAME}_mailhog
+    driver: bridge
+  minio:
+    name: ${DOCKER_NAME}_minio
+    driver: bridge
+
+services:
+  laravel:
+    container_name: "${DOCKER_NAME}_laravel"
+    build:
+      context: ./docker/laravel
+      args:
+        - PUID=${DOCKER_PUID}
+        - PGID=${DOCKER_PGID}
+        - DOCKER_USER=laravel
+    volumes:
+      - ./:/var/www:cached
+      - ./docker/laravel/laravel.ini:/usr/local/etc/php/conf.d/laravel.ini:ro
+      - ./docker/laravel/laravel.pool.conf:/usr/local/etc/php-fpm.d/www.conf:ro
+      - ./docker/laravel/supervisord.d:/etc/supervisord.d:ro
+    expose:
+      - "9000"
+    tty: true
+    environment:
+      - "DB_HOST=${DB_HOST}"
+      - "DB_PORT=${DB_PORT}"
+      - "REDIS_HOST=${REDIS_HOST}"
+      - "REDIS_PORT=${REDIS_PORT}"
+      - "TZ=Asia/Kathmandu"
+    depends_on:
+      - database
+      - redis
+      - mailhog
+      - minio
+    networks:
+      - laravel
+      - database
+      - redis
+      - mail
+      - minio
+
+  server:
+    container_name: "${DOCKER_NAME}_server"
+    build:
+      context: ./docker/server
+    #    restart: on-failure
+    volumes:
+      - ./:/var/www:cached
+      - ./docker/server/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/server/default.conf:/etc/nginx/sites-available/default.conf:ro
+      - ./docker/data/logs/nginx/:/var/log/nginx:rw
+    #      - ./docker/traefik/certs/:/etc/nginx/certificates:ro
+    expose:
+      - 80
+      - 443
+    depends_on:
+      - laravel
+    networks:
+      - laravel
+      - public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik_web"
+
+      - "traefik.http.middlewares.${DOCKER_NAME}_middleware.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.${DOCKER_NAME}_middleware.redirectscheme.permanent=true"
+      - "traefik.http.middlewares.${DOCKER_NAME}_middleware.redirectscheme.port=443"
+
+      - "traefik.http.routers.${DOCKER_NAME}_http.entrypoints=web"
+      - "traefik.http.routers.${DOCKER_NAME}_http.rule=Host(`${APP_FRONT_DOMAIN}`) || Host(`${APP_ADMIN_DOMAIN}`)"
+      - "traefik.http.routers.${DOCKER_NAME}_http.middlewares=${DOCKER_NAME}_middleware@docker"
+
+      - "traefik.http.routers.${DOCKER_NAME}_https.entrypoints=websecure"
+      - "traefik.http.routers.${DOCKER_NAME}_https.rule=Host(`${APP_FRONT_DOMAIN}`) || Host(`${APP_ADMIN_DOMAIN}`)"
+      - "traefik.http.routers.${DOCKER_NAME}_https.tls=true"
+
+      - "traefik.http.services.${DOCKER_NAME}.loadbalancer.server.port=443"
+      - "traefik.http.services.${DOCKER_NAME}.loadbalancer.server.scheme=https"
+      - "traefik.http.services.${DOCKER_NAME}.loadbalancer.passhostheader=true"
+    environment:
+      TZ: 'Asia/Kathmandu'
+
+  database:
+    image: postgres:12-alpine
+    container_name: "${DOCKER_NAME}_database"
+    volumes:
+      - ./docker/data/postgres:/var/lib/postgresql/data:rw
+    restart: on-failure
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    networks:
+      - database
+      - public
+
+  redis:
+    image: redis:5-alpine
+    container_name: "${DOCKER_NAME}_redis"
+    volumes:
+      - ./docker/data/redis:/data
+    ports:
+      - ${REDIS_PORT}:6379
+    networks:
+      - redis
+
+  mailhog:
+    image: 'mailhog/mailhog:latest'
+    container_name: "${DOCKER_NAME}_mailhog"
+    ports:
+      - 1025:1025
+    #      - 8025:8025
+    expose:
+      - 8025
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik_mailhog"
+      - "traefik.http.routers.${DOCKER_NAME}_mailhog.rule=Host(`mail.localhost`)"
+      - "traefik.http.services.${DOCKER_NAME}_mailhog.loadbalancer.server.port=8025"
+      - "traefik.http.services.${DOCKER_NAME}_mailhog.loadbalancer.passhostheader=true"
+    networks:
+      - mail
+      - public
+
+  minio:
+    image: minio/minio
+    container_name: "${DOCKER_NAME}_minio"
+    command: server --address 0.0.0.0:${DOCKER_MINIO_PORT} /export
+    entrypoint:
+      - "minio"
+    volumes:
+      - ./docker/data/minio/data:/export
+      - ./docker/data/minio/config:/root/.minio
+      - ./docker/minio/certs:/certs
+    ports:
+      - ${DOCKER_MINIO_PORT}:${DOCKER_MINIO_PORT}
+    environment:
+      - MINIO_ACCESS_KEY=${DOCKER_MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${DOCKER_MINIO_SECRET_KEY}
+    networks:
+      - minio
+      - public
+
+  traefik:
+    image: traefik:2.4
+    container_name: "${DOCKER_NAME}_traefik"
+    #        restart: always
+    ports:
+      - "${DOCKER_SERVER_PORT}:80"
+      - "${DOCKER_SERVER_PORT_SECURE}:443"
+    networks:
+      - public
+    dns:
+      - host.docker.internal
+    volumes:
+      - ./docker/traefik/certs/:/certs:ro
+      - ./docker/traefik/traefik.toml:/etc/traefik/traefik.toml:ro
+      - ./docker/traefik/config.yml:/etc/traefik/dynamic_conf/conf.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      - traefik.enable=true
+      - tls.certificates.certFile=/certs/cert.crt
+      - tls.certificates.keyFile=/certs/cert.key
+      - tls.certificates.stores=default
+      - traefik.http.routers.api.rule=Host(`dashboard.docker.localhost`)
+      - traefik.http.routers.api.service=api@internal

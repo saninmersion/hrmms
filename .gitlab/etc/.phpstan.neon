@@ -1,0 +1,22 @@
+includes:
+    - ../../vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - ../../app
+
+    # The level 8 is the highest level
+    level: 8
+
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9\\|_]+::forceRedirect\(\)#'
+        - '#Property [a-zA-Z0-9\\|_]+::\$model \([a-zA-Z0-9\\|_]+\) does not accept [a-zA-Z0-9\\|_]+\<[a-zA-Z0-9\\|_]+\>#'
+        - '#Cannot call method error\(\) on Illuminate\\Log\\LogManager\|null#'
+        - '#Parameter \#2 \$[a-zA-Z0-9]+ of function view expects array\<string, mixed\>\|Illuminate\\Contracts\\Support\\Arrayable, array given.#'
+        - '#Parameter \#1 \$[a-zA-Z0-9]+ of function json_decode expects string, string\|false given#'
+
+    #excludes_analyse:
+    #    - ./*/*/FileToBeExcluded.php
+
+    checkMissingIterableValueType: false

@@ -1,0 +1,95 @@
+<?php
+
+namespace App\Domain\Monitorings\Actions;
+
+use App\Application\Admin\Notifications\ExportCompletedNotification;
+use App\Domain\Monitorings\Exports\EnumeratorMonitoringExport;
+use App\Domain\Users\Models\User;
+use App\Infrastructure\Constants\General;
+use App\Infrastructure\Support\Helper;
+use App\Infrastructure\Support\Zip\ZipService;
+use Exception;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Storage;
+use League\Flysystem\FileNotFoundException;
+
+/**
+ * Class ExportEnumeratorMonitoring
+ * @package App\Domain\Monitorings\Actions
+ */
+class ExportEnumeratorMonitoring implements ShouldQueue
+{
+    use Dispatchable;
+    use InteractsWithQueue;
+    use Queueable;
+    use SerializesModels;
+
+    /**
+     * @var User|\Illuminate\Contracts\Auth\Authenticatable|null
+     */
+    protected $user;
+
+    /**
+     * ExportOverallMonitoring constructor.
+     */
+    public function __construct()
+    {
+        $this->user = auth()->user();
+    }
+
+    /**
+     * Export application list
+     *
+     * 1. Get Last updated date
+     * 2. Filename with last updated date
+     * 3. Store export database
+     * 3. Export file with filename
+     * 4. Update export database
+     * 5. Move exported file to cloud
+     * 6. Delete exported file from local
+     *
+     * @param ZipService $zipService
+     *
+     * @throws FileNotFoundException
+     */
+    public function handle(ZipService $zipService): void
+    {
+        ini_set('memory_limit', '-1');
+        ini_set('max_execution_time', '1000');
+
+        $filename    = sprintf("enumerator_monitoring_%s.csv", now());
+        $zipFilename = sprintf("enumerator_monitoring_%s.zip", now());
+        $tempPath    = storage_path("exports/{$filename}");
+        $path        = sprintf("%s/%s", General::PATH_EXPORTS, $zipFilename);
+
+        $exportDetails = [
+            'type'     => 'enumerator monitoring',
+            'filename' => $zipFilename,
+        ];
+
+        try {
+            (new EnumeratorMonitoringExport())->export($tempPath);
+        } catch (Exception $exception) {
+            Helper::logException($exception);
+
+            return;
+        }
+
+        $zipPath = Storage::disk('local')->path($zipFilename);
+
+        $zipService->convertToZip([$filename => $tempPath], $zipPath);
+
+        /** @var resource $inputStream */
+        $inputStream = Storage::disk('local')->getDriver()->readStream($zipFilename);
+
+        Storage::disk('minio')->put($path, $inputStream);
+        Notification::send([$this->user], new ExportCompletedNotification($this->user, Helper::fileUrl($path), $exportDetails));
+        unlink($tempPath);
+        unlink($zipPath);
+    }
+}

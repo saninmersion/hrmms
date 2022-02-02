@@ -1,0 +1,288 @@
+// Input fields
+
+.form {
+    &-group:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &-control {
+        border-radius: 4px;
+        padding: 14px 12px;
+        width: 100%;
+        border: 1px solid var(--color-border);
+        color: var(--color-base-2);
+
+        &::placeholder {
+            color: var(--color-base-3);
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--color-base-3);
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: var(--color-base-3);
+        }
+    }
+
+}
+
+// Multi-select dropdown
+
+#app .multiselect {
+    border-radius: 4px;
+
+    &__tags {
+        border-color: var(--color-border);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 52px;
+    }
+
+    &__tags input {
+        background: transparent;
+    }
+
+    &__single {
+        background: transparent;
+        color: var(--color-base-2);
+        border-width: 0;
+    }
+
+
+    &__placeholder {
+        font-size: 16px;
+        color: var(--color-base-3);
+        font-weight: 400;
+    }
+
+    &__select {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            margin-top: -4px;
+            height: 8px;
+            width: 8px;
+            border: 2px solid currentColor;
+            border-left: 0;
+            border-bottom: 0;
+            transform: rotate(135deg);
+            transition: .3s;
+        }
+    }
+
+
+    &--active .multiselect__select {
+        transform: none;
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &--active .multiselect__placeholder {
+        display: block;
+    }
+
+    &__option {
+        white-space: unset;
+        word-break: break-all;
+    }
+}
+
+
+#app .form-page .multiselect {
+
+    &__select:before {
+        border: 5px solid #3B4256;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom: 0;
+        transform: none;
+        margin-top: 0;
+    }
+
+    &--active .multiselect__select {
+        transform: none;
+
+        &:before {
+            margin-top: -5px;
+            transform: rotate(-180deg);
+        }
+    }
+
+}
+
+//// custom-radio input
+
+.radio-btn-group {
+    label {
+        cursor: pointer;
+        position: relative;
+    }
+
+    label:before, {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 11px;
+        border: 2px solid #3B4256;
+        background-color: transparent;
+    }
+
+    input {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+
+    input[type=radio]:checked + label:after {
+        border-radius: 11px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 7px;
+        left: 5px;
+        content: " ";
+        display: block;
+        background: #3B4256;
+    }
+
+    &--blue label:before {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        border-color: var(--color-border);
+    }
+
+    &--blue label:hover:before {
+        border-color: var(--color-primary);
+    }
+
+    &--blue input[type=radio]:checked + label:after {
+        border: 5px solid var(--color-primary);
+        width: 16px;
+        height: 16px;
+        top: 4px;
+        left: 0;
+        background: transparent;
+    }
+}
+
+.checkbox-label {
+    cursor: pointer;
+    display: flex;
+
+    input {
+        min-width: 16px;
+        min-height: 16px;
+        margin: 5px 8px 0 0;
+        filter: grayscale(1);
+        vertical-align: middle;
+    }
+}
+
+.input-file {
+    &-btn {
+        transition: .2s;
+    }
+
+    &-btn:hover {
+        color: var(--color-base-1);
+
+        > span {
+            color: var(--color-base-1);
+        }
+
+        .input-file-box {
+            color: var(--color-base-2);
+            border-color: var(--color-base-3);
+        }
+    }
+
+    &-btn:last-child {
+        border-left: 1px solid #e9e9e9;
+
+        @include respond(sm) {
+            border-left: 0;
+            border-top: 1px solid #e9e9e9;
+        }
+    }
+
+    &-box {
+        border: 2px dashed var(--color-border);
+        border-radius: 6px;
+
+        input {
+            opacity: 0;
+        }
+    }
+
+    input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &-txt {
+        padding: 12px;
+        color: var(--color-base-3);
+        background: var(--color-bg-3);
+
+        @include respond(sm) {
+            width: 100%;
+        }
+    }
+
+    // file-upload field
+
+    .file__item {
+        &:before {
+            content: '';
+            background: var(--color-black);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: .4;
+            transition: .2s;
+        }
+
+        &:hover:before {
+            opacity: .1;
+        }
+    }
+
+    .btn-remove {
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        right: 5px;
+
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+

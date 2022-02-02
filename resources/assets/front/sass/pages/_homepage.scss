@@ -1,0 +1,227 @@
+.en {
+    .banner {
+        &__lg-txt {
+            font-size: 30px;
+        }
+    }
+
+    .nav {
+        .header__title {
+            font-size: 16px;
+        }
+
+        .header__title-desc {
+            font-size: 13px;
+        }
+    }
+}
+
+.banner {
+    &__heading {
+        background: #F3F8FF;
+    }
+
+    &__heading .grid {
+        grid-template-columns: 1fr 430px;
+
+        @include respond(xlg) {
+            grid-template-columns: auto;
+        }
+    }
+
+    @include respond(sm) {
+        height: auto;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #8B9498;
+        flex: 1;
+    }
+
+    &__lg-txt {
+        font-size: 34px;
+        color: var(--color-primary);
+        line-height: 1.2;
+
+        @include respond(md) {
+            font-size: 28px;
+        }
+
+        @include respond(sm) {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.banner__content {
+    grid-template-columns: 1fr 430px;
+    @include respond(xlg) {
+        grid-template-columns: auto;
+    }
+
+    > span {
+        background: #F5FBFE;
+    }
+
+
+    .bg-layer {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            background: #F3F8FF;
+            bottom: 50%;
+            z-index: -1;
+            width: 400vw;
+            transform: translateX(-100vw);
+        }
+    }
+
+    &-form label.text-black-100 {
+        color: var(--color-base-1);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &-item:last-child {
+        border-left: 1px solid #eee;
+
+        @include respond(md) {
+            border: none;
+        }
+    }
+
+    .list {
+        padding-left: 19px;
+    }
+
+    .list li {
+        margin-bottom: 8px;
+    }
+
+    // for mobile - read-more btn toggle
+
+    .card-shadow-wrap {
+        transition: .3s;
+
+        @include respond(sm) {
+            max-height: 350px;
+        }
+
+        button:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid var(--color-primary);
+            border-right: 2px solid var(--color-primary);
+            display: inline-block;
+            transform: rotate(
+                    135deg
+            );
+        }
+    }
+
+    .card-shadow {
+        display: none;
+        @include respond(sm) {
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 57.29%);
+        }
+    }
+
+    .card--show {
+        height: auto;
+        max-height: 920px;
+
+        .card-shadow {
+            display: none;
+        }
+    }
+
+}
+
+.sample__file-wrap {
+    min-height: 146px;
+    overflow: hidden;
+    background: #D4E8FB;
+    grid-template-columns: 120px 1fr;
+
+    @include respond(sm) {
+        grid-template-columns: 1fr;
+    }
+
+    .sample__file-img-wrap {
+        height: 164px;
+
+        @include respond(sm) {
+            height: 120px;
+            width: 120px;
+        }
+
+    }
+}
+
+
+.tab {
+    border-radius: 6px;
+
+    &__list {
+        border-bottom: 1px solid #E7F6FD;
+    }
+
+    &__item {
+        overflow: hidden;
+        cursor: pointer;
+        padding: 12px 24px;
+        transition: 0.1s;
+        font-size: 16px;
+        position: relative;
+        color: var(--color-border);
+
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 95%;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        &.is--active {
+            color: var(--color-primary);
+
+            &:before {
+                background: var(--color-primary);
+            }
+        }
+    }
+
+
+    &__content-item {
+        display: none;
+
+        &.is--active {
+            display: block;
+        }
+    }
+
+}
+
+.tab .tab {
+    .tab__item {
+        font-size: 16px;
+    }
+
+    .tab__content {
+        padding: 0;
+    }
+}

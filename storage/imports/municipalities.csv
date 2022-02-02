@@ -1,0 +1,754 @@
+Province,Province Name En,Province Name Ne,District Id,District Code,District Name En,District Name Ne,GAPA Id,GAPA Code,GaPa Name En,GaPa Name Ne,Total Wards
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,1,10101,Phaktanlung Gaunpalika,फक्ताङ्लुङ्ग गाउँपालिका,7
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,2,10102,Mikwakhola Gaunpalika,मिक्वाखोला गाउँपालिका,5
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,3,10103,Meringden Gaunpalika,मेरिङ्गदेन गाउँपालिका,6
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,4,10104,Maiwakhola Gaunpalika,मैवाखोला गाउँपालिका,6
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,5,10105,Aatharai Tribeni Gaunpalika,आठराई त्रिवेणी गाउँपालिका,5
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,6,10106,Phungling Municipality,फुङलिङ्ग नगरपालिका,11
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,7,10107,Pathivara Yangwarak Gaunpalika,पाथीभरा याङवरक गाउँपालिका,6
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,8,10108,Sirijanga Gaunpalika,सिरीजङ्गा गाउंपालिका,8
+1,Province No. 1,प्रदेश १,1,101,Taplejung,ताप्लेजुङ,9,10109,Sidingba Gaunpalika,सिदिङ्गवा गाउँपालिका,7
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,1,10201,Bhotkhola Gaunpalika,भोटखोला गाउँपालिका,5
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,2,10202,Makalu Gaunpalika,मकालु गाउँपालिका,6
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,3,10203,Silichong Gaunpalika,सिलीचोङ गाउँपालिका,5
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,4,10204,Chichila Gaunpalika,चिचिला गाउँपालिका,5
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,5,10205,Sabhapokhari Gaunpalika,सभापोखरी गाउँपालिका,6
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,6,10206,Khandabari Municipality,खाँदबारी नगरपालिका,11
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,7,10207,Panchakhapan Municipality,पाँचखपन नगरपालिका,9
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,8,10208,Chainapur Municipality,चैनपुर नगरपालिका,11
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,9,10209,Madi Municipality,मादी नगरपालिका,9
+1,Province No. 1,प्रदेश १,2,102,Sankhuwasabha,संखुवासभा,10,10210,Dharmadevi Municipality,धर्मदेवी नगरपालिका,9
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,1,10301,Khumbu Pasanglhamu Gaunpalika,खुम्बु पासाङल्हामु गाउँपालिका,5
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,2,10302,Mahakulung Gaunpalika,माहाकुलुङ गाउँपालिका,5
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,3,10303,Sotang Gaunpalika,सोताङ गाउँपालिका,5
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,4,10304,Mapya Dudhkoshi Gaunpalika,माप्य दुधकोशी गाउँपालिका,7
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,5,10305,Thulung Dudhkoshi Gaunpalika,थुलुङ दुधकोशी गाउँपालिका,9
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,6,10306,Necha Salyan Gaunpalika,नेचासल्यान गाउँपालिका,5
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,7,10307,Solu Dhudhakunda Municipality,सोलुदुधकुण्ड नगरपालिका,11
+1,Province No. 1,प्रदेश १,3,103,Solukhumbu,सोलुखुम्बु,8,10308,Likhu Pike Gaunpalika,लिखु पिके गाउँपालिका,5
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,1,10401,Chishankhu Gadhi Gaunpalika,चिशंखुगढी गाउँपालिका,8
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,2,10402,Siddhicharan Municipality,सिद्धिचरण नगरपालिका,12
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,3,10403,Molung Gaunpalika,मोलुङ्ग गाउँपालिका,8
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,4,10404,Khiji Demba Gaunpalika,खिजीदेम्बा गाउँपालिका,9
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,5,10405,Likhu Gaunpalika,लिखु गाउँपालिका ,9
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,6,10406,Champadevi Gaunpalika,चम्पादेवी गाउँपालिका,10
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,7,10407,Sunkoshi Gaunpalika,सुनकोशी गाउँपालिका ,10
+1,Province No. 1,प्रदेश १,4,104,Okhaldhunga,ओखलढुङ्गा,8,10408,Manebhanjyang Gaunpalika,मानेभन्ज्याङ्ग गाउँपालिका,9
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,1,10501,Kepilasgadhi Gaunpalika,केपिलासगढी गाउँपालिका,7
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,2,10502,Aiselukharka Gaunpalika,ऐसेलुखर्क गाउँपालिका,7
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,3,10503,Rawa Besi Gaunpalika,रावा बेसी गाउँपालिका,6
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,4,10504,Halesi Tuwachung Municipality,हलेसी तुवाचुङ नगरपालिका,11
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,5,10505,Diktel Rupakot Majhuwagadhi Municipality,दिक्तेल रुपाकोट मझुवागढी नगरपालिका,15
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,6,10506,Sakela Gaunpalika,साकेला गाउँपालिका,5
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,7,10507,Diprung Chuichumma Gaunpalika,दिप्रुङ चुइचुम्मा गाउँपालिका,7
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,8,10508,Khotehang Gaunpalika,खोटेहाङ गाउँपालिका,9
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,9,10509,Jante Dhunga Gaunpalika,जन्तेढुङ्गा गाउँपालिका,6
+1,Province No. 1,प्रदेश १,5,105,Khotang,खोटाङ,10,10510,Baraha Pokhari Gaunpalika,बराहपोखरी गाउँपालिका,6
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,1,10601,Shadananda Municipality,षडानन्द नगरपालिका,14
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,2,10602,Salpa Silichho Gaunpalika,साल्पासिलिछो गाउँपालिका,6
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,3,10603,Temkemaiyum Gaunpalika,टेम्केमैयुङ गाउँपालिका,9
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,4,10604,Bhojpur Municipality,भोजपुर नगरपालिका,12
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,5,10605,Arun Gaunpalika,अरुण गाउँपालिका,7
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,6,10606,Pauwa Dunma Gaunpalika,पौवा दुङ्मा गाउँपालिका,6
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,7,10607,Ramprasad Rai Gaunpalika,रामप्रसाद राई गाउँपालिका,8
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,8,10608,Hatuwagadhi Gaunpalika,हतुवागढी गाउँपालिका,9
+1,Province No. 1,प्रदेश १,6,106,Bhojpur,भोजपुर,9,10609,Aamchowk Gaunpalika,आमचोक गाउँपालिका,10
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,1,10701,Mahalaxmi Municipality,महालक्ष्मी नगरपालिका,9
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,2,10702,Pakhribas Municipality,पाख्रिबास नगरपालिका,10
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,3,10703,Chhathar Jorpati Gaunpalika,छथर जोरपाटी गाउँपालिका,6
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,4,10704,Dhankuta Municipality,धनकुटा नगरपालिका,10
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,5,10705,Shahidbhumi Gaunpalika,सहिदभूमि गाउँपालिका,7
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,6,10706,Sangurigadhi Gaunpalika,साँगुरीगढी गाउँपालिका,10
+1,Province No. 1,प्रदेश १,7,107,Dhankuta,धनकुटा,7,10707,Chaubise Gaunpalika,चौविसे गाउँपालिका,8
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,1,10801,Aatharai Gaunpalika,आठराई गाउँपालिका,7
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,2,10802,Phedap Gaunpalika,फेदाप गाउँपालिका,5
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,3,10803,Menchhayayem Gaunpalika,मेन्छयायेम गाउँपालिका,6
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,4,10804,Myanglung Municipality,म्याङ्गलुङ्ग नगरपालिका,10
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,5,10805,Laligurans Municipality,लालीगुराँस नगरपालिका,9
+1,Province No. 1,प्रदेश १,8,108,Terhathum,तेह्रथुम,6,10806,Chhathar Gaunpalika,छथर गाउँपालिका,6
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,1,10901,Yangbarak Gaunpalika,याङवरक गाउँपालिका,6
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,2,10902,Hilihan Gaunpalika,हिलिहाङ्ग गाउँपालिका,7
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,3,10903,Falelung Gaunpalika,फालेलुङ्ग गाउँपालिका,8
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,4,10904,Phidim Municipality,फिदिम नगरपालिका,14
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,5,10905,Falgunanda Gaunpalika,फाल्गुनन्द गाउँपालिका,7
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,6,10906,Kummayak Gaunpalika,कुम्मायक गाउँपालिका,5
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,7,10907,Tumbewa Gaunpalika,तुम्बेवा गाउँपालिका,5
+1,Province No. 1,प्रदेश १,9,109,Panchthar,पाँचथर,8,10908,Miklajung Gaunpalika,मिक्लाजुङ गाउँपालिका,8
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,1,11001,Mai Jogmai Gaunpalika,माई जोगमाई गाउँपालिका,6
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,2,11002,Sandakpur Gaunpalika,सन्दकपुर गाउँपालिका,5
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,3,11003,Illam Municipality,ईलाम नगरपालिका,12
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,4,11004,Deumai Municipality,देउमाई नगरपालिका,9
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,5,11005,Fakfokathum Gaunpalika,फाकफोकथुम गाउँपालिका,7
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,6,11006,Mangsebung Gaunpalika,माङसेबुङ गाउँपालिका,6
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,7,11007,Chulachuli Gaunpalika,चुलाचुली गाउँपालिका,6
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,8,11008,Mai Municipality,माई नगरपालिका,10
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,9,11009,Suryodaya Municipality,सूर्योदय नगरपालिका,14
+1,Province No. 1,प्रदेश १,10,110,Ilam,इलाम,10,11010,Rong Gaunpalika,रोङ गाउँपालिका,6
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,1,11101,Mechinagar Municipality,मेचीनगर नगरपालिका,15
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,2,11102,Buddhashanti Gaunpalika,बुद्धशान्ति गाउँपालिका,7
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,3,11103,Arjundhara Municipality,अर्जुनधारा नगरपालिका,11
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,4,11104,Kankai Municipality,कन्काई नगरपालिका,9
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,5,11105,Shivasatakshi Municipality,शिवसताक्षी नगरपालिका,11
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,6,11106,Kamal Gaunpalika,कमल गाउँपालिका,7
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,7,11107,Damak Municipality,दमक नगरपालिका,10
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,8,11108,Gauradaha Municipality,गौरादह नगरपालिका,9
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,9,11109,Gauriganj Gaunpalika,गौरिगञ्ज गाउँपालिका,6
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,10,11110,Jhapa Gaunpalika,झापा गाउँपालिका,7
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,11,11111,Barhadashi Gaunpalika,बाह्रदशी गाउँपालिका,7
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,12,11112,Birtamod Municipality,बिर्तामोड नगरपालिका,10
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,13,11113,Haldibari Gaunpalika,हल्दीबारी गाउँपालिका,5
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,14,11114,Bhadrapur Municipality,भद्रपुर नगरपालिका,10
+1,Province No. 1,प्रदेश १,11,111,Jhapa,झापा,15,11115,Kachanakawal Gaunpalika,कचनकवल गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,1,11201,Miklajung Gaunpalika,मिक्लाजुङ गाउँपालिका,9
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,2,11202,Letang Municipality,लेटाङ नगरपालिका,9
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,3,11203,Kerabari Gaunpalika,केराबारी गाउँपालिका,10
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,4,11204,Sundarharaicha Municipality,सुन्दरहरैंचा नगरपालिका,12
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,5,11205,Belbari Municipality,बेलबारी नगरपालिका,11
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,6,11206,Kanepokhari Gaunpalika,कानेपोखरी गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,7,11207,Pathari Shanishchare Municipality,पथरी शनिश्चरे नगरपालिका,10
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,8,11208,Urlabari Municipality,उर्लाबारी नगरपालिका,9
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,9,11209,Ratuwamai Municipality,रतुवामाई नगरपालिका,10
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,10,11210,Sunwarshi Municipality,सुनवर्षी नगरपालिका,9
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,11,11211,Rangeli Municipality,रंगेली नगरपालिका,9
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,12,11212,Gramthan Gaunpalika,ग्रामथान गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,13,11213,Budhiganga Gaunpalika,बुढीगंगा गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,14,11214,Biratnagar Metropolitian City,बिराटनगर महानगरपालिका,19
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,15,11215,Katahari Gaunpalika,कटहरी गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,16,11216,Dhanapalthan Gaunpalika,धनपालथान गाउँपालिका,7
+1,Province No. 1,प्रदेश १,12,112,Morang,मोरङ,17,11217,Jahada Gaunpalika,जहदा गाउँपालिका,7
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,1,11301,Dharan Sub-Metropolitian City,धरान उपमहानगरपालिका,20
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,2,11302,Barahachhetra Municipality,बराहक्षेत्र नगरपालिका,11
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,3,11303,Koshi Gaunpalika,कोशी गाउँपालिका,8
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,4,11304,Bhokraha Narsingh Gaunpalika,भोक्राहा नरसिंह गाउँपालिका,8
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,5,11305,Ramdhuni Municipality,रामधुनी नगरपालिका,9
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,6,11306,Itahari Sub-Metropolitian City,ईटहरी उपमहानगरपालिका,20
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,7,11307,Duhabi Municipality,दुहबी नगरपालिका,12
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,8,11308,Gadhi Gaunpalika,गढी गाउँपालिका,6
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,9,11309,Inaruwa Municipality,इनरुवा नगरपालिका,10
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,10,11310,Harinagar Gaunpalika,हरिनगर गाउँपालिका,7
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,11,11311,Dewangunj Gaunpalika,देवानगन्ज गाउँपालिका,7
+1,Province No. 1,प्रदेश १,13,113,Sunsari,सुनसरी,12,11312,Barju Gaunpalika,बर्जु गाउँपालिका,6
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,1,11401,Belaka Municipality,बेलका नगरपालिका,9
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,2,11402,Chaudandigadhi Municipality,चौदण्डीगढी नगरपालिका,10
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,3,11403,Triyuga Municipality,त्रियुगा नगरपालिका,16
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,4,11404,Rautamai Gaunpalika,रौतामाई गाउँपालिका,8
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,5,11405,Limchunbung Gaunpalika,लिम्चुङबुङ्ग गाउँपालिका,5
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,6,11406,Tapli Gaunpalika,ताप्ली गाउँपालिका,5
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,7,11407,Katari Municipality,कटारी नगरपालिका,14
+1,Province No. 1,प्रदेश १,14,114,Udayapur,उदयपुर,8,11408,Udayapurgadhi Gaunpalika,उदयपुरगढी गाउँपालिका,8
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,1,20101,Saptakoshi Municipality,सप्तकोशी नगरपालिका,11
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,2,20102,Kanchanrup Municipality,कन्चनरुप नगरपालिका,12
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,3,20103,Agnisair Krishna Sabaran Gaunpalika,अग्निसाइर कृष्ण सवरन गाउँपालिका,6
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,4,20104,Rupani Gaunpalika,रुपनी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,5,20105,Shambhunath Municipality,शम्भुनाथ नगरपालिका,12
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,6,20106,Khadak Municipality,खडक नगरपालिका,11
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,7,20107,Surunga Municipality,सुरुङ्गा नगरपालिका,11
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,8,20108,Balan-Bihul Gaunpalika,बलान बिहुल गाउँपालिका,6
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,9,20109,Bode Barsain Municipality,बोदेबरसाईन नगरपालिका,10
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,10,20110,Dakneshwori Municipality,डाक्नेश्वरी नगरपालिका,10
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,11,20111,Rajgadh Gaunpalika,राजगढ गाउँपालिका,6
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,12,20112,Bishnupur Gaunpalika,बिष्णुपुर गाउँपालिका,7
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,13,20113,Rajbiraj Municipality,राजविराज नगरपालिका,16
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,14,20114,Mahadewa Gaunpalika,महादेवा गाउँपालिका,6
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,15,20115,Tirahut Gaunpalika,तिरहुत गाउँपालिका,5
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,16,20116,Hanumannagar Kankalini Municipality,हनुमाननगर कङ्कालिनी नगरपालिका,14
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,17,20117,Tilathi Koiladi Gaunpalika,तिलाठी कोईलाडी गाउँपालिका,8
+2,Province No. 2,प्रदेश २,15,201,Saptari,सप्तरी,18,20118,Chhinnamasta Gaunpalika,छिन्नमस्ता गाउँपालिका,7
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,1,20201,Lahan Municipality,लहान नगरपालिका,24
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,2,20202,Dhangadhimai Municipality,धनगढीमाई नगरपालिका,14
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,3,20203,Golbazar Municipality,गोलबजार नगरपालिका,13
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,4,20204,Mirchaiya Municipality,मिर्चेया नगरपालिका,12
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,5,20205,Karjanha Municipality,कर्जन्हा नगरपालिका,11
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,6,20206,Kalyanpur Municipality,कल्याणपुर नगरपालिका,12
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,7,20207,Naraha Gaunpalika,नरहा गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,8,20208,Bishnupur Gaunpalika,बिष्णुपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,9,20209,Arnama Gaunpalika,अर्नमा गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,10,20210,Sukhipur Municipality,सुखीपुर नगरपालिका,10
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,11,20211,Laxmipur Patari Gaunpalika,लक्ष्मीपुर पतारी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,12,20212,Sakhuwa Nankarkatti Gaunpalika,सखुवानान्कारकट्टी गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,13,20213,Bhagawanpur Gaunpalika,भगवानपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,14,20214,Nawarajpur Gaunpalika,नवराजपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,15,20215,Bariyarpatti Gaunpalika,बरियारपट्टी गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,16,20216,Aurahi Gaunpalika,औरही गाउँपालिका,5
+2,Province No. 2,प्रदेश २,16,202,Siraha,सिरहा,17,20217,Siraha Municipality,सिराहा नगरपालिका,22
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,1,20301,Ganeshman Charnath Municipality,गणेशमान चारनाथ नगरपालिका,11
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,2,20302,Dhanushadham Municipality,धनुषाधाम नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,3,20303,Mithila Municipality,मिथिला नगरपालिका,11
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,4,20304,Bateshwor Gaunpalika,बटेश्वर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,5,20305,Chhireshwornath Municipality,क्षिरेश्वरनाथ नगरपालिका,10
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,6,20306,Laxminiya Gaunpalika,लक्ष्मीनिया गाउँपालिका,7
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,7,20307,Mithila Bihari Municipality,मिथिला बिहारी नगरपालिका,10
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,8,20308,Hansapur Municipality,हंसपुर नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,9,20309,Sabaila Municipality,सबैला नगरपालिका,13
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,10,20310,Shahidnagar Municipality,शहीदनगर नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,11,20311,Kamala Municipality,कमला नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,12,20312,Janak Nandini Gaunpalika,जनक नन्दिनी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,13,20313,Bideha Municipality,बिदेह नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,14,20314,Aurahi Gaunpalika,औरही गाउँपालिका,6
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,15,20315,Janakpurdham Sub-Metropolitian City,जनकपुरधाम उपमहानगरपालिका,25
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,16,20316,Dhanauji Gaunpalika,धनौजी गाउँपालिका,5
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,17,20317,Nagarain Municipality,नगराइन नगरपालिका,9
+2,Province No. 2,प्रदेश २,17,203,Dhanusa,धनुषा,18,20318,Mukhiyapatti Musaharmiya Gaunpalika,मुखियापट्टी मुसहरमिया गाउँपालिका,6
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,1,20401,Bardibas Municipality,बर्दिबास नगरपालिका,14
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,2,20402,Gaushala Municipality,गौशाला नगरपालिका,12
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,3,20403,Sonama Gaunpalika,सोनमा गाउँपालिका,8
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,4,20404,Aurahi Municipality,औरही नगरपालिका,9
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,5,20405,Bhangaha Municipality,भँगाहा नगरपालिका,9
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,6,20406,Loharpatti Municipality,लोहरपट्टी नगरपालिका,9
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,7,20407,Balawa Municipality,बलवा नगरपालिका,11
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,8,20408,Ram Gopalpur Municipality,राम गोपालपुर नगरपालिका,9
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,9,20409,Samsi Gaunpalika,साम्सी गाउँपालिका,7
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,10,20410,Manara Shisawa Municipality,मनरा शिसवा नगरपालिका,10
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,11,20411,Ekadara Gaunpalika,एकडारा गाउँपालिका,6
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,12,20412,Mahottari Gaunpalika,महोत्तरी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,13,20413,Pipara Gaunpalika,पिपरा गाउँपालिका,7
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,14,20414,Matihani Municipality,मटिहानी नगरपालिका,9
+2,Province No. 2,प्रदेश २,18,204,Mahottari,महोत्तरी,15,20415,Jaleshwor Municipality,जलेश्वर नगरपालिका,12
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,1,20501,Lalbandi Municipality,लालबन्दी नगरपालिका,17
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,2,20502,Hariwan Municipality,हरिवन नगरपालिका,11
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,3,20503,Bagmati Municipality,बागमती नगरपालिका,12
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,4,20504,Barahathawa Municipality,बरहथवा नगरपालिका,18
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,5,20505,Haripur Municipality,हरिपुर नगरपालिका,9
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,6,20506,Ishworpur Municipality,ईश्वरपुर नगरपालिका,15
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,7,20507,Haripurwa Municipality,हरिपुर्वा नगरपालिका,9
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,8,20508,Parsa Gaunpalika,पर्सा गाउँपालिका,6
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,9,20509,Brahmapuri Gaunpalika,ब्रह्मपुरी गाउँपालिका,7
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,10,20510,Chandranagar Gaunpalika,चन्द्रनगर गाउँपालिका,7
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,11,20511,Kabilashi Municipality,कविलासी नगरपालिका,10
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,12,20512,Chakraghatta Gaunpalika,चक्रघट्टा गाउँपालिका,9
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,13,20513,Basbariya Gaunpalika,बसबरिया गाउँपालिका,6
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,14,20514,Dhanakaul Gaunpalika,धनकौल गाउँपालिका,7
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,15,20515,Ramnagar Gaunpalika,रामनगर गाउँपालिका,7
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,16,20516,Balara Municipality,बलरा नगरपालिका,11
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,17,20517,Godaita Municipality,गोडैटा नगरपालिका,12
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,18,20518,Bishnu Gaunpalika,विष्णु गाउँपालिका,8
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,19,20519,Kaudena Gaunpalika,कौडेना गाउँपालिका,7
+2,Province No. 2,प्रदेश २,19,205,Sarlahi,सर्लाही,20,20520,Malangawa Municipality,मलंगवा नगरपालिका,12
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,1,20601,Chandrapur Municipality,चन्द्रपुर नगरपालिका,10
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,2,20602,Gujara Municipality,गुजरा नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,3,20603,Phatuwa Bijayapur Municipality,फतुवा बिजयपुर नगरपालिका,11
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,4,20604,Katahariya Municipality,कटहरिया नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,5,20605,Brindaban Municipality,बृन्दावन नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,6,20606,Gadhimai Municipality,गढीमाई नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,7,20607,Madhav Narayan Municipality,माधव नारायण नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,8,20608,Garuda Municipality,गरुडा नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,9,20609,Dewahi Gonahi Municipality,देवाही गोनाही नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,10,20610,Maulapur Municipality,मौलापुर नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,11,20611,Boudhimai Municipality,बौधीमाई नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,12,20612,Paroha Municipality,परोहा नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,13,20613,Rajpur Municipality,राजपुर नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,14,20614,Yamunamai Gaunpalika,यमुनामाई गाउँपालिका,5
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,15,20615,Durga Bhagawati Gaunpalika,दुर्गा भगवती गाउँपालिका,5
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,16,20616,Rajdevi Municipality,राजदेवी नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,17,20617,Gaur Municipality,गौर नगरपालिका,9
+2,Province No. 2,प्रदेश २,20,206,Rautahat,रौतहट,18,20618,Ishanath Municipality,ईशनाथ नगरपालिका,9
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,1,20701,Nijagadh Municipality,निजगढ नगरपालिका,13
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,2,20702,Kolhabi Municipality,कोल्हवी नगरपालिका,11
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,3,20703,Jitpur Simara Sub-Metropolitian City,जीतपुर सिमरा उपमहानगरपालिका,24
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,4,20704,Parawanipur Gaunpalika,परवानीपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,5,20705,Prasauni Gaunpalika,प्रसौनी गाउँपालिका,7
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,6,20706,Bishrampur Gaunpalika,विश्रामपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,7,20707,Pheta Gaunpalika,फेटा गाउँपालिका,7
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,8,20708,Kalaiya Sub-Metropolitian City,कलैया उपमहानगरपालिका,27
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,9,20709,Karaiyamai Gaunpalika,करैयामाई गाउँपालिका,8
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,10,20710,Baragadhi Gaunpalika,बारागढी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,11,20711,Aadarsha Kotwal Gaunpalika,आदर्श कोटवाल गाउँपालिका,8
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,12,20712,Simroungadh Municipality,सिम्रौनगढ नगरपालिका,11
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,13,20713,Pacharauta Municipality,पचरौता नगरपालिका,9
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,14,20714,Mahagadhimai Municipality,महागढीमाई नगरपालिका,11
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,15,20715,Devtal Gaunpalika,देवताल गाउँपालिका,7
+2,Province No. 2,प्रदेश २,21,207,Bara,बारा,16,20716,Subarna Gaunpalika,सुवर्ण गाउँपालिका,8
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,1,20801,Thori Gaunpalika,ठोरी (सुवर्णपुर) गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,2,20802,Jirabhawani Gaunpalika,जिराभवानी गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,3,20803,Jagarnathpur Gaunpalika,जगरनाथपुर गाउँपालिका,6
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,4,20804,Paterwa Sugauli Gaunpalika,पटेर्वा सुगौली गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,5,20805,Sakhuwa Prasauni Gaunpalika,सखुवा प्रसौनी गाउँपालिका,6
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,6,20806,Parsagadhi Municipality,पर्सागढी नगरपालिका,9
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,7,20807,Birgunj Metropolitian City,बिरगन्ज महानगरपालिका,32
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,8,20808,Bahudarmai Municipality,बहुदरमाई नगरपालिका,9
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,9,20809,Pokhariya Municipality,पोखरिया नगरपालिका,10
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,10,20810,Kalikamai Gaunpalika,कालिकामाई गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,11,20811,Dhobini Gaunpalika,धोबीनी गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,12,20812,Chhipaharmai Gaunpalika,छिपहरमाई गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,13,20813,Pakaha Mainpur Gaunpalika,पकाहा मैनपुर गाउँपालिका,5
+2,Province No. 2,प्रदेश २,22,208,Parsa,पर्सा,14,20814,Bindabasini Gaunpalika,बिन्दबासिनी गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,1,30101,Gaurishankar Gaunpalika,गौरिशंकर गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,2,30102,Bigu Gaunpalika,बिगु गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,3,30103,Kalinchowk Gaunpalika,कालिन्चोक गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,4,30104,Baiteshwor Gaunpalika,बैतेश्वर गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,5,30105,Jiri Municipality,जिरी नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,6,30106,Tamakoshi Gaunpalika,तामाकोशी गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,7,30107,Melung Gaunpalika,मेलुङ्ग गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,8,30108,Shailung Gaunpalika,शैलुड० गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,23,301,Dolakha,दोलखा,9,30109,Bhimeshwor Municipality,भिमेश्वर नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,1,30201,Bhotekoshi Gaunpalika,भोटेकोशी गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,2,30202,Jugal Gaunpalika,जुगल गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,3,30203,Panchpokhari Thangpal Gaunpalika,पाँचपोखरी थाड०पाल गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,4,30204,Helambu Gaunpalika,हेलम्बु गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,5,30205,Melanchi Municipality,मेलम्ची नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,6,30206,Indrawoti Gaunpalika,ईन्द्रावती गाउँपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,7,30207,Choutara Sangachowkgadhi Municipality,चौतारा साँगाचोकगढी नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,8,30208,Balephi Gaunpalika,बलेफी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,9,30209,Bahrabise Municipality,बाह्रबिसे नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,10,30210,Tripurasundari Gaunpalika,त्रिपुरासुन्दरी गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,11,30211,Lisankhu Pakhar Gaunpalika,लिसंखु पाखर गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,24,302,Sindhupalchok,सिन्धुपाल्चोक,12,30212,Sunkoshi Gaunpalika,सुनकोशी गाउँपालिका ,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,25,303,Rasuwa,रसुवा,1,30301,Gosaikunda Gaunpalika,गोसाईकुण्ड गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,25,303,Rasuwa,रसुवा,2,30302,Aamachhodingmo Gaunpalika,आमाछोदिङमो गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,25,303,Rasuwa,रसुवा,3,30303,Uttargaya Gaunpalika,उत्तरगया गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,25,303,Rasuwa,रसुवा,4,30304,Shuva Kalika Gaunpalika,शुभ कालीका गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,25,303,Rasuwa,रसुवा,5,30305,Naukunda Gaunpalika,नौकुण्ड गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,1,30401,Rubi Valley Gaunpalika,रुबी भ्याली गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,2,30402,Khaniyabas Gaunpalika,खनियाबास गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,3,30403,Ganga Jamuna Gaunpalika,गंङ्गा जमुना गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,4,30404,Tripurasundari Gaunpalika,त्रिपुरासुन्दरी गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,5,30405,Netrawati Dabjong Gaunpalika,नेत्रावती डबजोङ गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,6,30406,Nilkhantha Municipality,नीलकण्ठ नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,7,30407,Jwalamukhi Gaunpalika,ज्वालामुखी गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,8,30408,Siddhalek Gaunpalika,सिद्धलेक गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,9,30409,Benighat Rorang Gaunpalika,बेनीघाट रोराङ्ग गाउँपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,10,30410,Gajuri Gaunpalika,गजुरी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,11,30411,Galchhi Gaunpalika,गल्छी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,12,30412,Thakre Gaunpalika,थाक्रे गाउँपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,26,304,Dhading,धादिङ,13,30413,Dhunibenshi Municipality,धुनीबेंशी नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,1,30501,Dupcheshwor Gaunpalika,दुप्चेश्वर गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,2,30502,Tadi Gaunpalika,तादी गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,3,30503,Suryagadhi Gaunpalika,सुर्यगढी गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,4,30504,Bidur Municipality,बिदुर नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,5,30505,Kispang Gaunpalika,किस्पाङ्ग गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,6,30506,Myagang Gaunpalika,म्यगङ गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,7,30507,Tarakeshwor Gaunpalika,तारकेश्वर गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,8,30508,Belkotgadhi Municipality,बेलकोटगढी नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,9,30509,Likhu Gaunpalika,लिखु गाउँपालिका ,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,10,30510,Panchakanya Gaunpalika,पन्चकन्या गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,11,30511,Shivapuri Gaunpalika,शिवपुरी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,27,305,Nuwakot,नुवाकोट,12,30512,Kakani Gaunpalika,ककनी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,1,30601,Shankharapur Municipality,शंङ्खरापुर नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,2,30602,Kageshwori Manahara Municipality,कागेश्वरी मनहरा नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,3,30603,Gokarneshwor Municipality,गोकर्णेश्वर नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,4,30604,Budhanilkhantha Municipality,बुढानिलकण्ठ नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,5,30605,Tokha Municipality,टोखा नगरपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,6,30606,Tarakeshwor Municipality,तारकेश्वर नगरपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,7,30607,Nagarjun Municipality,नागार्जुन नगरपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,8,30608,Kathmandu Metropolitian City,काठमाण्डौ महानगरपालिका,32
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,9,30609,Kirtipur Municipality,किर्तिपुर नगरपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,10,30610,Chandragiri Municipality,चन्द्रागिरी नगरपालिका,15
+3,Bagmati Pradesh,वाग्मती प्रदेश,28,306,Kathmandu,काठमाडौँ,11,30611,Dakshinkali Municipality,दक्षिणकाली नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,29,307,Bhaktapur,भक्तपुर,1,30701,Changunarayan Municipality,चाँगुनारायण नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,29,307,Bhaktapur,भक्तपुर,2,30702,Bhaktapur Municipality,भक्तपुर नगरपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,29,307,Bhaktapur,भक्तपुर,3,30703,Madhyapur Thimi Municipality,मध्यपुर थिमी नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,29,307,Bhaktapur,भक्तपुर,4,30704,Suryabinayak Municipality,सूर्यविनायक नगरपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,1,30801,Mahalaxmi Municipality,महालक्ष्मी नगरपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,2,30802,Lalitpur Metropolitian City,ललितपुर महानगरपालिका,29
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,3,30803,Godawari Municipality,गोदावरी नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,4,30804,Konjyosom Gaunpalika,कोन्ज्योसोम गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,5,30805,Mahankal Gaunpalika,महाङ्काल गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,30,308,Lalitpur,ललितपुर,6,30806,Bagmati Gaunpalika,बाग्मती गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,1,30901,Chauri Deurali Gaunpalika,चौरीदेउराली गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,2,30902,Bhumlu Gaunpalika,भुम्लु गाउँपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,3,30903,Mandan Deupur Municipality,मण्डन देउपुर नगरपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,4,30904,Banepa Municipality,बनेपा नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,5,30905,Dhulikhel Municipality,धुलिखेल नगरपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,6,30906,Panchkhal Municipality,पाँचखाल नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,7,30907,Temal Gaunpalika,तेमाल गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,8,30908,Namobuddha Municipality,नमोबुद्ध नगरपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,9,30909,Panauti Municipality,पनौती नगरपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,10,30910,Bethanchowk Gaunpalika,बेथानचोक गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,11,30911,Roshi Gaunpalika,रोशी गाउँपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,12,30912,Mahabharat Gaunpalika,महाभारत गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,31,309,Kavrepalanchok,काभ्रेपलाञ्चोक,13,30913,Khanikhola Gaunpalika,खानीखोला गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,1,31001,Umakunda Gaunpalika,उमाकुण्ड गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,2,31002,Gokulganga Gaunpalika,गोकुलगङ्गा गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,3,31003,Likhu Tamakoshi Gaunpalika,लिखु तामाकोशी गाउँपालिका ,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,4,31004,Ramechhap Municipality,रामेछाप नगरपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,5,31005,Manthali  Municipality,मन्थली नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,6,31006,Khandadevi Gaunpalika,खाँडादेवी गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,7,31007,Doramba Gaunpalika,दोरम्बा गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,32,310,Ramechhap,रामेछाप,8,31008,Sunapati Gaunpalika,सुनापती गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,1,31101,Dudhouli Municipality,दुधौली नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,2,31102,Phikkal Gaunpalika,फिक्कल गाउँपालिका,6
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,3,31103,Tinpatan Gaunpalika,तीनपाटन गाउँपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,4,31104,Golanjor Gaunpalika,गोलन्जोर गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,5,31105,Kamalamai Municipality,कमलामाई नगरपालिका,14
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,6,31106,Sunkoshi Gaunpalika,सुनकोशी गाउँपालिका ,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,7,31107,Ghyanglekha Gaunpalika,ध्याङलेख गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,8,31108,Marin Gaunpalika,मरिण गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,33,311,Sindhuli,सिन्धुली,9,31109,Hariharpurgaghi Gaunpalika,हरिहरपुरगढी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,1,31201,Indrasarowar Gaunpalika,ईन्द्रसरोवर गाउँपालिका,5
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,2,31202,Thaha Municipality,थाहा नगरपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,3,31203,Kailash Gaunpalika,कैलाश गाउँपालिका,10
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,4,31204,Raksirang Gaunpalika,राक्सिराङ्ग गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,5,31205,Manahari Gaunpalika,मनहरी गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,6,31206,Hetauda Sub-Metropolitian City,हेटौडा उपमहानगरपालिका,19
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,7,31207,Bhimphedi Gaunpalika,भिमफेदी गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,8,31208,Makawanpurgadhi Gaunpalika,मकवानपुरगढी गाउँपालिका,8
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,9,31209,Bakaiya Gaunpalika,बकैया गाउँपालिका,12
+3,Bagmati Pradesh,वाग्मती प्रदेश,34,312,Makwanpur,मकवानपुर,10,31210,Bagmati Gaunpalika,बाग्मती गाउँपालिका,9
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,1,31301,Rapti Municipality,राप्ती नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,2,31302,Kalika Municipality,कालिका नगरपालिका,11
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,3,31303,Ichchha Kamana Gaunpalika,इच्छाकामना गाउँपालिका,7
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,4,31304,Bharatpur Metropolitian City,भरतपुर महानगरपालिका,29
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,5,31305,Ratnanagar Municipality,रत्ननगर नगरपालिका,16
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,6,31306,Khairahani Municipality,खैरहनी नगरपालिका,13
+3,Bagmati Pradesh,वाग्मती प्रदेश,35,313,Chitawan,चितवन,7,31307,Madi Municipality,मादी नगरपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,1,40101,Chumanubri Gaunpalika,चुमनुब्री गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,2,40102,Ajirkot Gaunpalika,अजिरकोट गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,3,40103,Barpak Sulikot Gaunpalika,बारपाक सुलिकोट गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,4,40104,Dharche Gaunpalika,धार्चे गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,5,40105,Aarughat Gaunpalika,आरुघाट गाउँपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,6,40106,Bhimsenthapa Gaunpalika,भिमसेनथापा गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,7,40107,Siranchowk Gaunpalika,सिरानचोक गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,8,40108,Palungtar Municipality,पालुङ्गटार नगरपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,9,40109,Gorkha Municipality,गोरखा नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,10,40110,Shahid Lakhan Gaunpalika,शहीद लखन गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,36,401,Gorkha,गोरखा,11,40111,Gandaki Gaunpalika,गण्डकी गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,37,402,Manang,मनाङ,1,40201,Narpa Bhumi Gaunpalika,नार्पा भूमि गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,37,402,Manang,मनाङ,2,40202,Manang Ngisyang Gaunpalika,मनाङ ङिस्याङ गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,37,402,Manang,मनाङ,3,40203,Chame Gaunpalika,चामे गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,37,402,Manang,मनाङ,4,40204,Nason Gaunpalika,नासोँ गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,38,403,Mustang,मुस्ताङ,1,40301,Lo Ghekar Damodarkunda Gaunpalika,लो-घेकर दामोदरकुण्ड गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,38,403,Mustang,मुस्ताङ,2,40302,Gharpajhong Gaunpalika,घरपझोङ गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,38,403,Mustang,मुस्ताङ,3,40303,Varagung Muktichhetra Gaunpalika,वारागुङ मुक्तिक्षेत्र गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,38,403,Mustang,मुस्ताङ,4,40304,Lomanthang Gaunpalika,लोमन्थाङ गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,38,403,Mustang,मुस्ताङ,5,40305,Thasang Gaunpalika,थासाङ गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,1,40401,Annapurna Gaunpalika,अन्नपूर्ण गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,2,40402,Raghuganga Gaunpalika,रघुगंगा गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,3,40403,Dhawalagiri Gaunpalika,धवलागिरी गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,4,40404,Malika Gaunpalika,मालिका गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,5,40405,Mangala Gaunpalika,मंगला गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,39,404,Myagdi,म्याग्दी,6,40406,Beni Municipality,बेनी नगरपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,40,405,Kaski,कास्की,1,40501,Madi Gaunpalika,मादी गाउँपालिका,12
+4,Gandaki Pradesh,गण्डकी प्रदेश,40,405,Kaski,कास्की,2,40502,Machhapuchchhre Gaunpalika,माछापुच्छ्र्े गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,40,405,Kaski,कास्की,3,40503,Annapurna Gaunpalika,अन्नपूर्ण गाउँपालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,40,405,Kaski,कास्की,4,40504,Pokhara Metropolitian City,पोखरा महानगरपालिका,33
+4,Gandaki Pradesh,गण्डकी प्रदेश,40,405,Kaski,कास्की,5,40505,Rupa Gaunpalika,रूपा गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,1,40601,Dordi Gaunpalika,दोर्दी गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,2,40602,Marshyangdi Gaunpalika,मस्र्याङ्गदी गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,3,40603,Kwhola Sothar Gaunpalika,क्ब्होलासोथार गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,4,40604,Madhya Nepal Municipality,मध्यनेपाल नगरपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,5,40605,Bensishahar Municipality,बेंसीशहर नगरापालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,6,40606,Sundarbazar Municipality,सुन्दरबजार नगरपालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,7,40607,Rainas Municipality,राईनास नगरपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,41,406,Lamjung,लमजुङ,8,40608,Dudhapokhari Gaunpalika,दुधपोखरी गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,1,40701,Bhanu Municipality,भानु नगरपालिका,13
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,2,40702,Byas Municipality,ब्यास नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,3,40703,Myagde Gaunpalika,म्याग्दे गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,4,40704,Shuklagandaki Municipality,शुक्लागण्डकी नगरपालिका,12
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,5,40705,Bhimad Municipality,भिमाद नगरपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,6,40706,Ghiring Gaunpalika,घिरिङ्ग गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,7,40707,Rhishing Gaunpalika,ऋषिङ्ग गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,8,40708,Devghat Gaunpalika,देवघाट गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,9,40709,Bandipur Gaunpalika,बन्दिपुर गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,42,407,Tanahu,तनहुँ,10,40710,Aanbu Khaireni Gaunpalika,आँबुखैरेनी गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),1,40801,Gaidakot Municipality,गैडाकोट नगरपालिका,18
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),2,40802,Bulingtar Gaunpalika,बुलिङ्गटार गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),3,40803,Baudikali Gaunpalika,बौदीकाली गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),4,40804,Hupsekot Gaunpalika,हुप्सेकोट गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),5,40805,Devchuli Municipality,देवचुली नगरपालिका,17
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),6,40806,Kawasoti Municipality,कावासोती नगरपालिका,17
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),7,40807,Madhya Bindu Municipality,मध्यबिन्दु नगरपालिका,15
+4,Gandaki Pradesh,गण्डकी प्रदेश,43,408,Nawalparasi (East),नवलपरासी (बर्दघाट सुस्तापूर्व),8,40808,Binayi Tribeni Gaunpalika,बिनयी त्रिवेणी गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,1,40901,Putalibazar Municipality,पुतलीबजार नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,2,40902,Phedikhola Gaunpalika,फेदीखोला गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,3,40903,Aandhikhola Gaunpalika,आँधिखोला गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,4,40904,Arjun Choupari Gaunpalika,अर्जुनचौपारी गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,5,40905,Bhirkot Municipality,भीरकोट नगरपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,6,40906,Biruwa Gaunpalika,बिरुवा गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,7,40907,Harinas Gaunpalika,हरिनास गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,8,40908,Chapakot Municipality,चापाकोट नगरपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,9,40909,Walling Municipality,वालिङ्ग नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,10,40910,Galyang Municipality,गल्याङ नगरपालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,44,409,Syangja,स्याङजा,11,40911,Kaligandaki Gaunpalika,कालीगण्डकी गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,1,41001,Modi Gaunpalika,मोदी गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,2,41002,Jaljala Gaunpalika,जलजला गाउँपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,3,41003,Kushma Municipality,कुश्मा नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,4,41004,Phalebas Municipality,फलेबास नगरपालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,5,41005,Mahashila Gaunpalika,महाशिला गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,6,41006,Bihadi Gaunpalika,बिहादी गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,45,410,Parbat,पर्वत,7,41007,Paiyu Gaunpalika,पैयुं गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,1,41101,Baglung Municipality,बाग्लुङ्ग नगरपालिका,14
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,2,41102,Kathekhola Gaunpalika,काठेखोला गाउँपालिका,8
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,3,41103,Tarakhola Gaunpalika,ताराखोला गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,4,41104,Tamankhola Gaunpalika,तमानखोला गाउँपालिका,6
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,5,41105,Dhorpatan Municipality,ढोरपाटन नगरपालिका,9
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,6,41106,Nisikhola Gaunpalika,निसीखोला गाउँपालिका,7
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,7,41107,Badigad Gaunpalika,बडिगाड गाउँपालिका,10
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,8,41108,Galkot Municipality,गल्कोट नगरपालिका,11
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,9,41109,Bareng Gaunpalika,बरेङ गाउँपालिका,5
+4,Gandaki Pradesh,गण्डकी प्रदेश,46,411,Baglung,बागलुङ,10,41110,Jaimuni Municipality,जैमुनी नगरपालिका,10
+5,Province No. 5,प्रदेश ५,47,501,Rukum (East),रुकुम (पूर्व),1,50101,Putha Uttanganga Gaunpalika,पुथा उत्तरगंगा गाउँपालिका,14
+5,Province No. 5,प्रदेश ५,47,501,Rukum (East),रुकुम (पूर्व),2,50102,Sisne Gaunpalika,सिस्ने गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,47,501,Rukum (East),रुकुम (पूर्व),3,50103,Bhoome Gaunpalika,भूमे गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,1,50201,Sunchhahari Gaunpalika,सुनछहरी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,2,50202,Thawang Gaunpalika,थबाङ्ग गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,3,50203,Pariwartan Gaunpalika,परिवर्तन गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,4,50204,Gangadev Gaunpalika,गंगादेव गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,5,50205,Madi Gaunpalika,मादी गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,6,50206,Tribeni Gaunpalika,त्रिवेणी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,7,50207,Rolpa Municipality,रोल्पा नगरपालिका,10
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,8,50208,Runtigadhi Gaunpalika,रुन्टीगढी गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,9,50209,Sunil Smriti Gaunpalika,सुनिल स्मृति गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,48,502,Rolpa,रोल्पा,10,50210,Lungri Gaunpalika,लुङ्ग्री गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,1,50301,Gaumukhi Gaunpalika,गौमुखी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,2,50302,Naubahini Gaunpalika,नौबहिनी गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,3,50303,Jhimaruk Gaunpalika,झिमरुक गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,4,50304,Pyuthan Municipality,प्यूठान नगरपालिका,10
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,5,50305,Sworgadwari Municipality,स्वर्गद्धारी नगरपालिका,9
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,6,50306,Mandavi Gaunpalika,माण्डवी गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,7,50307,Mallarani Gaunpalika,मल्लरानी गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,8,50308,Aairawati Gaunpalika,ऐरावती गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,49,503,Pyuthan,प्यूठान,9,50309,Sarumarani Gaunpalika,सरुमारानी गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,1,50401,Kali Gandaki Gaunpalika,कालिगण्डकी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,2,50402,Satyawoti Gaunpalika,सत्यवती गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,3,50403,Chandrakot Gaunpalika,चन्द्रकोट गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,4,50404,Musikot Municipality,मुसिकोट नगरपालिका,9
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,5,50405,Isma Gaunpalika,ईस्मा गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,6,50406,Malika Gaunpalika,मालिका गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,7,50407,Madane Gaunpalika,मदाने गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,8,50408,Dhurkot Gaunpalika,धुर्कोट गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,9,50409,Resunga Municipality,रेसुङ्गा नगरपालिका,14
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,10,50410,Gulmi Durbar Gaunpalika,गुल्मी दरबार गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,11,50411,Chhatrakot Gaunpalika,छत्रकोट गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,50,504,Gulmi,गुल्मी,12,50412,Ruruchhetra Gaunpalika,रुरुक्षेत्र गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,1,50501,Chhatradev Gaunpalika,छत्रदेव गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,2,50502,Malarani Gaunpalika,मालारानी गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,3,50503,Bhumikasthan Municipality,भुमिकास्थान नगरपालिका,10
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,4,50504,Sandhikharka Municipality,सन्धिखर्क नगरपालिका,12
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,5,50505,Panini Gaunpalika,पाणिनी गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,51,505,Arghakhanchi,अर्घाखाँची,6,50506,Shitaganga Municipality,शितगंगा नगरपालिका,14
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,1,50601,Rampur Municipality,रामपुर नगरपालिका,10
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,2,50602,Purbakhola Gaunpalika,पुर्वखोला गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,3,50603,Rambha Gaunpalika,रम्भा गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,4,50604,Baganaskali Gaunpalika,बगनासकाली गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,5,50605,Tansen Municipality,तानसेन नगरपालिका,14
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,6,50606,Ribdikot Gaunpalika,रिब्दीकोट गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,7,50607,Rainadevi Chhahara Gaunpalika,रैनादेवी छहरा गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,8,50608,Tinau Gaunpalika,तिनाउ गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,9,50609,Mathagadhi Gaunpalika,माथागढी गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,52,506,Palpa,पाल्पा,10,50610,Nisdi Gaunpalika,निस्दी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),1,50701,Bardaghat Municipality,बर्दघाट नगरपालिका,16
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),2,50702,Sunawal Municipality,सुनवल नगरपालिका,13
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),3,50703,Ramgram Municipality,रामग्राम नगरपालिका,18
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),4,50704,Palhinandan Gaunpalika,पाल्हीनन्दन गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),5,50705,Sarawal Gaunpalika,सरावल गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),6,50706,Pratapapur Gaunpalika,प्रतापपुर गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,53,507,Nawalparasi (West),नवलपरासी (बर्दघाट सुस्तापश्चिम),7,50707,Susta Gaunpalika,सुस्ता गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,1,50801,Devdaha Municipality,देबदह नगरपालिका,12
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,2,50802,Butwal Sub-Metropolitian City,बुटवल उपमहानगरपालिका,19
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,3,50803,Sainamaina Municipality,सैनामैना नगरपालिका,11
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,4,50804,Kanchan Gaunpalika,कन्चन गाउँपालिका,5
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,5,50805,Gaidahawa Gaunpalika,गैडहवा गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,6,50806,Suddhodhan Gaunpalika,सुद्धोधन गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,7,50807,Siyari Gaunpalika,सियारी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,8,50808,Tilottama Municipality,तिलोत्तमा नगरापालिका,17
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,9,50809,Om Satiya Gaunpalika,ओमसतिया गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,10,50810,Rohini Gaunpalika,रोहिणी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,11,50811,Siddharthanagar Municipality,सिद्धार्थनगर नगरपालिका,13
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,12,50812,Mayadevi Gaunpalika,मायादेवी गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,13,50813,Lumbini Sanskritik Municipality,लुम्बिनी साँस्कृतिक नगरपालिका,13
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,14,50814,Kotahimai Gaunpalika,कोटहीमाई गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,15,50815,Sammarimai Gaunpalika,सम्मरीमाई गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,54,508,Rupandehi,रुपन्देही,16,50816,Marchawari Gaunpalika,मर्चवारी गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,1,50901,Banganga Municipality,बाणगंगा नगरपालिका,11
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,2,50902,Buddhabhumi Municipality,बुद्धभूमी नगरपालिका,10
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,3,50903,Shivaraj Municipality,शिवराज नगरपालिका,11
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,4,50904,Bijayanagar Gaunpalika,बिजयनगर गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,5,50905,Krishnanagar Municipality,कृष्णनगर नगरपालिका,12
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,6,50906,Maharajganj Municipality,महाराजगन्ज नगरपालिका,11
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,7,50907,Kapilbastu Municipality,कपिलबस्तु नगरपालिका,12
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,8,50908,Yasodhara Gaunpalika,यसोधरा गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,9,50909,Mayadevi Gaunpalika,मायादेवी गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,55,509,Kapilbastu,कपिलवस्तु,10,50910,Shuddhodhan Gaunpalika,शुद्धोधन गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,1,51001,Bangalachuli Gaunpalika,बंगलाचुली गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,2,51002,Ghorahi Sub-Metropolitian City,घोराही उपमहानगरपालिका,19
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,3,51003,Tulsipur Sub-Metropolitian City,तुल्सीपुर उपमहानगरपालिका,19
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,4,51004,Shantinagar Gaunpalika,शान्तिनगर गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,5,51005,Babai Gaunpalika,बबई गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,6,51006,Dangisharan Gaunpalika,दंगीशरण गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,7,51007,Lamahi Municipality,लमही नगरपालिका,9
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,8,51008,Rapti Gaunpalika,राप्ती गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,9,51009,Gadhawa Gaunpalika,गढवा गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,56,510,Dang,दाङ,10,51010,Rajpur Gaunpalika,राजपुर गाउँपालिका,7
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,1,51101,Rapti Sonari Gaunpalika,राप्ती सोनारी गाउँपालिका,9
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,2,51102,Kohalpur Municipality,कोहलपुर नगरपालिका,15
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,3,51103,Baijanath Gaunpalika,बैजनाथ गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,4,51104,Khajura Gaunpalika,खजुरा गाउँपालिका,8
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,5,51105,Janaki Gaunpalika,जानकी गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,6,51106,Nepalganj Sub-Metropolitian City,नेपालगञ्ज उपमहानगरपालिका,23
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,7,51107,Duduwa Gaunpalika,डुडुवा गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,57,511,Banke,बाँके,8,51108,Narainapur Gaunpalika,नरैनापुर गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,1,51201,Bansgadhi Municipality,बाँसगढी नगरपालिका,9
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,2,51202,Barbardiya Municipality,बारबर्दिया नगरपालिका,11
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,3,51203,Thakurbaba Municipality,ठाकुरबाबा नगरपालिका,9
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,4,51204,Geruwa Gaunpalika,गेरुवा गाउँपालिका,6
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,5,51205,Rajapur Municipality,राजापुर नगरपालिका,10
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,6,51206,Madhuwan Municipality,मधुवन नगरपालिका,9
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,7,51207,Gulariya Municipality,गुलरीया नगरपालिका,12
+5,Province No. 5,प्रदेश ५,58,512,Bardiya,बर्दिया,8,51208,Badhaiyatal Gaunpalika,बढैयाताल गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,1,60101,Dolpo Buddha Gaunpalika,डोल्पो बुद्ध गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,2,60102,Shey Phoksundo Gaunpalika,शे फोक्सुण्डो गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,3,60103,Jagadulla Gaunpalika,जगदुल्ला गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,4,60104,Mudkechula Gaunpalika,मुड्केचुला गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,5,60105,Tripurasundari Municipality,त्रिपुरासुन्दरी नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,6,60106,Thulibheri Municipality,ठुलीभेरी नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,7,60107,Kaike Gaunpalika,काइके गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,59,601,Dolpa,डोल्पा,8,60108,Chharka Tangsong Gaunpalika,छार्का ताङसोङ गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,60,602,Mugu,मुगु,1,60201,Mugumakarmarog Gaunpalika,मुगुमकार्मारोग गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,60,602,Mugu,मुगु,2,60202,Chhayanath Rara Municipality,छायाँनाथ रारा नगरपालिका,14
+6,Karnali Pradesh,कर्णाली प्रदेश,60,602,Mugu,मुगु,3,60203,Soru Gaunpalika,सोरु गाउँपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,60,602,Mugu,मुगु,4,60204,Khatyad Gaunpalika,खत्याड गाउँपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,1,60301,Chankheli Gaunpalika,चंखेली गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,2,60302,Kharpunath Gaunpalika,खार्पुनाथ गाउँपालिका,5
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,3,60303,Simkot Gaunpalika,सिमकोट गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,4,60304,Namkha Gaunpalika,नाम्खा गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,5,60305,Sarkegad Gaunpalika,सर्केगाड गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,6,60306,Adanchuli Gaunpalika,अदानचुली गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,61,603,Humla,हुम्ला,7,60307,Tanjakot Gaunpalika,ताँजाकोट गाउँपालिका,5
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,1,60401,Patarasi Gaunpalika,पातारासी गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,2,60402,Kanaka Sundari Gaunpalika,कनका सुन्दरी गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,3,60403,Sinja Gaunpalika,सिंजा गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,4,60404,Chandannath Municipality,चन्दननाथ नगरपालिका,10
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,5,60405,Guthichaur Gaunpalika,गुठिचौर गाउँपालिका,5
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,6,60406,Tatopani Gaunpalika,तातोपानी गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,7,60407,Tila Gaunpalika,तिला गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,62,604,Jumla,जुम्ला,8,60408,Hima Gaunpalika,हिमा गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,1,60501,Palata Gaunpalika,पलाता गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,2,60502,Pachal Jharana Gaunpalika,पचाल झरना गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,3,60503,Raskot Municipality,रास्कोट नगरपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,4,60504,Sanni Tribeni Gaunpalika,सान्नी त्रिवेणी गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,5,60505,Naraharinath Gaunpalika,नरहरिनाथ गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,6,60506,Khandachakra Municipality,खाँडाचक्र नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,7,60507,Tilagupha Municipality,तिलागुफा नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,8,60508,Mahawai Gaunpalika,महावै गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,63,605,Kalikot,कालिकोट,9,60509,Shuva Kalika Gaunpalika,शुभ कालिका गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,1,60601,Naumule Gaunpalika,नौमुले गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,2,60602,Mahabu Gaunpalika,महाबु गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,3,60603,Bhairabi Gaunpalika,भैरवी गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,4,60604,Thantikandh Gaunpalika,ठाँटीकाँध गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,5,60605,Aathbis Municipality,आठबीस नगरपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,6,60606,Chamunda Bindrasaini Municipality,चामुण्डा बिन्द्रासैनी नगरपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,7,60607,Dullu Municipality,दुल्लु नगरपालिका,13
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,8,60608,Narayan Municipality,नारायण नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,9,60609,Bhagawatimai Gaunpalika,भगवतीमाई गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,10,60610,Dungeshwor Gaunpalika,डुङ्गेश्वर गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,64,606,Dailekh,दैलेख,11,60611,Gurans Gaunpalika,गुराँस गाउँपालिका,8
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,1,60701,Barekot Gaunpalika,बारेकोट गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,2,60702,Kuse Gaunpalika,कुसे गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,3,60703,Junichande Gaunpalika,जुनीचाँदे गाउँपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,4,60704,Chhedagad Municipality,छेडागाड नगरपालिका,13
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,5,60705,Shivalaya Gaunpalika,शिवालय गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,6,60706,Bheri Malika Municipality,भेरीमालिका नगरपालिका,13
+6,Karnali Pradesh,कर्णाली प्रदेश,65,607,Jajarkot,जाजरकोट,7,60707,Nalgad Municipality,नलगाड नगरपालिका,13
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),1,60801,Aathabisakot Municipality,आठबिसकोट नगरपालिका,14
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),2,60802,Sanibheri Gaunpalika,सानीभेरी गाउँपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),3,60803,Banphikot Gaunpalika,बाँफिकोट गाउँपालिका,10
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),4,60804,Musikot Municipality,मुसिकोट नगरपालिका,14
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),5,60805,Tribeni Gaunpalika,त्रिवेणी गाउँपालिका,10
+6,Karnali Pradesh,कर्णाली प्रदेश,66,608,Rukum (West),रुकुम (पश्चिम),6,60806,Chaurjahari Municipality,चौरजहारी नगरपालिका,14
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,1,60901,Darma Gaunpalika,दार्मा गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,2,60902,Kumakh Gaunpalika,कुमाख गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,3,60903,Banagad Kupinde Municipality,बनगाड कुपिण्डे नगरपालिका,12
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,4,60904,Siddha Kumakh Gaunpalika,सिद्ध कुमाख गाउँपालिका,5
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,5,60905,Bagachour Municipality,बागचौर नगरपालिका,12
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,6,60906,Chhatreshwori Gaunpalika,छत्रेश्वरी गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,7,60907,Sharada Municipality,शारदा नगरपालिका,15
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,8,60908,Kalimati Gaunpalika,कालिमाटी गाउँपालिका,7
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,9,60909,Tribeni Gaunpalika,त्रिवेणी गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,67,609,Salyan,सल्यान,10,60910,Kapurkot Gaunpalika,कपुरकोट गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,1,61001,Simta Gaunpalika,सिम्ता गाउँपालिका,9
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,2,61002,Chingad Gaunpalika,चिङ्गगाड गाउँपालिका,6
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,3,61003,Lekabeshi Municipality,लेकबेशी नगरपालिका,10
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,4,61004,Gurbhakot Municipality,गुर्भाकोट नगरपालिका,14
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,5,61005,Bheriganga Municipality,भेरीगंगा नगरपालिका,13
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,6,61006,Birendranagar Municipality,बीरेन्द्रनगर नगरपालिका,16
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,7,61007,Barahatal Gaunpalika,बराहताल गाउँपालिका,10
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,8,61008,Panchapuri Municipality,पञ्चपुरी नगरपालिका,11
+6,Karnali Pradesh,कर्णाली प्रदेश,68,610,Surkhet,सुर्खेत,9,61009,Chaukune Gaunpalika,चौकुने गाउँपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,1,70101,Himali Gaunpalika,हिमाली गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,2,70102,Gaumul Gaunpalika,गौमुल गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,3,70103,Budhinanda Municipality,बुढीनन्दा नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,4,70104,Swamikartik Khapar Gaunpalika,स्वामीकार्तिक खापर गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,5,70105,Jagannath Gaunpalika,जगन्‍नाथ गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,6,70106,Badimalika Municipality,बडिमालिका नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,7,70107,Khaptad Chhededaha Gaunpalika,खप्तड छेडेदह गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,8,70108,Budhiganga Municipality,बुढीगंगा नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,69,701,Bajura,बाजुरा,9,70109,Tribeni Municipality,त्रिवेणी नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,1,70201,Saipal Gaunpalika,साइपाल गाउँपालिका ,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,2,70202,Bungal Municipality,बुंगल नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,3,70203,Surma Gaunpalika,सूर्मा गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,4,70204,Talkot Gaunpalika,तालकोट गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,5,70205,Masta Gaunpalika,मष्टा गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,6,70206,Jayaprithbi Municipality,जयपृथ्वी नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,7,70207,Chhabis Pathibhara Gaunpalika,छबिस पाथिभरा गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,8,70208,Durgathali Gaunpalika,दुर्गाथली गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,9,70209,Kedarsyun Gaunpalika,केदारस्युँ गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,10,70210,Bitthadchir Gaunpalika,बित्थडचिर गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,11,70211,Thalara Gaunpalika,थलारा गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,70,702,Bajhang,बझाङ,12,70212,Khaptad Chhanna Gaunpalika,खप्तडछान्ना गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,1,70301,Byas Gaunpalika,ब्याँस गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,2,70302,Duhun Gaunpalika,दुहुँ गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,3,70303,Mahakali Municipality,महाकाली नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,4,70304,Naugad  Gaunpalika,नौगाड गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,5,70305,Apihimal Gaunpalika,अपिहिमाल गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,6,70306,Marma Gaunpalika,मार्मा गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,7,70307,Shailyashikhar Municipality,शैल्यशिखर नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,8,70308,Malikarjun Gaunpalika,मालिकार्जुन गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,71,703,Darchula,दार्चुला,9,70309,Lekam Gaunpalika,लेकम गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,1,70401,Dilasaini Gaunpalika,डीलासैनी गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,2,70402,Dogada Kedar Gaunpalika,दोगडाकेदार गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,3,70403,Puchaundi Municipality,पुचौंडी नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,4,70404,Surnaya Gaunpalika,सुर्नया गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,5,70405,Dasharathchand Municipality,दशरथचन्द नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,6,70406,Pancheshwor Gaunpalika,पन्चेश्वर गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,7,70407,Shivanath Gaunpalika,शिवनाथ गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,8,70408,Melauli Municipality,मेलौली नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,9,70409,Patan Municipality,पाटन नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,72,704,Baitadi,बैतडी,10,70410,Sigas Gaunpalika,सिगास गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,1,70501,Nawadurga Gaunpalika,नवदुर्गा गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,2,70502,Amargadhi Municipality,अमरगढी नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,3,70503,Ajayameru Gaunpalika,अजयमेरु गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,4,70504,Bhageshwor Gaunpalika,भागेश्वर गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,5,70505,Parashuram Municipality,परशुराम नगरपालिका,12
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,6,70506,Aalital Gaunpalika,आलिताल गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,73,705,Dadeldhura,डँडेलधुरा,7,70507,Ganyapdhura Gaunpalika,गन्यापधुरा गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,1,70601,Purbichouki Gaunpalika,पुर्विचौकी गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,2,70602,Sayal Gaunpalika,सायल गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,3,70603,Aadarsha Gaunpalika,आदर्श गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,4,70604,Shikhar Municipality,शिखर नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,5,70605,Dipayal Silgadhi Municipality,दिपायल सिलगढी नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,6,70606,K.I. Singh Gaunpalika,के.आई.सिं. गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,7,70607,Bogatan Phudsil Gaunpalika,बोगटान फुड्सिल गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,8,70608,Badi Kedar Gaunpalika,बडीकेदार गाउँपालिका,5
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,74,706,Doti,डोटी,9,70609,Jorayal Gaunpalika,जोरायल गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,1,70701,Panchdebal Binayak Municipality,पंचदेवल बिनायक नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,2,70702,Ramaroshan Gaunpalika,रामारोशन गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,3,70703,Mellekh Gaunpalika,मेल्लेख गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,4,70704,Sanphebagar Municipality,साँफेबगर नगरपालिका,14
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,5,70705,Chaurpati Gaunpalika,चौरपाटी गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,6,70706,Mangalsen Municipality,मंगलसेन नगरपालिका,14
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,7,70707,Bannigadhi Jayagadh Gaunpalika,बान्नीगढी जयगढ गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,8,70708,Kamal bazar Municipality,कमलबजार नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,9,70709,Dhakari Gaunpalika,ढकारी गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,75,707,Achham,अछाम,10,70710,Turmakhand Gaunpalika,तुर्माखाँद गाउँपालिका,8
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,1,70801,Mohanyal Gaunpalika,मोहन्याल गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,2,70802,Chure Gaunpalika,चुरे गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,3,70803,Godawari Municipality,गोदावरी नगरपालिका,12
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,4,70804,Gauriganga Municipality,गौरीगंगा नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,5,70805,Ghodaghodi Municipality,घोडाघोडी नगरपालिका,12
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,6,70806,Bardagoriya Gaunpalika,बर्दगोरिया गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,7,70807,Lamki Chuha Municipality,लम्कि चुहा नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,8,70808,Janaki Gaunpalika,जानकी गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,9,70809,Joshipur Gaunpalika,जोशीपुर गाउँपालिका,7
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,10,70810,Tikapur Municipality,टिकापुर नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,11,70811,Bhajani Municipality,भजनी नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,12,70812,Kailari Gaunpalika,कैलारी गाउँपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,76,708,Kailali,कैलाली,13,70813,Dhangadhi Sub-Metropolitian City,धनगढी उपमहानगरपालिका,19
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,1,70901,Krishnapur Municipality,कृष्णपुर नगरपालिका,9
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,2,70902,Shuklaphanta Municipality,शुक्लाफाँटा नगरपालिका,12
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,3,70903,Bedkot Municipality,बेदकोट नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,4,70904,Bhimdatta Municipality,भिमदत्त नगरपालिका,19
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,5,70905,Mahakali Municipality,महाकाली नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,6,70906,Laljhadi Gaunpalika,लालझाडी गाउँपालिका,6
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,7,70907,Punarbas Municipality,पुनर्वास नगरपालिका,11
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,8,70908,Belouri Municipality,बेलौरी नगरपालिका,10
+7,Sudurpashchim Pradesh,सुदूरपश्चिम प्रदेश,77,709,Kanchanpur,कञ्चनपुर,9,70909,Beldandi Gaunpalika,बेलडाँडी गाउँपालिका,5

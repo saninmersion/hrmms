@@ -1,0 +1,289 @@
+.sidebar {
+
+    &__list {
+        @include respond(xlg) {
+            display: none;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid #B9C5CA;
+        }
+    }
+
+    &__link {
+        color: var(--color-primary-light);
+        padding: 20px 0;
+        display: block;
+        font-weight: 600;
+    }
+
+    .btn.btn--outline {
+        @include respond(xlg) {
+            display: none;
+        }
+    }
+
+}
+
+.form-page {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 32px 0;
+
+        @include respond(xlg) {
+            padding: 24px 0;
+        }
+    }
+
+
+    .heading-primary--lg {
+        @include respond(sm) {
+            font-size: 28px;
+            order: 2;
+        }
+    }
+
+
+    .help-text {
+        font-size: 19px;
+        @include respond(sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 200px 1fr;
+        padding-bottom: 32px;
+
+        @include respond(xl) {
+            grid-template-columns: 180px 1fr;
+            grid-gap: 24px;
+        }
+
+        @include respond(xlg) {
+            display: block;
+        }
+    }
+
+    .card {
+        padding: 16px 24px;
+        background: var(--color-bg-1);
+        border: 1px solid #B9C5CA;
+
+        .heading-primary {
+            padding-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .heading-primary--sm {
+            padding: 16px 0;
+        }
+
+    }
+
+    fieldset {
+        border-radius: 8px;
+        padding: 10px 12px;
+        border: 1px solid #B9C5CA;
+        margin: 16px 0;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        color: var(--color-base-2);
+    }
+
+    &-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .grid {
+        @include respond(sm) {
+            grid-template-columns: none;
+        }
+    }
+
+    .form-control, .multiselect__tags {
+        border-width: 0;
+        background: var(--color-bg-3);
+        border-radius: 4px;
+    }
+
+    .date-btn-wrap button {
+        border-radius: 0;
+        padding: 12px
+    }
+}
+
+// preview page
+
+.data-block {
+    padding: 16px 0;
+
+    @include respond(sm) {
+        width: 100%;
+    }
+
+    .data-block-item {
+        display: flex;
+        gap: 32px;
+        padding: 12px 0;
+
+        @include respond(sm) {
+            gap: 24px;
+        }
+
+        &:not(:first-child) {
+            border-top: 1px solid #E7F6FD;
+        }
+    }
+
+    .data-block-label {
+        color: var(--color-base-1);
+        width: 300px;
+        @include respond(sm) {
+            width: 40%;
+        }
+    }
+
+    .data-block-value {
+        color: var(--color-base-2);
+        @include respond(sm) {
+            width: 60%;
+        }
+    }
+
+}
+
+
+.slick-slide, .slick-slide * {
+    outline: none !important;
+}
+
+.data-file {
+    margin-left: auto;
+    @include respond(md) {
+        margin: 16px auto 32px;
+        order: -1;
+    }
+}
+
+
+.slider-doc {
+    width: 140px;
+
+    .slick-slide img {
+        width: 153px;
+        height: 160px;
+    }
+
+}
+
+.slider-citizen {
+    width: 176px;
+
+    img {
+        width: 130px;
+        height: 150px;
+    }
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.slick-dots {
+    text-align: center;
+    font-size: 0;
+    padding-top: 12px;
+
+    li {
+        height: 12px;
+        width: 12px;
+        background: #B9C5CA;
+        margin: 0 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+
+        &.slick-active {
+            background: #2E3133;
+        }
+    }
+}
+
+.slick-track:focus {
+    outline: 0;
+    border: 0;
+}
+
+.slick-slide {
+    background: #fff;
+    padding: 8px;
+}
+
+.slick-list {
+    box-shadow: 0 2px 4px 0 rgba(46, 49, 51, .24);
+    border-radius: 6px;
+}
+
+// How to page
+.info-page {
+
+    .heading-primary--lg {
+        @include respond(sm) {
+            font-size: 26px;
+        }
+    }
+
+    section > .heading-primary {
+        margin-bottom: 16px;
+    }
+
+    .heading-primary--sm {
+        font-weight: 600;
+        color: var(--color-base-3);
+        padding-top: 8px;
+    }
+
+    p {
+        margin: 16px 0;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .note {
+        padding-left: 24px;
+        border-left: 4px solid var(--color-primary);
+        font-size: 18px;
+        color: var(--color-black);
+        margin: 40px 0;
+
+        @include respond(sm) {
+            margin: 24px 0;
+        }
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
+
+.results-link {
+    font-size: 18px;
+    &:hover {
+        color: var(--color-primary);
+    }
+}
