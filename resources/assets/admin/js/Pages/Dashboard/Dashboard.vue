@@ -71,7 +71,6 @@
 
 <script>
     import EmptyData                     from "../../../../shared/js/Components/DataTable/EmptyData"
-    import Icon                          from "../../Components/General/Icon"
     import AdminLayout                   from "../../Layouts/AdminLayout"
     import ApplicationsSubmittedChart    from "./Partials/ApplicationsSubmittedChart"
     import GenderDistributionChart       from "./Partials/GenderDistributionChart"
@@ -86,7 +85,6 @@
             EmptyData,
             ApplicationsSubmittedChart,
             AdminLayout,
-            Icon,
         },
 
         props: {
