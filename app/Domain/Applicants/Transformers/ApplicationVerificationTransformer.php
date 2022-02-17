@@ -9,6 +9,7 @@ use League\Fractal\TransformerAbstract;
 
 /**
  * Class ApplicationVerificationTransformer
+ *
  * @package App\Domain\Applicants\Transformers
  */
 class ApplicationVerificationTransformer extends TransformerAbstract
@@ -29,34 +30,34 @@ class ApplicationVerificationTransformer extends TransformerAbstract
 
         return [
             'id'                                       => $applicant->id,
-            'application_for'                          => $applicant->application->application_for ?? ApplicationType::SUPERVISOR,
+            'application_for'                          => data_get($applicant, "application.application_for", ApplicationType::SUPERVISOR),
             'citizenship_number'                       => $applicant->citizenship_number,
             'citizenship_issued_district'              => $applicant->citizenship_issued_district_code,
             'citizenship_issued_date'                  => $applicant->citizenship_issued_date_bs,
             'dob_bs'                                   => $applicant->dob_bs,
             'name_in_nepali'                           => $applicant->name_in_nepali_formatted,
             'name_in_english'                          => $applicant->name_in_english_formatted,
-            'gender'                                   => $applicant->details->gender ?? '',
-            'has_education_qualification'              => (bool) ($applicant->details->qualification->has_education_qualification ?? false),
+            'gender'                                   => data_get($applicant->details, "gender", ''),
+            'has_education_qualification'              => (bool) ($applicant->details->qualification->has_education_qualification),
             'education_supervisor_grading_system'      => $supervisorGrading,
             'education_supervisor_grade_percentage'    => $supervisorGP,
-            'education_supervisor_percentage'          => $applicant->details->qualification->education->supervisor->percentage ?? null,
-            'education_supervisor_grade'               => $applicant->details->qualification->education->supervisor->grade ?? null,
-            'education_supervisor_major_subject'       => $applicant->details->qualification->education->supervisor->major_subject ?? 'others',
-            'education_supervisor_major_subject_other' => $applicant->details->qualification->education->supervisor->major_subject_other ?? null,
+            'education_supervisor_percentage'          => data_get($applicant->details, "qualification->education->supervisor->percentage", null),
+            'education_supervisor_grade'               => data_get($applicant->details, "qualification->education->supervisor->grade", null),
+            'education_supervisor_major_subject'       => data_get($applicant->details, "qualification->education->supervisor->major_subject ?? ",),
+            'education_supervisor_major_subject_other' => data_get($applicant->details, "qualification->education->supervisor->major_subject_other", null),
             'education_enumerator_grading_system'      => $enumeratorGrading,
             'education_enumerator_grade_percentage'    => $enumeratorGP,
-            'education_enumerator_percentage'          => $applicant->details->qualification->education->enumerator->percentage ?? null,
-            'education_enumerator_grade'               => $applicant->details->qualification->education->enumerator->grade ?? null,
-            'education_enumerator_major_subject'       => $applicant->details->qualification->education->enumerator->major_subject ?? 'others',
-            'education_enumerator_major_subject_other' => $applicant->details->qualification->education->enumerator->major_subject_other ?? null,
-            'has_training'                             => (bool) ($applicant->details->qualification->has_training ?? false),
-            'training_institute'                       => $applicant->details->qualification->training->institute ?? '',
-            'training_period'                          => $applicant->details->qualification->training->period ?? '',
-            'has_experience'                           => (bool) ($applicant->details->qualification->has_experience ?? false),
-            'experience_organization'                  => $applicant->details->qualification->experience->organization ?? '',
-            'experience_period_day'                    => $applicant->details->qualification->experience->period_day ?? '',
-            'experience_period_month'                  => $applicant->details->qualification->experience->period_month ?? '',
+            'education_enumerator_percentage'          => data_get($applicant->details, "qualification->education->enumerator->percentage", null),
+            'education_enumerator_grade'               => data_get($applicant->details, "qualification->education->enumerator->grade", null),
+            'education_enumerator_major_subject'       => data_get($applicant->details, "qualification->education->enumerator->major_subject ?? ",),
+            'education_enumerator_major_subject_other' => data_get($applicant->details, "qualification->education->enumerator->major_subject_other", null),
+            'has_training'                             => (bool) ($applicant->details->qualification->has_training),
+            'training_institute'                       => data_get($applicant->details, "qualification->training->institute ??", ''),
+            'training_period'                          => data_get($applicant->details, "qualification->training->period", ''),
+            'has_experience'                           => (bool) ($applicant->details->qualification->has_experience),
+            'experience_organization'                  => data_get($applicant->details, "qualification->experience->organization ??", ''),
+            'experience_period_day'                    => data_get($applicant->details, "qualification->experience->period_day", ''),
+            'experience_period_month'                  => data_get($applicant->details, "qualification->experience->period_month ??", ''),
             'documents'                                => $this->getDocuments($applicant),
         ];
     }

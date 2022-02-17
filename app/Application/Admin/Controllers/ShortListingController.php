@@ -27,6 +27,7 @@ use Prettus\Repository\Exceptions\RepositoryException;
 
 /**
  * Class ShortListingController
+ *
  * @package App\Application\Admin\Controllers
  */
 class ShortListingController extends AdminController
@@ -35,6 +36,7 @@ class ShortListingController extends AdminController
      * @var ShortListedApplicantRepository
      */
     protected ShortListedApplicantRepository $shortListedApplicantRepository;
+
     /**
      * @var ApplicationListRepository
      */

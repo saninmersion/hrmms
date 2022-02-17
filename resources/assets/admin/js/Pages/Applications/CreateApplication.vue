@@ -122,7 +122,7 @@
             return {
                 form: this.$inertia.form({
                     application: {
-                        application_for: "enumerator_supervisor",
+                        application_for: "",
                         locations: [
                             {
                                 priority: 1,
@@ -155,7 +155,7 @@
                     this.$set(this.form, "qualification", { ...this.form.qualification, ...applicant.qualification })
 
                     const locations = this.getFromObject(this.form, "application.locations", [])
-                    console.log(locations.length)
+
                     if (locations.length === 0) {
                         this.form.application.locations = [
                             {

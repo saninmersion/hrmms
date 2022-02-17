@@ -19,20 +19,17 @@ class CreateApplicationsTable extends Migration
      */
     public function up()
     {
-        Schema::create(
-            DBTables::APPLICATIONS,
-            function (Blueprint $table) {
-                $table->id();
-                $table->foreignId('applicant_id')->constrained(DBTables::AUTH_APPLICANTS)->onDelete('cascade');
-                $table->boolean('for_supervisor')->default(false);
-                $table->boolean('for_enumerator')->default(false);
-                $table->jsonb('locations')->nullable();
-                $table->string('status')->default(StatusTypes::APPLICATION_DRAFT);
-                $table->timestamp('application_date')->nullable();
-                $table->jsonb('official')->nullable();
-                Helper::commonMigration($table, false, true);
-            }
-        );
+        Schema::create(DBTables::APPLICATIONS, function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('applicant_id')->constrained(DBTables::AUTH_APPLICANTS)->onDelete('cascade');
+            $table->boolean('for_supervisor')->default(false);
+            $table->boolean('for_enumerator')->default(false);
+            $table->jsonb('locations')->nullable();
+            $table->string('status')->default(StatusTypes::APPLICATION_DRAFT);
+            $table->timestamp('application_date')->nullable();
+            $table->jsonb('official')->nullable();
+            Helper::commonMigration($table, false, true);
+        });
     }
 
     /**

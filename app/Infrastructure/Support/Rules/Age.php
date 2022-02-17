@@ -57,6 +57,6 @@ class Age implements Rule
             return false;
         }
 
-        return $age >= $ageLimit[$this->gender][0] && $age <= $ageLimit[$this->gender][1];
+        return $age >= $ageLimit[$this->gender][0] && $age < $ageLimit[$this->gender][1];
     }
 }

@@ -1,15 +1,15 @@
 <template>
     <fieldset class="xl:w-3/5 relative">
         <legend>
-            {{ trans(`application.application-locations-${priority}`) }}
+            {{ trans(`application.application_location`) }}
         </legend>
 
-        <div class="grid sm:grid-cols-3 gap-3">
+        <div class="grid sm:grid-cols-2 gap-3">
             <location-combo :value="value"
                             :districts="districtOptions"
                             :excluded-options="excludedOptions"
                             :has-tole="false"
-                            :has-ward="true"
+                            :has-ward="false"
                             excluded-name="ward"
                             :name="name"
                             @input="handleOnChange"/>

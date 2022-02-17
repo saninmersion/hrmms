@@ -21,24 +21,24 @@ final class DBTables
     public const AUTH_PASSWORD_RESETS = 'auth_password_resets';
     public const AUTH_APPLICANTS      = 'auth_applicants';
 
-    public const PROVINCES                 = 'tbl_provinces';
-    public const DISTRICTS                 = 'tbl_districts';
-    public const MUNICIPALITIES            = 'tbl_municipalities';
-    public const CENSUS_OFFICES            = 'tbl_census_offices';
+    public const PROVINCES      = 'tbl_provinces';
+    public const DISTRICTS      = 'tbl_districts';
+    public const MUNICIPALITIES = 'tbl_municipalities';
+    public const CENSUS_OFFICES = 'tbl_census_offices';
 
     public const APPLICATIONS              = 'tbl_applications';
     public const APPLICANT_EXPORTS         = 'tbl_applicant_exports';
     public const APPLICANT_VERIFICATIONS   = 'tbl_applicant_verifications';
     public const APPLICATION_DOWNLOAD_LOGS = 'tbl_application_download_logs';
 
-    public const LAST_UPDATED_TABLE        = 'tbl_last_updated_table';
-    public const VERIFIER_ASSIGNMENT       = 'tbl_verifier_assignments';
+    public const LAST_UPDATED_TABLE  = 'tbl_last_updated_table';
+    public const VERIFIER_ASSIGNMENT = 'tbl_verifier_assignments';
 
-    public const MONITORINGS               = 'tbl_monitorings';
-    public const SHORTLISTED               = 'tbl_shortlisted';
-    public const DAILY_REPORTS             = 'tbl_daily_reports';
-    public const HOUSE_DAILY_REPORTS       = 'tbl_house_daily_reports';
-    public const ENUMERATORS               = 'tbl_enumerators';
+    public const MONITORINGS         = 'tbl_monitorings';
+    public const SHORTLISTED         = 'tbl_shortlisted';
+    public const DAILY_REPORTS       = 'tbl_daily_reports';
+    public const HOUSE_DAILY_REPORTS = 'tbl_house_daily_reports';
+    public const ENUMERATORS         = 'tbl_enumerators';
 
     public const VIEW_APPLICATIONS = 'view_applications';
 }

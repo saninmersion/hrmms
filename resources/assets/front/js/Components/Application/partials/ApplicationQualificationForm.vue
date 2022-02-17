@@ -235,68 +235,6 @@
             </div>
         </div>
 
-        <!--has training-->
-        <div class="my-6">
-            <div>
-                <label class="checkbox-label">
-                    <input v-model="qualification.has_training"
-                           class="checkbox"
-                           type="checkbox">
-                    <span>
-                        {{ trans("application.fields.has_training") }}
-                        <span class="text-black-200">({{ trans("general.optional") }})</span>
-                    </span>
-                </label>
-                <input-error v-if="validation().get('qualification.has_training')"
-                             :message="validation().get('qualification.has_training')"/>
-            </div>
-
-            <fieldset v-if="qualification.has_training">
-                <legend>
-                    {{ trans("application.training_details") }}
-                </legend>
-                <div class="grid md:grid-cols-2 gap-6 form-group ">
-                    <div>
-                        <label-component :value="trans('application.fields.training_organization')"/>
-                        <input-component
-                            v-model="qualification.training.institute"
-                            :class="{'form-input-error' :validation().has('qualification.training.institute')} "
-                            :placeholder="trans('application.placeholders.training_organization')"
-                            type="text"/>
-                        <input-error v-if="validation().has('qualification.training.institute')"
-                                     :message="validation().get('qualification.training.institute')"/>
-                    </div>
-                    <div>
-                        <label-component :value="trans('application.fields.training_period')"/>
-                        <div class="flex items-center gap-4">
-                            <input-component
-                                v-model.number="qualification.training.period"
-                                :class="{'form-input-error' :validation().has('qualification.training.period')} "
-                                class="!w-12"
-                                @keypress="numberOnly"/>
-                            {{ trans("general.day") }}
-                        </div>
-
-                        <input-error :message="validation().get('qualification.training.period')"/>
-                    </div>
-                </div>
-                <div class="input-file grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label-component :value="trans('application.fields.training_document')"/>
-                        <div class="relative">
-                            <div class="text-black-200">
-                                {{ trans("application.form-help-text.image-format-size") }}
-                            </div>
-                            <camera-input v-model="qualification.training_documents"
-                                          :submit-url="fileUploadUrl"/>
-                        </div>
-                        <input-error v-if="validation().has('qualification.training_documents')"
-                                     :message="validation().get('qualification.training_documents')"/>
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-
         <!--has experience-->
         <div class="mt-5 ">
             <div class="my-8">
@@ -370,12 +308,12 @@
 </template>
 
 <script type="text/ecmascript-6">
-    import CameraInput   from "../../../../../shared/js/Components/Forms/Files/CameraInput"
-    import DropDownInput from "../../../../../shared/js/Components/Forms/DropDownInput"
-    import InputComponent    from "../../../../../shared/js/Components/Forms/Input"
-    import InputError        from "../../../../../shared/js/Components/Forms/InputError"
-    import LabelComponent    from "../../../../../shared/js/Components/Forms/Label"
-    import RadioGroupInput   from "../../../../../shared/js/Components/Forms/RadioGroupInput"
+    import DropDownInput   from "../../../../../shared/js/Components/Forms/DropDownInput"
+    import CameraInput     from "../../../../../shared/js/Components/Forms/Files/CameraInput"
+    import InputComponent  from "../../../../../shared/js/Components/Forms/Input"
+    import InputError      from "../../../../../shared/js/Components/Forms/InputError"
+    import LabelComponent  from "../../../../../shared/js/Components/Forms/Label"
+    import RadioGroupInput from "../../../../../shared/js/Components/Forms/RadioGroupInput"
 
     export default {
         name: "ApplicationQualificationForm",

@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class LoginResponse
+ *
  * @package App\Domain\Users\Actions\Auth
  */
 class LoginResponse implements LoginResponseContract
@@ -32,10 +33,6 @@ class LoginResponse implements LoginResponseContract
             AuthRoles::ADMIN       => config('fortify.home'),
             AuthRoles::STAFFS      => config('fortify.home'),
             AuthRoles::VERIFIERS   => route('admin.assigned-applications.index'),
-//            AuthRoles::MONITORING  => route('admin.monitorings.index'),
-//            AuthRoles::SUPERVISOR  => route('admin.monitorings.index'),
-//            AuthRoles::ENUMERATOR  => route('admin.monitorings.index'),
-//            AuthRoles::OPERATOR    => route('admin.monitorings.index'),
         ];
 
         $route = $roleRouteMappings[$currentUser->role] ?? config('fortify.home');

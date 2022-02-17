@@ -10,6 +10,7 @@ use League\Fractal\TransformerAbstract;
 
 /**
  * Class ShortListedApplicantDistrictTransformer
+ *
  * @package App\Domain\Applicants\Transformers
  */
 class ShortListedApplicantDistrictTransformer extends TransformerAbstract
@@ -50,12 +51,12 @@ class ShortListedApplicantDistrictTransformer extends TransformerAbstract
                 ],
             ],
 
-            'is_submitted'      => $applicantView->is_submitted ?? false,
-            'submission_number' => $applicantView->submission_number ?? '',
-            'status'            => $applicantView->status ?? '',
+            'is_submitted'      => data_get($applicantView, "is_submitted", false),
+            'submission_number' => data_get($applicantView, "submission_number", ''),
+            'status'            => data_get($applicantView, "status", ''),
 
             'dates'           => $this->getDates($applicantView),
-            'application_for' => $applicantView->application_for ?? '',
+            'application_for' => data_get($applicantView, "application_for", ''),
             'location'        => [
                 'district'     => $applicantView->shortlist->first()->municipality->district->title_ne,
                 'municipality' => $applicantView->shortlist->first()->municipality->title_ne,

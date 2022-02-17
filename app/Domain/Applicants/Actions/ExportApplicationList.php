@@ -17,6 +17,7 @@ use League\Flysystem\FileNotFoundException;
 
 /**
  * Class ExportApplicationList
+ *
  * @package App\Domain\Applicants\Actions
  */
 class ExportApplicationList
@@ -68,7 +69,7 @@ class ExportApplicationList
 
         /** @var LastUpdated $lastUpdatedAt */
         $lastUpdatedAt = $this->lastUpdatedRepository->getByName(UpdateDataTypes::APPLICATION_LIST);
-        $lastUpdatedAt = $lastUpdatedAt? $lastUpdatedAt->updated_at : now();
+        $lastUpdatedAt = isset($lastUpdatedAt->updated_at) ? $lastUpdatedAt->updated_at : now();
 
         $filename    = sprintf("applications-%s.csv", $lastUpdatedAt->format('Y-m-d-H-i-s'));
         $zipFilename = sprintf("applications-%s.zip", $lastUpdatedAt->format('Y-m-d-H-i-s'));
@@ -81,7 +82,7 @@ class ExportApplicationList
                 'filename' => $zipFilename,
                 'path'     => $path,
                 'metadata' => [
-                    'data_as_of' => $lastUpdatedAt ? $lastUpdatedAt->toDateTimeString() : now()->toDateTimeString(),
+                    'data_as_of' => $lastUpdatedAt->toDateTimeString(),
                 ],
             ]
         );

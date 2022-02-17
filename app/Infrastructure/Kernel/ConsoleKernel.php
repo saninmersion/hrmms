@@ -43,7 +43,5 @@ class ConsoleKernel extends Kernel
         $schedule->command('cbs:refresh:application-list')->hourly()->withoutOverlapping()->onOneServer();
         $schedule->command('cbs:compute:stats')->hourly()->withoutOverlapping()->onOneServer();
         $schedule->command('cbs:applications:export')->hourly()->withoutOverlapping()->onOneServer();
-//        $schedule->command('cbs:export:applications:recommended_for_rejection')->daily()->withoutOverlapping()->onOneServer();
-//        $schedule->command('cbs:export:applications:correction_needed')->daily()->withoutOverlapping()->onOneServer();
     }
 }

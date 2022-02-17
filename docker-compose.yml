@@ -143,7 +143,7 @@ services:
   minio:
     image: minio/minio
     container_name: "${DOCKER_NAME}_minio"
-    command: server --address 0.0.0.0:${DOCKER_MINIO_PORT} /export
+    command: server --console-address 0.0.0.0:${DOCKER_MINIO_PORT} /export
     entrypoint:
       - "minio"
     volumes:

@@ -76,8 +76,8 @@ class ApplicationController extends FrontController
      * @return JsonResponse
      * @throws FormNonEditableException
      */
-    public function saveForm(ApplicationFormSaveRequest $request, SaveApplication $saveApplication)
-    : JsonResponse {
+    public function saveForm(ApplicationFormSaveRequest $request, SaveApplication $saveApplication): JsonResponse
+    {
         AuthHelper::guardEditableForm();
 
         try {

@@ -26,6 +26,7 @@ return [
     'no_i_have_not'            => 'No',
     'note'                     => 'Note',
     'All'                      => 'All',
+    'Please select a value'    => 'Please select a value',
 
     'submission-number' => 'Submission Number',
     'submission-status' => 'Submission Status',

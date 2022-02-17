@@ -157,6 +157,7 @@ return [
         'qualification' => 'Qualification',
     ],
 
+    'application_location'        => "Census area",
     'application-locations-1'     => "First priority census area",
     'application-locations-2'     => "Second priority census area",
     'application-locations-2-add' => "Add second priority census area",
@@ -295,9 +296,11 @@ return [
     ],
 
     'major_subjects' => [
-        'population' => 'Population',
-        'statistics' => 'Statistics',
-        'others'     => 'Others',
+        'agriculture'    => 'Agriculture',
+        'animal_science' => 'Animal Science',
+        'population'     => 'Population',
+        'statistics'     => 'Statistics',
+        'others'         => 'Others',
     ],
     'disabilities'   => [
         'disabled'     => 'Has disability',
@@ -316,6 +319,7 @@ return [
     'help-text'          => [
         'form'                              => 'Before submitting the form, you can edit the form within 15 (Fifteen) days of creating the form and then submit.',
         'preview'                           => 'The application once submitted cannot be edited again. Hence, please check for the accuracy of details entered before pressing "SUBMIT APPLICATION" button.',
+        'needs_submission'                  => 'Your application has only been saved. Please submit the application by clicking the "SUBMIT APPLICATION" button to process your application.',
         'check_enumerator_shortlist_status' => 'To know the shortlisting status of enumerator application, please provide the following information.',
         'check_supervisor_shortlist_status' => 'To know the shortlisting status of supervisor application, please provide the following information.',
     ],

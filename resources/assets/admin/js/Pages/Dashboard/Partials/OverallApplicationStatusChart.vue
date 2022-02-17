@@ -30,7 +30,10 @@
                 ]
             },
             stats() {
-                const stats = [];
+                const stats = [
+                    { name: this.trans("application.application-status.draft"), data: [0, 0, 0] },
+                    { name: this.trans("application.application-status.submitted"), data: [0, 0, 0] },
+                ]
                 Object.entries(this.overallStats).forEach(([key, value]) => {
                     delete value.na
                     stats.push({

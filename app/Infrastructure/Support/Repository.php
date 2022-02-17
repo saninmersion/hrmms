@@ -9,6 +9,7 @@ use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class Repository
+ *
  * @package App\Infrastructure\Support
  */
 abstract class Repository extends BaseRepository
@@ -35,11 +36,13 @@ abstract class Repository extends BaseRepository
     /**
      * @param int $value
      *
-     * @return Builder
+     * @return BaseRepository
      */
-    public function take(int $value)
+    public function take($value)
     {
-        return $this->getBuilder()->take($value);
+        $this->model = $this->getBuilder()->take($value);
+
+        return $this;
     }
 
     /**

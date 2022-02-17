@@ -6,6 +6,13 @@
             </bread-crumb>
         </template>
 
+        <div class="relative flex flex-col sm:flex-row sm:items-center justify-end py-5">
+            <div>
+                <a class="text-primary-500 hover:opacity-90 hover:underline p-2" :href="route('admin.console.applications.export')">
+                    Generate latest application export
+                </a>
+            </div>
+        </div>
         <div class="relative flex flex-col sm:flex-row sm:items-center bg-white shadow rounded-md py-5 pl-6 pr-8 sm:pr-6">
             <template v-if="exportedFile">
                 <div class="flex flex-row items-center border-b sm:border-b-0 w-full sm:w-auto pb-4 sm:pb-0">

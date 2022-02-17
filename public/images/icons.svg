@@ -14,8 +14,7 @@
                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol viewBox="0 0 13 14" id="ic-download" xmlns="http://www.w3.org/2000/svg">
-        <path
-                d="M0 12.526h13V14H0v-1.474zm7.222-4.294l4.385-4.474L12.628 4.8 6.5 11.053.372 4.8l1.021-1.043L5.778 8.23V0h1.444v8.232z"/>
+        <path d="M0 12.526h13V14H0v-1.474zm7.222-4.294l4.385-4.474L12.628 4.8 6.5 11.053.372 4.8l1.021-1.043L5.778 8.23V0h1.444v8.232z"/>
     </symbol>
     <symbol viewBox="0 0 21 14" id="ic-arrow-left" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.534 6.1H21v1.8H3.534l4.95 4.827L7.18 14 0 7l7.18-7 1.305 1.273L3.534 6.1z"/>
@@ -28,9 +27,7 @@
         <path d="M7 14A7 7 0 1 1 7 0a7 7 0 0 1 0 14zm-.7-7.7v4.2h1.4V6.3H6.3zm0-2.8v1.4h1.4V3.5H6.3z" fill="#8B9498"/>
     </symbol>
     <symbol id="ic-logout" fill="none" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
-        <path
-                d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 10 20zm7-6v-3H9V9h8V6l5 4-5 4z"
-                fill="#278BED"/>
+        <path fill="#2b6846" d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 10 20zm7-6v-3H9V9h8V6l5 4-5 4z"/>
     </symbol>
     <symbol id="ic-upload" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
         <path

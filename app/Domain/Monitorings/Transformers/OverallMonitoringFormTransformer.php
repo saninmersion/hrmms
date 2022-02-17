@@ -8,6 +8,7 @@ use League\Fractal\TransformerAbstract;
 
 /**
  * Class OverallMonitoringFormTransformer
+ *
  * @package App\Domain\Monitorings\Transformers
  */
 class OverallMonitoringFormTransformer extends TransformerAbstract
@@ -27,18 +28,18 @@ class OverallMonitoringFormTransformer extends TransformerAbstract
             'municipality'    => $monitoring->municipality_code,
             'ward'            => $monitoring->ward,
             'monitoring_data' => [
-                'family_count'               => $monitoring->monitoring_data->family_count ?? '',
-                'monitored_person_mobile_no' => $monitoring->monitoring_data->monitored_person_mobile_no ?? "",
-                'monitored_person_name'      => $monitoring->monitoring_data->monitored_person_name ?? "",
-                'monitoring_problems'        => $monitoring->monitoring_data->monitoring_problems ?? "",
-                'monitoring_suggestions'     => $monitoring->monitoring_data->monitoring_suggestions ?? "",
+                'family_count'               => data_get($monitoring->monitoring_data, "family_count", ''),
+                'monitored_person_mobile_no' => data_get($monitoring->monitoring_data, "monitored_person_mobile_no", ""),
+                'monitored_person_name'      => data_get($monitoring->monitoring_data, "monitored_person_name", ""),
+                'monitoring_problems'        => data_get($monitoring->monitoring_data, "monitoring_problems", ""),
+                'monitoring_suggestions'     => data_get($monitoring->monitoring_data, "monitoring_suggestions", ""),
                 'onsite_monitoring'          => [
-                    'complaints'          => $monitoring->monitoring_data->onsite_monitoring->complaints ?? '',
-                    'local_advertisement' => $monitoring->monitoring_data->onsite_monitoring->local_advertisement ?? '',
-                    'marking'             => $monitoring->monitoring_data->onsite_monitoring->marking ?? '',
-                    'missed_count'        => $monitoring->monitoring_data->onsite_monitoring->missed_count ?? '',
-                    'obstacles'           => $monitoring->monitoring_data->onsite_monitoring->obstacles ?? '',
-                    'prior_information'   => $monitoring->monitoring_data->onsite_monitoring->prior_information ?? '',
+                    'complaints'          => data_get($monitoring->monitoring_data, "onsite_monitoring.complaints", ''),
+                    'local_advertisement' => data_get($monitoring->monitoring_data, "onsite_monitoring.local_advertisement", ''),
+                    'marking'             => data_get($monitoring->monitoring_data, "onsite_monitoring.marking", ''),
+                    'missed_count'        => data_get($monitoring->monitoring_data, "onsite_monitoring.missed_count", ''),
+                    'obstacles'           => data_get($monitoring->monitoring_data, "onsite_monitoring.obstacles", ''),
+                    'prior_information'   => data_get($monitoring->monitoring_data, "onsite_monitoring.prior_information", ''),
                 ],
             ],
         ];

@@ -73,8 +73,6 @@ class ApplicationRequest extends WebFormRequest
             'details.education.division'                 => "required",
             'details.education.percentage'               => "required",
             'details.education.major'                    => "required",
-            'details.training.institute'                 => "required",
-            'details.training.period'                    => "required",
             'details.work_experience.institute'          => "required",
             'details.work_experience.period.year'        => "required",
             'details.work_experience.period.month'       => "required",

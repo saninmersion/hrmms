@@ -19,6 +19,7 @@ use Illuminate\Validation\Rule;
 
 /**
  * Class ApplicationSubmissionValidator
+ *
  * @package App\Domain\Applicants\Validators
  */
 class ApplicationSubmissionValidator
@@ -62,7 +63,6 @@ class ApplicationSubmissionValidator
             'application.application_for'          => "required|in:{$applicationTypes}",
             'application.locations.*.district'     => "required|exists:{$districtTable},code",
             'application.locations.*.municipality' => "required|exists:{$municipalityTable},code",
-            'application.locations.*.ward'         => "required",
 
             'personal.name_in_nepali.first_name'  => "required",
             'personal.name_in_nepali.last_name'   => "required",
@@ -86,9 +86,7 @@ class ApplicationSubmissionValidator
 
             'personal.citizenship_number'          => [
                 'required',
-                Rule::unique($applicantTable, 'citizenship_number')->where(
-                    fn($query) => $query->where('citizenship_issued_district_code', $citizenshipIssuedDistrict)
-                )->ignore($currentApplicant->id),
+                Rule::unique($applicantTable, 'citizenship_number')->where(fn ($query) => $query->where('citizenship_issued_district_code', $citizenshipIssuedDistrict))->ignore($currentApplicant->id),
             ],
             'personal.citizenship_issued_district' => "required|exists:{$districtTable},code",
             'personal.citizenship_issued_date'     => ['required', new NepaliDate()],
@@ -133,10 +131,6 @@ class ApplicationSubmissionValidator
                 'qualification.has_education_qualification'         => "required|in:1",
                 'qualification.education.extra.major_subject'       => "nullable|in:{$majorSubjects}",
                 'qualification.education.extra.major_subject_other' => "required_if:qualification.education.extra.major_subject,".ApplicationConstants::MAJOR_SUBJECT_OTHERS,
-
-                'qualification.training.institute' => "required_if:qualification.has_training,".true,
-                'qualification.training.period'    => "required_if:qualification.has_training,".true,
-                'qualification.training_documents' => "required_if:qualification.has_training,".true,
 
                 'qualification.experience.organization' => "required_if:qualification.has_experience,".true,
                 'qualification.experience.period_day'   => "required_if:qualification.has_experience,".true,
@@ -244,9 +238,6 @@ class ApplicationSubmissionValidator
             'qualification.education.enumerator.major_subject_other' => trans('application.fields.major_subject'),
             'qualification.education.extra.major_subject_other'      => trans('application.fields.major_subject'),
 
-            'qualification.training.institute'      => trans('application.fields.training_organization'),
-            'qualification.training.period'         => trans('application.fields.training_period'),
-            'qualification.training_documents'      => trans('application.fields.training_document'),
             'qualification.experience.organization' => trans('application.fields.experience_organization'),
             'qualification.experience.period_day'   => trans('application.fields.experience_period'),
             'qualification.experience.period_month' => trans('application.fields.experience_period'),
