@@ -16,6 +16,7 @@ use Illuminate\Validation\Rule;
 
 /**
  * Class ApplicationFormCreateRequest
+ *
  * @package App\Application\Front\Requests
  */
 class ApplicationFormSaveRequest extends FormRequest
@@ -57,9 +58,7 @@ class ApplicationFormSaveRequest extends FormRequest
                 'required',
                 'string',
                 'max:255',
-                Rule::unique($applicantTable, 'citizenship_number')->where(
-                    fn($query) => $query->where('citizenship_issued_district_code', $district)
-                )->ignore($currentApplicant->id),
+                Rule::unique($applicantTable, 'citizenship_number')->where(fn ($query) => $query->where('citizenship_issued_district_code', $district))->ignore($currentApplicant->id),
             ],
             'personal.citizenship_issued_district' => "required|exists:{$districtTable},code",
             'personal.mobile_number'               => [
@@ -101,7 +100,7 @@ class ApplicationFormSaveRequest extends FormRequest
         $applicant = $this->prepareApplicantAddress($applicant);
         $applicant = $this->prepareApplicantThreeGeneration($applicant);
         $applicant = $this->prepareApplicantEducation($applicant);
-        $applicant = $this->prepareApplicantTrainingExp($applicant);
+        $applicant = $this->prepareApplicantExperience($applicant);
 
         return [$applicant, $applications];
     }
@@ -291,22 +290,10 @@ class ApplicationFormSaveRequest extends FormRequest
      *
      * @return Applicant
      */
-    protected function prepareApplicantTrainingExp(Applicant $applicant): Applicant
+    protected function prepareApplicantExperience(Applicant $applicant): Applicant
     {
         $details        = json_decode(json_encode($applicant->details), true);
         $qualifications = $details['qualification'] ?? [];
-
-        if ( $this->has('qualification.has_training') ) {
-            $qualifications['has_training'] = $this->boolean('qualification.has_training');
-        }
-
-        if ( $this->has('qualification.training') ) {
-            $qualifications['training'] = $this->input('qualification.training');
-        }
-
-        if ( $this->has('qualification.training_documents') ) {
-            $details['training_documents'] = $this->input('qualification.training_documents');
-        }
 
         if ( $this->has('qualification.has_experience') ) {
             $qualifications['has_experience'] = $this->boolean('qualification.has_experience');
@@ -334,15 +321,9 @@ class ApplicationFormSaveRequest extends FormRequest
         $data = [];
 
         if ( $this->input('application.application_for') ) {
-            $data['for_supervisor'] = in_array(
-                $this->input('application.application_for'),
-                [ApplicationType::SUPERVISOR, ApplicationType::ENUMERATOR_SUPERVISOR]
-            );
+            $data['for_supervisor'] = in_array($this->input('application.application_for'), [ApplicationType::SUPERVISOR, ApplicationType::ENUMERATOR_SUPERVISOR]);
 
-            $data['for_enumerator'] = in_array(
-                $this->input('application.application_for'),
-                [ApplicationType::ENUMERATOR, ApplicationType::ENUMERATOR_SUPERVISOR]
-            );
+            $data['for_enumerator'] = in_array($this->input('application.application_for'), [ApplicationType::ENUMERATOR, ApplicationType::ENUMERATOR_SUPERVISOR]);
         }
 
         if ( $this->input('application.locations') ) {

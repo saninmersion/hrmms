@@ -89,7 +89,8 @@ class DistrictDashboardController extends AdminController
      * @throws BindingResolutionException
      */
     protected function getStatsForDistrict(int $districtCode)
-    : array {
+    : array
+    {
         return [
             $this->statsService->overallByDistrict((int) $districtCode)->get(),
             $this->statsService->genderBasedByDistrict((int) $districtCode)->get(),

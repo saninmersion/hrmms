@@ -427,10 +427,6 @@ class OfflineApplicationRequest extends WebFormRequest
                 'qualification.education.extra.major_subject'       => "nullable|in:{$majorSubjects}",
                 'qualification.education.extra.major_subject_other' => "required_if:qualification.education.extra.major_subject,".ApplicationConstants::MAJOR_SUBJECT_OTHERS,
 
-                'qualification.training.institute' => "required_if:qualification.has_training,".true,
-                'qualification.training.period'    => "required_if:qualification.has_training,".true,
-                'qualification.training_documents' => "required_if:qualification.has_training,".true,
-
                 'qualification.experience.organization' => "required_if:qualification.has_experience,".true,
                 'qualification.experience.period_day'   => "required_if:qualification.has_experience,".true,
                 'qualification.experience.period_month' => "required_if:qualification.has_experience,".true,

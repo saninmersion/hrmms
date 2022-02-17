@@ -22,7 +22,7 @@ class ApplicantDetailTransformer extends TransformerAbstract
     {
         return [
             'id'                => $applicant->id,
-            'is_submitted'      => $applicant->application->is_submitted ?? false,
+            'is_submitted'      => (bool) optional($applicant->application)->is_submitted,
             'submission_number' => $applicant->application->submission_number ?? '',
             'status'            => $applicant->application->status ?? '',
 
@@ -41,19 +41,6 @@ class ApplicantDetailTransformer extends TransformerAbstract
                     null
                 ) : null,
             ],
-            'location_second' => [
-                'district'     => $applicant->application ? $this->getLocationFormat(
-                    $applicant->application->second_priority_district
-                ) : '',
-                'municipality' => $applicant->application ? $this->getLocationFormat(
-                    $applicant->application->second_priority_municipality
-                ) : '',
-                'ward'         => $applicant->application ? data_get(
-                    $applicant->application,
-                    'locations.second.ward',
-                    null
-                ) : null,
-            ],
             'personal'        => $this->getPersonal($applicant),
             'qualification'   => $this->getQualification($applicant),
         ];
@@ -69,18 +56,18 @@ class ApplicantDetailTransformer extends TransformerAbstract
         return [
             'name_in_nepali'      => $applicant->name_in_nepali_formatted,
             'name_in_english'     => $applicant->name_in_english_formatted,
-            'applicant_photo'     => $applicant->details->applicant_photo ?? [],
-            'gender'              => $applicant->details->gender ?? '',
-            'ethnicity'           => $applicant->details->ethnicity ?? '',
-            'ethnicity_other'     => $applicant->details->ethnicity_other ?? '',
-            'mother_tongue'       => $applicant->details->mother_tongue ?? '',
-            'mother_tongue_other' => $applicant->details->mother_tongue_other ?? '',
+            'applicant_photo'     => data_get($applicant, "details.applicant_photo", []),
+            'gender'              => data_get($applicant, "details.gender", ''),
+            'ethnicity'           => data_get($applicant, "details.ethnicity", ''),
+            'ethnicity_other'     => data_get($applicant, "details.ethnicity_other", ''),
+            'mother_tongue'       => data_get($applicant, "details.mother_tongue", ''),
+            'mother_tongue_other' => data_get($applicant, "details.mother_tongue_other", ''),
             'disability'          => $applicant->disability_formatted,
             'dob_bs'              => $applicant->dob_bs,
-            'dob_ad'              => $applicant->details->dob_ad ?? '',
+            'dob_ad'              => data_get($applicant, "details.dob_ad", ''),
             'citizenship'         => $this->getCitizenship($applicant),
             'addresses'           => $this->getAddresses($applicant),
-            'mobile_number'       => $applicant->mobile_number ?? '',
+            'mobile_number'       => data_get($applicant, "mobile_number", ''),
             'father_name'         => $applicant->father_name_formatted,
             'grand_father_name'   => $applicant->grand_father_name_formatted,
             'mother_name'         => $applicant->mother_name_formatted,
@@ -103,10 +90,10 @@ class ApplicantDetailTransformer extends TransformerAbstract
                 'municipality' => $applicant->permanent_address_municipality ? $this->getLocationFormat(
                     $applicant->permanent_address_municipality
                 ) : '',
-                'ward'         => $applicant->permanent_address->ward ?? '',
-                'tole'         => $applicant->permanent_address->tole ?? '',
+                'ward'         => data_get($applicant->permanent_address, "ward", ''),
+                'tole'         => data_get($applicant->permanent_address, "tole", ''),
             ],
-            'has_current_address'       => (bool) ($applicant->details->has_current_address ?? false),
+            'has_current_address'       => (bool) optional($applicant->details)->has_current_address,
             'current_address'           => [
                 'district'     => $applicant->current_address_district ? $this->getLocationFormat(
                     $applicant->current_address_district
@@ -114,10 +101,10 @@ class ApplicantDetailTransformer extends TransformerAbstract
                 'municipality' => $applicant->current_address_municipality ? $this->getLocationFormat(
                     $applicant->current_address_municipality
                 ) : '',
-                'ward'         => $applicant->current_address->ward ?? '',
-                'tole'         => $applicant->temporary_address->tole ?? '',
+                'ward'         => data_get($applicant->current_address, "ward", ''),
+                'tole'         => data_get($applicant->temporary_address, "tole", ''),
             ],
-            'current_address_documents' => $applicant->details->current_address_documents ?? [],
+            'current_address_documents' => data_get($applicant->details, "current_address_documents", []),
         ];
     }
 
@@ -129,12 +116,12 @@ class ApplicantDetailTransformer extends TransformerAbstract
     protected function getCitizenship(Applicant $applicant): array
     {
         return [
-            'number'          => $applicant->citizenship_number ?? '',
+            'number'          => data_get($applicant, "citizenship_number", ''),
             'issued_district' => $applicant->citizenship_issued_district ? $this->getLocationFormat(
                 $applicant->citizenship_issued_district
             ) : '',
-            'issued_date'     => $applicant->citizenship_issued_date_bs ?? '',
-            'files'           => $applicant->details->citizenship_files ?? [],
+            'issued_date'     => data_get($applicant, "citizenship_issued_date_bs", ''),
+            'files'           => data_get($applicant, "details->citizenship_files", []),
         ];
     }
 
@@ -146,45 +133,38 @@ class ApplicantDetailTransformer extends TransformerAbstract
     protected function getQualification(Applicant $applicant): array
     {
         return [
-            'has_education_qualification'    => (bool) ($applicant->details->qualification->has_education_qualification ?? false),
-            'files_for_supervisor_education' => $applicant->details->files_for_supervisor_education ?? [],
-            'files_for_enumerator_education' => $applicant->details->files_for_enumerator_education ?? [],
-            'files_for_extra_education'      => $applicant->details->files_for_extra_education ?? [],
+            'has_education_qualification'    => (bool) (data_get($applicant->details, "qualification.has_education_qualification")),
+            'files_for_supervisor_education' => data_get($applicant->details, "files_for_supervisor_education", []),
+            'files_for_enumerator_education' => data_get($applicant->details, "files_for_enumerator_education", []),
+            'files_for_extra_education'      => data_get($applicant->details, "files_for_extra_education", []),
             'education'                      => [
                 'supervisor' => [
                     'files'               => [],
-                    'grading_system'      => $applicant->details->qualification->education->supervisor->grading_system ?? ApplicationConstants::GRADING_SYSTEM_GRADE,
-                    'percentage'          => $applicant->details->qualification->education->supervisor->percentage ?? null,
-                    'grade'               => $applicant->details->qualification->education->supervisor->grade ?? null,
-                    'major_subject'       => $applicant->details->qualification->education->supervisor->major_subject ?? null,
-                    'major_subject_other' => $applicant->details->qualification->education->supervisor->major_subject_other ?? null,
+                    'grading_system'      => data_get($applicant->details, "qualification.education.supervisor.grading_system", ApplicationConstants::GRADING_SYSTEM_GRADE),
+                    'percentage'          => data_get($applicant->details, "qualification.education.supervisor.percentage", null),
+                    'grade'               => data_get($applicant->details, "qualification.education.supervisor.grade", null),
+                    'major_subject'       => data_get($applicant->details, "qualification.education.supervisor.major_subject", null),
+                    'major_subject_other' => data_get($applicant->details, "qualification.education.supervisor.major_subject_other", null),
                 ],
                 'enumerator' => [
                     'files'               => [],
-                    'grading_system'      => $applicant->details->qualification->education->enumerator->grading_system ?? ApplicationConstants::GRADING_SYSTEM_GRADE,
-                    'percentage'          => $applicant->details->qualification->education->enumerator->percentage ?? null,
-                    'grade'               => $applicant->details->qualification->education->enumerator->grade ?? null,
-                    'major_subject'       => $applicant->details->qualification->education->enumerator->major_subject ?? null,
-                    'major_subject_other' => $applicant->details->qualification->education->enumerator->major_subject_other ?? null,
+                    'grading_system'      => data_get($applicant->details, "qualification.education.enumerator.grading_system", ApplicationConstants::GRADING_SYSTEM_GRADE),
+                    'percentage'          => data_get($applicant->details, "qualification.education.enumerator.percentage", null),
+                    'grade'               => data_get($applicant->details, "qualification.education.enumerator.grade", null),
+                    'major_subject'       => data_get($applicant->details, "qualification.education.enumerator.major_subject", null),
+                    'major_subject_other' => data_get($applicant->details, "qualification.education.enumerator.major_subject_other", null),
                 ],
                 'extra'      => [
-                    'major_subject'       => $applicant->details->qualification->education->extra->major_subject ?? null,
-                    'major_subject_other' => $applicant->details->qualification->education->extra->major_subject_other ?? null,
+                    'major_subject'       => data_get($applicant->details, "qualification.education.extra.major_subject", null),
+                    'major_subject_other' => data_get($applicant->details, "qualification.education.extra.major_subject_other", null),
                 ],
             ],
-            'has_training'                   => (bool) ($applicant->details->qualification->has_training ?? false),
-            'training_documents'             => $applicant->details->training_documents ?? [],
-            'training'                       => [
-                'institute' => $applicant->details->qualification->training->institute ?? '',
-                'period'    => $applicant->details->qualification->training->period ?? '',
-                'files'     => [],
-            ],
-            'has_experience'                 => (bool) ($applicant->details->qualification->has_experience ?? false),
-            'experience_documents'           => $applicant->details->experience_documents ?? [],
+            'has_experience'                 => (bool) (data_get($applicant->details, "qualification.has_experience")),
+            'experience_documents'           => data_get($applicant->details, "experience_documents", []),
             'experience'                     => [
-                'organization' => $applicant->details->qualification->experience->organization ?? '',
-                'period_day'   => $applicant->details->qualification->experience->period_day ?? '',
-                'period_month' => $applicant->details->qualification->experience->period_month ?? '',
+                'organization' => data_get($applicant->details, "qualification.experience.organization", ''),
+                'period_day'   => data_get($applicant->details, "qualification.experience.period_day", ''),
+                'period_month' => data_get($applicant->details, "qualification.experience.period_month", ''),
                 'files'        => [],
             ],
         ];

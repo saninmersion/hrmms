@@ -30,7 +30,12 @@
                 ]
             },
             stats() {
-                const stats = []
+                const stats = [
+                    { name: this.trans("application.gender-male"), data: [0, 0, 0] },
+                    { name: this.trans("application.gender-female"), data: [0, 0, 0] },
+                    { name: this.trans("application.gender-other"), data: [0, 0, 0] },
+                ]
+
                 Object.entries(this.genderDistribution).forEach(([key, value]) => {
                     stats.push({
                         name: this.trans(`application.gender-${key}`),

@@ -6,11 +6,6 @@
                     <span class="block sm:inline">Data as of</span>
                     <strong class="font-bold">{{ dateTime }}</strong>
                 </div>
-                <div>
-                    <a class="text-primary-500 hover:opacity-90 p-2" target="_blank" :href="route('admin.console.applications.export')">
-                        Refresh application stats
-                    </a>
-                </div>
             </div>
             <div class="flex flex-wrap">
                 <district-distribution :district-wise="districtWise" :districts="districts" :hired-stats="hiredStats"/>

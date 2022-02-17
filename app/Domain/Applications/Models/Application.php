@@ -21,6 +21,7 @@ use Staudenmeir\EloquentJsonRelations\HasJsonRelationships;
 
 /**
  * Class Application
+ *
  * @package App\Domain\Applications\Models
  *
  * @property int               $id
@@ -75,7 +76,7 @@ class Application extends Model implements Auditable
         'application_date',
         'official',
         'is_offline',
-        'entered_by_id'
+        'entered_by_id',
     ];
 
     /**
@@ -179,8 +180,6 @@ class Application extends Model implements Auditable
     {
         $locations      = [];
         $locations[]    = $this->locations->first ?? null;
-        $locations[]    = $this->locations->second ?? null;
-        $locations[]    = $this->locations->third ?? null;
         $locationsArray = [];
 
         foreach ($locations as $index => $location) {
@@ -218,7 +217,7 @@ class Application extends Model implements Auditable
      */
     public function getSubmissionNumberAttribute(): string
     {
-        return sprintf("NPHC-%07d", $this->id);
+        return sprintf("NSCA-%07d", $this->id);
     }
 
     /**

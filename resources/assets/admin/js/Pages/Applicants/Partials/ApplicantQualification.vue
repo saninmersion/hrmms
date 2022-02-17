@@ -68,30 +68,6 @@
                                   :images="applicant.qualification.files_for_extra_education"/>
             </div>
         </div>
-        <div class="lg:w-3/4 pb-4">
-            <applicant-preview-data-block
-                :label="trans('application.preview.has_training')"
-                :value="formatBoolean(getFromObject(applicant, 'qualification.has_training'))"/>
-        </div>
-        <div v-if="getFromObject(applicant, 'qualification.has_training', false)">
-            <h2 class="heading-primary heading-primary--sm">
-                {{ trans("application.preview.training") }}
-            </h2>
-            <div class="flex flex-wrap">
-                <div class="lg:w-3/4 order-2 lg:order-1 data-block  border-b border-blue-200 pt-4">
-                    <applicant-preview-data-block
-                        :label="trans('application.fields.training_organization')"
-                        :value="getFromObject(applicant, 'qualification.training.institute')"/>
-                    <applicant-preview-data-block
-                        :label="trans('application.fields.training_period')"
-                        :value="formatTrainingPeriod(getFromObject(applicant, 'qualification.training.period'))"/>
-                </div>
-                <slider-light-box v-if="getFromObject(applicant, 'qualification.training_documents') && isArray(applicant.qualification.training_documents)"
-                                  class="order-1 lg:order-2 my-4 mx-auto md:ml-auto md:mr-4"
-                                  :images="applicant.qualification.training_documents"
-                                  slider-class="slider-doc"/>
-            </div>
-        </div>
         <div class="py-4">
             <applicant-preview-data-block
                 :label="trans('application.preview.has_experience')"

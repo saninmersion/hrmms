@@ -2,7 +2,7 @@
 
 export default {
     application: {
-        application_for: "enumerator_supervisor",
+        application_for: "",
         locations: [
             {
                 priority: 1,

@@ -92,7 +92,15 @@ Route::post('/notifications/mark-as-read', [NotificationsController::class, 'mar
 // Artisan Commands
 Route::get('/console/applications/export', function () {
     Artisan::queue('cbs:applications:export');
+
+    return redirect()->back();
 })->name('console.applications.export');
+
+Route::get('/console/stats/compute', function () {
+    Artisan::queue('cbs:compute:stats');
+
+    return redirect()->back();
+})->name('console.stats.compute');
 
 //Route::prefix('verifications')->as('verifications.')->group(function () {
 //    Route::get('/exports/rejection', [VerificationExportController::class, 'exportRejectionList'])->name('exports.rejection');

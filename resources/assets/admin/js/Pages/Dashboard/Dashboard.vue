@@ -7,7 +7,7 @@
                     <strong class="font-semibold">{{ dateTime }}</strong>
                 </div>
                 <div>
-                    <a class="text-primary-500 hover:opacity-90 p-2" target="_blank" :href="route('admin.console.applications.export')">
+                    <a class="text-primary-500 hover:opacity-90 p-2" :href="route('admin.console.stats.compute')">
                         Refresh application stats
                     </a>
                 </div>
@@ -98,7 +98,7 @@
 
         methods: {
             getApplicationTotal: function(row) {
-                return (row.enumerator || 0) + (row.supervisor || 0) + (row.enumerator_supervisor || 0)
+                return (this.getFromObject(row, "enumerator", 0)) + (this.getFromObject(row, "supervisor", 0)) + (this.getFromObject(row, "enumerator_supervisor", 0))
             },
             getSum(obj) {
                 if (obj) {

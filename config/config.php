@@ -22,6 +22,7 @@ return [
     'editable-days'                 => env('EDITABLE_DAYS', 7),
     'number-of-assignments'         => env('NUMBER_OF_ASSIGNMENTS', 100),
     'offline-application-available' => env('OFFLINE_APPLICATION_AVAILABLE', false),
+    'shortlist-available'           => env('SHORTLIST_AVAILABLE', false),
     'show-notice'                   => env('SHOW_NOTICE', false),
 
     'age-limit' => [

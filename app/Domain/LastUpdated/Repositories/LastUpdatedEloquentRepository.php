@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /**
  * Class LastUpdatedEloquentRepository
+ *
  * @package App\Domain\LastUpdated\Repositories
  */
 class LastUpdatedEloquentRepository extends Repository implements LastUpdatedRepository
@@ -31,10 +32,6 @@ class LastUpdatedEloquentRepository extends Repository implements LastUpdatedRep
         $query = $this->getBuilder();
 
         $data = $query->where('updated_name', $name)->get();
-
-//        if ( $data->isEmpty() ) {
-//            throw (new ModelNotFoundException())->setModel($this->model(), ['updated_name' => $name]);
-//        }
 
         return $this->parserResult($data->first());
     }

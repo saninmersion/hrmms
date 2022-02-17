@@ -33,32 +33,22 @@
                               :name="'application.locations.' + locationIndex "
                               @remove="removeLocation(locationIndex)"
                               @input="application.locations[locationIndex] = $event"/>
-
-        <div>
-            <link-button v-if="application.locations.length < maxLocationCount"
-                         class="!border-0 !bg-transparent !shadow-none !px-0 text-primary"
-                         @click.prevent="addMoreLocations">
-                <Icon name="plus"/>    {{ trans(`application.application-locations-${application.locations.length + 1}-add`) }}
-            </link-button>
-        </div>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
-    import { LinkButton }      from "../../../../../shared/js/Components/Buttons"
     import {
         InputError,
         RadioGroupInput,
     }                          from "../../../../../shared/js/Components/Forms"
     import ApplicationLocation from "./ApplicationLocation"
-    import Icon                from "../../Common/Icon"
 
     export default {
         name: "ApplicationPositionForm",
 
         inject: ["applicationTypes"],
 
-        components: { ApplicationLocation, InputError, RadioGroupInput, LinkButton, Icon },
+        components: { ApplicationLocation, InputError, RadioGroupInput },
 
         props: {
             value: { type: Object, required: true },

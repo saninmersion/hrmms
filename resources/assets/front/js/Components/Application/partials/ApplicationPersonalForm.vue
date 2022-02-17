@@ -116,15 +116,13 @@
                             {{ trans("application.calendar_bs") }}
                         </tertiary-button>
                     </div>
-                    <div>
-                        <nepali-date-picker v-if="dob_type === 'bs'"
-                                            :value="personal.dob_bs"
-                                            type="bs"
-                                            @input="handleDobChange"/>
-                        <nepali-date-picker v-if="dob_type === 'ad'"
-                                            :value="personal.dob_ad"
-                                            type="ad"
-                                            @input="handleDobChange"/>
+                    <div style="min-width: 200px;">
+                        <nepali-date-picker-preview v-if="dob_type === 'bs'"
+                                                    :value="personal.dob_bs"
+                                                    type="bs"/>
+                        <nepali-date-picker-preview v-if="dob_type === 'ad'"
+                                                    :value="personal.dob_ad"
+                                                    type="ad"/>
                     </div>
                 </div>
                 <div class="sm:pl-28 pt-2">
@@ -292,8 +290,8 @@
     import {
         ADToBS,
         BSToAD,
-    }                         from "bikram-sambat-js"
-    import { TertiaryButton } from "../../../../../shared/js/Components/Buttons"
+    }                              from "bikram-sambat-js"
+    import { TertiaryButton }      from "../../../../../shared/js/Components/Buttons"
     import {
         CameraInput,
         DropDownInput,
@@ -304,8 +302,9 @@
         LabelComponent,
         LocationCombo,
         NepaliDatePicker,
-    }                      from "../../../../../shared/js/Components/Forms"
-    import RadioGroupInput from "../../../../../shared/js/Components/Forms/RadioGroupInput"
+    }                              from "../../../../../shared/js/Components/Forms"
+    import NepaliDatePickerPreview from "../../../../../shared/js/Components/Forms/NepaliDatePickerPreview"
+    import RadioGroupInput         from "../../../../../shared/js/Components/Forms/RadioGroupInput"
 
     export default {
         name: "ApplicationPersonalForm",
@@ -313,17 +312,18 @@
         inject: ["mediaUploadUrl", "oldDistricts", "newDistricts", "ethnicities", "motherTongues", "disabilities"],
 
         components: {
+            NepaliDatePickerPreview,
             CameraInput,
             RadioGroupInput,
             LocationCombo,
             DropDownInput,
             InputComponent,
-            NepaliDatePicker,
             TertiaryButton,
             InputError,
             GenderInput,
             FullNameInput,
             LabelComponent,
+            NepaliDatePicker,
         },
 
         props: {

@@ -9,7 +9,7 @@
                     class="font-normal !px-2  text-base text-primary inline-flex items-center ml-auto -mr-2"
                     @click.prevent="handleLogout">
                     {{ trans("auth.logout") }}
-                    <Icon name="logout" class="!ml-3 !w-5 !h-5 !mr-0"/>
+                    <Icon name="logout" class="!ml-3 !w-5 !h-5 !mr-0" fill="#2b6846"/>
                 </button>
             </div>
 
@@ -143,6 +143,7 @@
         watch: {
             applicant: {
                 handler(applicant) {
+                    console.log(applicant)
                     this.formData = { ...this.formData, ...applicant }
                 },
                 immediate: true,
@@ -192,11 +193,11 @@
                 this.failed = false
 
                 try {
-                    const { body: { data, message } } = await Api.post(this.submitUrl, this.formData)
+                    const { body: { data } } = await Api.post(this.submitUrl, this.formData)
 
                     this.isSaving = false
                     this.saved = true
-                    console.log(message)
+
                     if (redirection) {
                         window.location.href = data.redirection_url
                     }

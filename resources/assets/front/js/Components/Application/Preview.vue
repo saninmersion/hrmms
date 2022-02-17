@@ -52,7 +52,8 @@
                         <Icon name="success" class="sm:!w-11 sm:!h-11 !mr-0 mt-1 sm:mt-0"/>
                         <p class="text-black text-left -mt-1 sm:mt-0" v-html="successMessage"/><!-- eslint-disable-line vue/no-v-html -->
                     </div>
-                    <application-help-text v-if="!applicant.is_submitted" :text="trans('application.help-text.preview')"/>
+                    <application-help-text v-if="!applicant.is_submitted" class="bg-danger-100 px-4 py-2" :text="trans('application.help-text.needs_submission')"/>
+                    <application-help-text v-if="!applicant.is_submitted" class="bg-blue-100 px-4 py-2" :text="trans('application.help-text.preview')"/>
                     <application-status :applicant="applicant"/>
                     <application-position :applicant="applicant"/>
                     <application-personal :applicant="applicant"/>
@@ -149,16 +150,13 @@
 
             async handleOnSubmitConfirm() {
                 try {
-                    const { body: { data, message } } = await Api.post(this.submitUrl)
-                    console.log(message)
+                    const { body: { data } } = await Api.post(this.submitUrl)
+
                     window.location.href = data.redirection_url
                 } catch (error) {
-                    console.log(error.response, "ERRROR")
                     if (error.response && error.response.status === 422) {
                         window.location.href = error.response.data.message
                     }
-
-                    console.error(error)
                 }
             },
 

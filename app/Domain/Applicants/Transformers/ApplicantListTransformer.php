@@ -8,6 +8,7 @@ use League\Fractal\TransformerAbstract;
 
 /**
  * Class AdminListTransformer
+ *
  * @package App\Domain\Applicants\Transformers
  */
 class ApplicantListTransformer extends TransformerAbstract
@@ -22,22 +23,22 @@ class ApplicantListTransformer extends TransformerAbstract
         return [
             'id'                          => $applicant->id,
             'submission_number'           => data_get($applicant->application, 'submission_number', ''),
-            'citizenship_number'          => $applicant->citizenship_number ?? '',
-            'citizenship_issued_district' => $applicant->citizenship_issued_district ?? '',
-            'dob'                         => $applicant->dob_bs ?? '',
+            'citizenship_number'          => data_get($applicant, "citizenship_number", ''),
+            'citizenship_issued_district' => data_get($applicant, "citizenship_issued_district", ''),
+            'dob'                         => data_get($applicant, "dob_bs", ''),
             'created_at'                  => Helper::dateResponse($applicant->created_at),
             'updated_at'                  => Helper::dateResponse($applicant->updated_at),
             'submitted_at'                => $this->getSubmittedAtDate($applicant),
-            'status'                      => $applicant->application ? $applicant->application->status : '',
+            'status'                      => data_get($applicant, "application.status", ''),
             'name'                        => $applicant->name_in_nepali_formatted,
             'name_in_english'             => $applicant->name_in_english_formatted,
-            'application_for'             => $applicant->application ? $applicant->application->application_for : '',
+            'application_for'             => data_get($applicant, "application.application_for", ''),
             'gender'                      => data_get($applicant->details, 'gender', ''),
-            'mobile_number'               => $applicant->mobile_number ?? '',
-            'p1_district'                 => $applicant->application->first_priority_district ?? '',
-            'p2_district'                 => $applicant->application->second_priority_district ?? '',
-            'verification_status'         => $applicant->verification->verification_status ?? 'not_verified',
-            'is_offline'                  => $applicant->application->is_offline ?? false,
+            'mobile_number'               => data_get($applicant, "mobile_number", ''),
+            'p1_district'                 => data_get($applicant, "application->first_priority_district", ''),
+            'p2_district'                 => data_get($applicant, "application->second_priority_district", ''),
+            'verification_status'         => data_get($applicant, "verification->verification_status", 'not_verified'),
+            'is_offline'                  => data_get($applicant, "application->is_offline", false),
         ];
     }
 

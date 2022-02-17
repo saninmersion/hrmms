@@ -15,6 +15,7 @@ use Illuminate\Http\JsonResponse;
 
 /**
  * Class MonitoringController
+ *
  * @package App\Application\Api\Controllers
  */
 class MonitoringApiController extends ApiController
@@ -118,7 +119,7 @@ class MonitoringApiController extends ApiController
             $monitoring = $this->monitoringRepository->find($monitoringFormId);
 
             if ( !$monitoring || $monitoring->monitored_by_id !== $user->id ) {
-                throw new Exception();
+                throw new \Exception();
             }
 
             $this->monitoringRepository->delete($monitoringFormId);
