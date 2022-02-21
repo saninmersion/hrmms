@@ -113,4 +113,4 @@ production-build-deploy:
     - docker push "$CONTAINER_FULL_IMAGE_NAME_WITH_TAG"
     - echo $CONTAINER_FULL_IMAGE_NAME_WITH_TAG
     - echo "Deploying on CapRover..."
-    - docker run --network host caprover/cli-caprover:v2.2.3 caprover deploy --caproverUrl $CAPROVER_URL --caproverPassword $CAPROVER_PASSWORD --caproverApp $CAPROVER_APP --imageName   $CONTAINER_FULL_IMAGE_NAME_WITH_TAG
+    - docker run --network host caprover/cli-caprover:2.2.3 caprover deploy --caproverUrl $CAPROVER_URL --caproverPassword $CAPROVER_PASSWORD --caproverApp $CAPROVER_APP --imageName   $CONTAINER_FULL_IMAGE_NAME_WITH_TAG
