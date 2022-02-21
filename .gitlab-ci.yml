@@ -87,6 +87,8 @@ staging-build-deploy:
 production-build-deploy:
   image: docker:19.03.1
   stage: deploy
+  tags:
+    - agriprod
   when: manual
   services:
     - docker:19.03.1-dind
