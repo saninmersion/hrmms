@@ -24,14 +24,14 @@
                 }
 
                 if (days > 0) {
-                    return `<span class="font-bold mr-2 text-3xl">${this.numberTrans(days)}</span> ${this.trans("general.Days Remaining")}`
+                    return `<span class="!text-center mr-2">${this.trans("general.Days Remaining").replace("%s", `<span class='text-2xl px-1 font-bold'>${this.numberTrans(days)}</span>`)}`
                 }
 
                 if (hours > 0) {
-                    return `<span class="font-bold mr-2 text-3xl">${this.numberTrans(hours)}</span> ${this.trans("general.Hours Remaining")}`
+                    return `<span class="!text-center mr-2">${this.trans("general.Hours Remaining").replace("%s", `<span class='text-2xl px-1 font-bold'>${this.numberTrans(hours)}</span>`)}`
                 }
 
-                return `<span class="font-bold mr-2 text-3xl">${this.numberTrans(minutes)}</span> ${this.trans("general.Minutes Remaining")}`
+                return `<span class="!text-center mr-2">${this.trans("general.Minutes Remaining").replace("%s", `<span class='text-2xl px-1 font-bold'>${this.numberTrans(minutes)}</span>`)}`
             },
         },
         methods: {

@@ -6,7 +6,6 @@ use App\Domain\Applicants\Models\Applicant;
 use App\Infrastructure\Constants\ApplicationConstants;
 use App\Infrastructure\Constants\ApplicationType;
 use App\Infrastructure\Constants\DBTables;
-use App\Infrastructure\Constants\Ethnicities;
 use App\Infrastructure\Constants\Guard;
 use App\Infrastructure\Constants\MotherTongues;
 use App\Infrastructure\Support\AuthHelper;
@@ -43,11 +42,8 @@ class ApplicationSubmissionValidator
     {
         $applicationTypes = implode(',', ApplicationType::all());
         $genders          = implode(',', ApplicationConstants::genders());
-        $ethnicities      = implode(',', Ethnicities::ethnicities());
-        $ethnicityOther   = Ethnicities::ETHNICITY_OTHER;
         $languages        = implode(',', MotherTongues::motherTongues());
         $languageOther    = MotherTongues::LANGUAGE_OTHER;
-        $disabilities     = implode(',', ApplicationConstants::disabilities());
 
         $districtTable     = DBTables::DISTRICTS;
         $municipalityTable = DBTables::MUNICIPALITIES;
@@ -78,11 +74,8 @@ class ApplicationSubmissionValidator
                 new MobileNumber(),
                 Rule::unique($applicantTable, 'mobile_number')->ignore($currentApplicant->id),
             ],
-            'personal.ethnicity'           => "required|in:{$ethnicities}",
-            'personal.ethnicity_other'     => "required_if:personal.ethnicity,{$ethnicityOther}",
             'personal.mother_tongue'       => "required|in:{$languages}",
             'personal.mother_tongue_other' => "required_if:personal.mother_tongue,{$languageOther}",
-            'personal.disability'          => "required|in:{$disabilities}",
 
             'personal.citizenship_number'          => [
                 'required',
@@ -192,11 +185,8 @@ class ApplicationSubmissionValidator
             'personal.dob_bs'              => trans('application.fields.dob'),
             'personal.dob_ad'              => trans('application.fields.dob'),
             'personal.mobile_number'       => trans('application.fields.mobile_number'),
-            'personal.ethnicity'           => trans('application.fields.ethnicity'),
-            'personal.ethnicity_other'     => trans('application.fields.ethnicity'),
             'personal.mother_tongue'       => trans('application.fields.mother_tongue'),
             'personal.mother_tongue_other' => trans('application.fields.mother_tongue'),
-            'personal.disability'          => trans('application.fields.disability'),
 
             'personal.citizenship_number'          => trans('application.fields.citizenship_no'),
             'personal.citizenship_issued_district' => trans('application.fields.citizenship_issued_district'),

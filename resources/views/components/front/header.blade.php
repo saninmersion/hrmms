@@ -12,7 +12,7 @@
             <div class="header__title-wrap mr-auto sm:pl-5 xlg:py-2 hidden xlg:block">
                 <h3 class="header__title">
                     <span
-                        class="font-extrabold">{{ trans('general.National Census') }}</span> {{ trans('general.2078') }}
+                            class="font-extrabold">{{ trans('general.National Census') }}</span> {{ trans('general.2078') }}
                 </h3>
                 <span class="header__title-desc font-semibold">{{ trans('general.app-name') }}</span>
             </div>
@@ -35,23 +35,13 @@
                     <div>
                         <h3 class="header__title">
                     <span
-                        class="font-extrabold">{{ trans('general.National Census') }}</span> {{ trans('general.2078') }}
+                            class="font-extrabold">{{ trans('general.National Census') }}</span> {{ trans('general.2078') }}
                         </h3>
                         <span class="header__title-desc font-semibold">{{ trans('general.app-name') }}</span>
                     </div>
                     <div class="close-menu ic-close ml-auto -mr-2"></div>
                 </div>
                 <div class="nav-content px-4 flex flex-col">
-                    <div>
-                        <a href="{{route('front.privacy-policy')}}"
-                           class="link block py-4">
-                            {{ trans('general.page-title.privacy-policy') }}
-                        </a>
-                        <a href="{{route('front.terms-and-conditions')}}"
-                           class="link block py-4">
-                            {{ trans('general.page-title.terms-and-conditions') }}
-                        </a>
-                    </div>
                     <div class="mt-10 pt-8">
                         @if(app()->getLocale() === 'en')
                             <img class="h-28 w-28 mx-auto" src="{{ asset('/images/logo-2-eng.png') }}"
@@ -63,12 +53,17 @@
                         <div class="text-black !inline-flex w-full justify-center my-6">
                             <days-remaining deadline="{{$deadline}}"></days-remaining>
                         </div>
-{{--                        <a href="{{route('front.results.supervisor')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">--}}
-{{--                            सर्टलिष्ट गरिएकाको नामावली--}}
-{{--                        </a>--}}
+                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
+                            <a href="{{route('front.results.supervisor')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
+                                सर्टलिष्ट गरिएकाका सुपरिवेक्षकको नामावली
+                            </a>
+                        @endif
+
+                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::ENUMERATOR_SHORTLISTED)
                             <a href="{{route('front.results.enumerator')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
                                 सर्टलिष्ट गरिएका गणकहरुको नामावली
                             </a>
+                        @endif
                     </div>
                 </div>
             </nav>

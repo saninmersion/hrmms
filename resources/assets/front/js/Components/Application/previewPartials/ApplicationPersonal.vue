@@ -37,22 +37,6 @@
 
                 <div class="data-block-item">
                     <div class="data-block-label">
-                        {{ trans("application.fields.ethnicity") }}
-                    </div>
-                    <div class="data-block-value">
-                        <span v-if="getFromObject(applicant, 'personal.ethnicity')">
-                            {{
-                                (getFromObject(applicant, "personal.ethnicity") !== "other")
-                                    ? trans(`caste.${getFromObject(applicant, "personal.ethnicity")}`)
-                                    : getFromObject(applicant, "personal.ethnicity_other")
-                            }}
-                        </span>
-                        <span v-if="!getFromObject(applicant, 'personal.ethnicity')">-</span>
-                    </div>
-                </div>
-
-                <div class="data-block-item">
-                    <div class="data-block-label">
                         {{ trans("application.fields.mother_tongue") }}
                     </div>
                     <div class="data-block-value">
@@ -64,22 +48,6 @@
                             }}
                         </span>
                         <span v-if="!getFromObject(applicant, 'personal.mother_tongue')">-</span>
-                    </div>
-                </div>
-
-                <div class="data-block-item">
-                    <div class="data-block-label">
-                        {{ trans("application.fields.disability") }}
-                    </div>
-                    <div class="data-block-value">
-                        <span v-if="getFromObject(applicant, 'personal.disability')">
-                            {{
-                                (getFromObject(applicant, "personal.disability") === "other")
-                                    ? getFromObject(applicant, "personal.disability_other")
-                                    : trans(`application.disabilities.${getFromObject(applicant, "personal.disability")}`)
-                            }}
-                        </span>
-                        <span v-if="!getFromObject(applicant, 'personal.disability')">-</span>
                     </div>
                 </div>
 

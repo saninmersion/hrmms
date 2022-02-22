@@ -20,17 +20,6 @@
                               v-text="trans(`application.gender-${getFromObject(applicant, 'personal.gender')}`)"/>
                     </template>
                 </applicant-preview-data-block>
-                <applicant-preview-data-block :label="trans('application.fields.ethnicity')">
-                    <template #value>
-                        <span v-if="getFromObject(applicant, 'personal.ethnicity')">
-                            {{
-                                (getFromObject(applicant, "personal.ethnicity") !== "other")
-                                    ? trans(`caste.${getFromObject(applicant, "personal.ethnicity")}`) : getFromObject(applicant, "personal.ethnicity_other")
-                            }}
-                        </span>
-                        <span v-if="!getFromObject(applicant, 'personal.ethnicity')">-</span>
-                    </template>
-                </applicant-preview-data-block>
                 <applicant-preview-data-block
                     :label="trans('application.fields.mother_tongue')">
                     <template #value>
@@ -43,9 +32,6 @@
                         <span v-if="!getFromObject(applicant, 'personal.mother_tongue')">-</span>
                     </template>
                 </applicant-preview-data-block>
-                <applicant-preview-data-block
-                    :label="trans('application.fields.disability')"
-                    :value="applicant.personal.disability"/>
                 <applicant-preview-data-block
                     :label="trans('application.fields.dob')">
                     <template #value>

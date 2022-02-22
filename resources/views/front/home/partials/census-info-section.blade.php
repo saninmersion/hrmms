@@ -27,8 +27,7 @@
             </div>
         </div>
     </div>
-    <div
-            class="banner__content-wrap bg-layer card hidden   md:grid md:grid-cols-2 gap-4 md:gap-0 p-6 lg:p-10 shadow">
+    <div class="banner__content-wrap bg-layer card hidden md:grid md:grid-cols-2 gap-4 md:gap-0 p-6 lg:p-10 shadow">
         <div class="banner__content-item  md:pr-8  xl:pr-10">
             <h3 class="heading-primary">
                 {{ trans('general.Supervisor') }}
@@ -39,7 +38,7 @@
             <ul class="list">
                 <li>{{ trans('general.about-text.supervisor.list-1') }}</li>
                 <li>{{ trans('general.about-text.supervisor.list-2') }}</li>
-                <li>{{ trans('general.about-text.supervisor.list-3') }}</li>
+                <li><strong>{{trans('general.Priority')}}</strong>: {{ trans('general.about-text.supervisor.list-3') }}</li>
             </ul>
         </div>
         <div class="banner__content-item md:pl-8  xl:pl-10 ">
@@ -52,7 +51,7 @@
             <ul class="list">
                 <li>{{ trans('general.about-text.enumerator.list-1') }}</li>
                 <li>{{ trans('general.about-text.enumerator.list-2') }}</li>
-                <li>{{ trans('general.about-text.enumerator.list-3') }}</li>
+                <li><strong>{{trans('general.Priority')}}</strong>: {{ trans('general.about-text.enumerator.list-3') }}</li>
             </ul>
         </div>
     </div>
@@ -72,7 +71,7 @@
             <li class="mb-4">{{ trans('general.requirement.list-7') }}</li>
         </ul>
         <span class="card-shadow  h-28  w-full items-end justify-center">
-                <button class="text-primary   text-sm font-semibold  mb-6  flex items-center flex-col">{{trans('general.read_more')}}</button>
-                        </span>
+            <button class="text-primary   text-sm font-semibold  mb-6  flex items-center flex-col">{{trans('general.read_more')}}</button>
+        </span>
     </div>
 </div>

@@ -1,8 +1,7 @@
 <template>
     <div class="help-text text-black-100 mb-6 sm:pr-12 md:pr-24">
-        <div class="w-1/10">
-            {{ text }}
-        </div>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div class="w-1/10" v-html="text"/>
     </div>
 </template>
 

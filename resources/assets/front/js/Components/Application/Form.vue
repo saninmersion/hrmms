@@ -143,7 +143,6 @@
         watch: {
             applicant: {
                 handler(applicant) {
-                    console.log(applicant)
                     this.formData = { ...this.formData, ...applicant }
                 },
                 immediate: true,
@@ -183,7 +182,7 @@
 
                     window.location.href = data.redirection_url
                 } catch (e) {
-                    console.log(e)
+                    console.error(e)
                 }
             },
             async handleOnSubmit(redirection = true) {
@@ -207,8 +206,6 @@
                     if (e.response && e.response.status === 422) {
                         this.validation().set(e.response.data.errors)
                     }
-
-                    console.log(e)
                 }
             },
         },

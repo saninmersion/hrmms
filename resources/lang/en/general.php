@@ -27,6 +27,7 @@ return [
     'note'                     => 'Note',
     'All'                      => 'All',
     'Please select a value'    => 'Please select a value',
+    'Priority'                 => 'Priority',
 
     'submission-number' => 'Submission Number',
     'submission-status' => 'Submission Status',
@@ -58,9 +59,9 @@ return [
     'Deadline'                             => 'Last date of application',
     'Deadline Over'                        => 'Deadline to submit applications is over',
     'Know Your Application Status Message' => 'You may know the status of your application by providing necessary details as follows.',
-    'Days Remaining'                       => 'Days Remaining',
-    'Hours Remaining'                      => 'Hours Remaining',
-    'Minutes Remaining'                    => 'Minutes Remaining',
+    'Days Remaining'                       => '%s Days Remaining to make online application',
+    'Hours Remaining'                      => '%s Hours Remaining to make online application',
+    'Minutes Remaining'                    => '%s Minutes Remaining to make online application',
     'how-to-button'                        => 'How to apply?',
     'shortlist-button'                     => 'ShortListed Name List',
     'shortlist-enumerator-button'          => 'ShortListed Enumerator Name List',
@@ -78,16 +79,16 @@ return [
 
     'about-text' => [
         'supervisor' => [
-            'text'   => 'In accordance with Clause 13 of the National Census Operation Directive 2020, candidates having following qualitification may apply for the post of a supervisor',
+            'text'   => 'In accordance with Clause 24 of the National Agriculture Census Management Order 2022, candidates having following qualification may apply for the post of a supervisor',
             'list-1' => 'Minimum Education: Obtained a Bachelor Degree or equivalent.',
             'list-2' => 'Age: Completed the age of 18 (Eighteen) years and not exceeded the age 40 (Forty) years by the deadline for submitting application. In case of women, age not exceeding 45 (Forty-five) years.',
-            'list-3' => 'Local Level: Citizen domiciled in the concerned local level.',
+            'list-3' => 'Candidate who has pursued education with agriculture, animal science or statistics as major, possess working experience in the national level census and surveys, is a resident of the concerned local unit, possess knowledge of local language.',
         ],
         'enumerator' => [
-            'text'   => 'In accordance with Clause 13 of the National Census Operation Directive 2020, candidates having following qualitification may apply for the post of an enumerator',
+            'text'   => 'In accordance with Clause 24 of the National Agriculture Census Management Order 2022, candidates having following qualification may apply for the post of an enumerator',
             'list-1' => 'Minimum Education: Obtained a 10+2 (Ten plus two) degree or equivalent',
             'list-2' => 'Age: Completed the age of 18 (Eighteen) years and not exceeded the age 40 (Forty) years by the deadline for submitting application. In case of women, age not exceeding 45 (Forty-five) years. ',
-            'list-3' => 'Local Level: Citizen domiciled in the concerned local level.',
+            'list-3' => 'Candidate who has pursued education with agriculture, animal science or statistics as major, possess working experience in the national level census and surveys, is a resident of the concerned local unit, possess knowledge of local language.',
         ],
     ],
 
@@ -97,8 +98,8 @@ return [
         'list-2' => 'Scan/Digital copy of Nepali Citizenship Certificate (both sides),',
         'list-3' => 'Scan/Digital copy of the transcript/s of minimum education qualification,',
         'list-4' => 'The scan/digital copies of the documents to upload should be maximum 512 Kilobytes (512 KB) in size and up to 1024px,',
-        'list-5' => 'Candidate can submit the final form and obtain a submission number within 15 (Fifteen) days of creating the new form. For this, candidate should press the "Save" button in the bottom of the form and follow steps required to edit application.',
-        'list-6' => 'If the applicant wants to mention training on data collection or past experience regarding data collection, she/he should upload the scan/digital copies of certificates as verification.',
+        'list-5' => 'Candidate can submit the final form and obtain a submission number within 7 (Seven) days of creating the new form. For this, candidate should press the "Save" button in the bottom of the form and follow steps required to edit application.',
+        'list-6' => 'If the applicant wants to mention past experience regarding data collection, she/he should upload the scan/digital copies of certificates as verification.',
         'list-7' => 'However, if the candidate has already submitted the form with mandatory fields filled-up as well as taken the Submission Number, such a form cannot be edited and submitted again.',
     ],
 
@@ -128,5 +129,13 @@ return [
         "bs-10" => 'Magh',
         "bs-11" => 'Falgun',
         "bs-12" => 'Chaitra',
+    ],
+
+    'contact_person' => [
+        'title'    => 'Contact Person',
+        "name"     => "Mr. Raju Pokhrel",
+        "position" => "Computer Officer",
+        "email"    => "rhlpokhrel2072@gmail.com",
+        "phone"    => "9841344090",
     ],
 ];
