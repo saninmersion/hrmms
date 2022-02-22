@@ -317,9 +317,9 @@ return [
         'days-remaining'  => 'Days Remaining',
     ],
     'help-text'          => [
-        'form'                              => 'Before submitting the form, you can edit the form within 15 (Fifteen) days of creating the form and then submit.',
+        'form'                              => 'Before submitting the form, you can edit the form within 7 (Seven) days of creating the form and then submit.',
         'preview'                           => 'The application once submitted cannot be edited again. Hence, please check for the accuracy of details entered before pressing "SUBMIT APPLICATION" button.',
-        'needs_submission'                  => 'Your application has only been saved. Please submit the application by clicking the "SUBMIT APPLICATION" button to process your application.',
+        'needs_submission'                  => 'Your application has only been saved. Please submit the application by clicking the "SUBMIT APPLICATION" button to process your application. <br /> The application process will considered only after the Submission Number is received. Hence, make sure you have safely recorded the Submission Number for you respective application ',
         'check_enumerator_shortlist_status' => 'To know the shortlisting status of enumerator application, please provide the following information.',
         'check_supervisor_shortlist_status' => 'To know the shortlisting status of supervisor application, please provide the following information.',
     ],

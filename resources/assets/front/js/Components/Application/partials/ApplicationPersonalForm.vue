@@ -20,19 +20,8 @@
                 </div>
             </div>
         </div>
-
-        <!--    photo & gender     -->
-        <div class="grid lg:grid-cols-2 gap-6 my-6">
-            <div class="input-group">
-                <label-component :value="trans('application.fields.applicant_photo')" class="block"/>
-                <span class="text-black-200">
-                    {{ trans("application.form-help-text.image-format-size") }}
-                </span>
-                <camera-input v-model="personal.applicant_photo"
-                              :submit-url="fileUploadUrl"/>
-                <input-error v-if="validation().has('personal.applicant_photo')"
-                             :message="validation().get('personal.applicant_photo')"/>
-            </div>
+        <!--    caste & language     -->
+        <div class="grid md:grid-cols-2 gap-6 my-6">
             <div>
                 <label-component :value="trans('application.fields.gender')"/>
                 <div class="w-full">
@@ -40,27 +29,6 @@
                 </div>
                 <input-error v-if="validation().has('personal.gender')"
                              :message="validation().get('personal.gender')"/>
-            </div>
-        </div>
-        <!--    caste & language     -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <div>
-                <label-component :value="trans('application.fields.ethnicity')" class="block mb-2"/>
-                <div class="gap-2 grid grid-cols-2">
-                    <div>
-                        <drop-down-input v-model="personal.ethnicity"
-                                         :options="ethnicityOptions"
-                                         :placeholder="trans('application.placeholders.ethnicity')"
-                                         :show-placeholder="true"/>
-                    </div>
-                    <input-component v-if="personal.ethnicity === 'other'"
-                                     v-model="personal.ethnicity_other"
-                                     placeholder="अन्य खुलाउनुहाेस्"
-                                     class="col-span-2 md:col-span-1"/>
-                </div>
-
-                <input-error :message="validation().get('personal.ethnicity')"/>
-                <input-error :message="validation().get('personal.ethnicity_other')"/>
             </div>
             <div>
                 <label-component :value="trans('application.fields.mother_tongue')" class="block mb-2"/>
@@ -81,18 +49,17 @@
                 <input-error :message="validation().get('personal.mother_tongue_other')"/>
             </div>
         </div>
-
-        <!--   disability    -->
-        <div class="lg:grid lg:grid-cols-2 gap-4 my-6">
-            <div>
-                <label-component :value="trans('application.fields.disability')"/>
-                <div class="w-full pt-2">
-                    <radio-group-input v-model="personal.disability"
-                                       :options="disabilityOptions"
-                                       class="flex gap-4 radio-btn-group"
-                                       name="personal.disability"/>
-                </div>
-                <input-error :message="validation().get('personal.disability')"/>
+        <!--    photo & gender     -->
+        <div class="grid lg:grid-cols-2 gap-6">
+            <div class="input-group">
+                <label-component :value="trans('application.fields.applicant_photo')" class="block"/>
+                <span class="text-black-200">
+                    {{ trans("application.form-help-text.image-format-size") }}
+                </span>
+                <camera-input v-model="personal.applicant_photo"
+                              :submit-url="fileUploadUrl"/>
+                <input-error v-if="validation().has('personal.applicant_photo')"
+                             :message="validation().get('personal.applicant_photo')"/>
             </div>
         </div>
 
@@ -141,7 +108,7 @@
                 <div class="grid sm:grid-cols-2 gap-4 md:gap-3 md:w-1/3">
                     <div>
                         <label-component :value="trans('application.fields.citizenship_no')"/>
-                        <input-component v-model="personal.citizenship_number" type="text"/>
+                        <input-component v-model="personal.citizenship_number" readonly type="text"/>
                         <input-error v-if="validation().has('personal.citizenship_number')"
                                      :message="validation().get('personal.citizenship_number')"/>
                     </div>
@@ -223,7 +190,7 @@
                 <div>
                     <label-component :value="trans('application.fields.mobile_number')"/>
                     <div class="grid sm:grid-cols-3 gap-3">
-                        <input-component v-model="personal.mobile_number" type="number"/>
+                        <input-component v-model="personal.mobile_number" readonly type="number"/>
                     </div>
                     <input-error :message="validation().get('personal.mobile_number')"/>
                 </div>
@@ -304,7 +271,6 @@
         NepaliDatePicker,
     }                              from "../../../../../shared/js/Components/Forms"
     import NepaliDatePickerPreview from "../../../../../shared/js/Components/Forms/NepaliDatePickerPreview"
-    import RadioGroupInput         from "../../../../../shared/js/Components/Forms/RadioGroupInput"
 
     export default {
         name: "ApplicationPersonalForm",
@@ -314,7 +280,6 @@
         components: {
             NepaliDatePickerPreview,
             CameraInput,
-            RadioGroupInput,
             LocationCombo,
             DropDownInput,
             InputComponent,

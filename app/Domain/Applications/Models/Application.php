@@ -179,7 +179,8 @@ class Application extends Model implements Auditable
     public function getLocationsArrayAttribute(): array
     {
         $locations      = [];
-        $locations[]    = $this->locations->first ?? null;
+        $locations[]    = data_get($this->locations, 'first');
+        $locations[]    = data_get($this->locations, 'second');
         $locationsArray = [];
 
         foreach ($locations as $index => $location) {
@@ -189,9 +190,9 @@ class Application extends Model implements Auditable
 
             $locationsArray[] = [
                 'priority'     => $index + 1,
-                'district'     => (int) ($location->district ?? null) ?: null,
-                'municipality' => (int) ($location->municipality ?? null) ?: null,
-                'ward'         => (int) ($location->ward ?? null) ?: null,
+                'district'     => (int) (data_get($location, "district", null)) ?: null,
+                'municipality' => (int) (data_get($location, "municipality", null)) ?: null,
+                'ward'         => (int) (data_get($location, "ward", null)) ?: null,
             ];
         }
 

@@ -10,7 +10,7 @@
                             :excluded-options="excludedOptions"
                             :has-tole="false"
                             :has-ward="false"
-                            excluded-name="ward"
+                            excluded-name="municipality"
                             :name="name"
                             @input="handleOnChange"/>
         </div>
@@ -25,7 +25,7 @@
 
 <script type="text/ecmascript-6">
     import { LocationCombo } from "../../../../../shared/js/Components/Forms"
-    import Icon from "../../Common/Icon";
+    import Icon              from "../../Common/Icon"
 
     export default {
         name: "ApplicationLocation",
@@ -55,15 +55,18 @@
         },
 
         computed: {
-            districtOptions: function() {
+            districtOptions() {
                 return this.newDistricts
             },
 
-            excludedOptions: function() {
-                return this.locations.reduce((excluded, location) => ([
-                    ...excluded,
-                    `${location.municipality}-${location.ward}`,
-                ]), [])
+            excludedOptions() {
+                return this.locations.reduce((excluded, location) => {
+                    if (location.municipality === undefined || location.municipality === this.location.municipality) {
+                        return excluded
+                    }
+
+                    return ([...excluded, location.municipality])
+                }, [])
             },
         },
 

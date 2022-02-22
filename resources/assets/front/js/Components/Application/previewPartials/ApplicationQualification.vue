@@ -123,51 +123,6 @@
             <div class="lg:w-3/4 pt-6 border-t border-blue-200">
                 <div class="data-block-item">
                     <div class="data-block-label">
-                        {{ trans("application.preview.has_training") }}
-                    </div>
-                    <div class="data-block-value">
-                        <span
-                            v-text="formatBoolean(getFromObject(applicant, 'qualification.has_training'))"/>
-                    </div>
-                </div>
-            </div>
-            <div v-if="getFromObject(applicant, 'qualification.has_training', false)" class="flex flex-wrap">
-                <div class="lg:w-3/4  ">
-                    <div class="heading-primary heading-primary--sm">
-                        {{ trans("application.preview.training") }}
-                    </div>
-
-                    <div class="data-block-item">
-                        <div class="data-block-label">
-                            {{ trans("application.fields.training_organization") }}
-                        </div>
-                        <div class="data-block-value">
-                            <span v-text="getFromObject(applicant, 'qualification.training.institute') || '-' "/>
-                        </div>
-                    </div>
-
-                    <div class="data-block-item">
-                        <div class="data-block-label">
-                            {{ trans("application.fields.training_period") }}
-                        </div>
-                        <div class="data-block-value">
-                            <span v-text="formatTrainingPeriod(getFromObject(applicant, 'qualification.training.period')) || '-' "/>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    v-if="getFromObject(applicant, 'qualification.training_documents') && isArray(applicant.qualification.training_documents)"
-                    class="data-file slider-doc">
-                    <Slider :images="applicant.qualification.training_documents"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="data-block">
-            <div class="lg:w-3/4 pt-6 border-t border-blue-200">
-                <div class="data-block-item">
-                    <div class="data-block-label">
                         {{ trans("application.preview.has_experience") }}
                     </div>
                     <div class="data-block-value">

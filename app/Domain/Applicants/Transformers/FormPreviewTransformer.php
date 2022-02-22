@@ -60,7 +60,7 @@ class FormPreviewTransformer extends TransformerAbstract
             'name_in_english'             => [
                 'first_name'  => data_get($applicant->details, "name_in_english.first_name", ''),
                 'middle_name' => data_get($applicant->details, "name_in_english.middle_name", ''),
-                'last_name'   => data_get($applicant->details, "name_in_english->last_name", ''),
+                'last_name'   => data_get($applicant->details, "name_in_english.last_name", ''),
             ],
             'applicant_photo'             => data_get($applicant->details, "applicant_photo", []),
             'gender'                      => data_get($applicant->details, "gender", ''),
