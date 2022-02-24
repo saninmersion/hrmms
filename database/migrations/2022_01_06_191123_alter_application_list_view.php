@@ -25,7 +25,7 @@ class AlterApplicationListView extends Migration
         $sql = <<<_SQL_
 select aa.id
      , case
-           when ta.status <> 'draft' then concat('NPHC-', LPAD(ta.id::varchar, 7, '0'))
+           when ta.status <> 'draft' then concat('NSCA-', LPAD(ta.id::varchar, 7, '0'))
            else null
     end::varchar(12)                                                                                     as submission_number
      , aa.created_at

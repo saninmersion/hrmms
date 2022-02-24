@@ -19,7 +19,7 @@
         </div>
 
         <div class="form-group mt-8">
-            <label-component :value="`${trans('general.submission-number')} (उदाहरणको लागी NPHC-0120130)`"/>
+            <label-component :value="`${trans('general.submission-number')} (उदाहरणको लागी NSCA-0120130)`"/>
             <input-component v-model="submission_number"
                              :disabled="disableSubmissionNumberInput"
                              :placeholder="trans('general.submission-number')"

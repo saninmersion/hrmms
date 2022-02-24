@@ -41,7 +41,7 @@
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPDQGCZLNT"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{config('config.gtm_container_id')}}"></script>
     <script>
         window.dataLayer = window.dataLayer || []
 
@@ -49,7 +49,7 @@
 
         gtag("js", new Date())
 
-        gtag("config", "G-FPDQGCZLNT")
+        gtag("config", "{{config('config.gtm_container_id')}}")
     </script>
 </head>
 <body class="antialiased {{app()->getLocale()}}">

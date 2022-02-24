@@ -103,7 +103,7 @@ return [
     'required'             => ':attribute आवश्यक छ।',
     'required_if'          => ':attribute आवश्यक छ।',
     'required_unless'      => 'The :attribute field is required unless :other is in :values.',
-    'required_with'        => 'The :attribute field is required when :values is present.',
+    'required_with'        => ':attribute आवश्यक छ।',
     'required_with_all'    => 'The :attribute field is required when :values are present.',
     'required_without'     => ':values अथवा :attribute आवश्यक छ.',
     'required_without_all' => 'The :attribute field is required when none of :values are present.',
@@ -161,6 +161,6 @@ return [
     ],
 
     'invalid_mobile_number'     => 'मोबाइल नं. मिलेन।',
-    'invalid_submission_number' => 'सबमिशन नं. को ढाँचा (NPHC-XXXXXXX) मिलेन ।',
+    'invalid_submission_number' => 'सबमिशन नं. को ढाँचा (NSCA-XXXXXXX) मिलेन ।',
 
 ];

@@ -2,6 +2,7 @@
     <chart-wrapper title="Gender Distribution of Submitted Applicants">
         <bar-chart v-if="genderDistribution"
                    :chart-data="stats"
+                   :colors="['#8700f9', '#00c4aa', '#bbbbbb']"
                    :labels="labels"
                    :stacked="true"/>
     </chart-wrapper>
@@ -30,11 +31,7 @@
                 ]
             },
             stats() {
-                const stats = [
-                    { name: this.trans("application.gender-male"), data: [0, 0, 0] },
-                    { name: this.trans("application.gender-female"), data: [0, 0, 0] },
-                    { name: this.trans("application.gender-other"), data: [0, 0, 0] },
-                ]
+                const stats = []
 
                 Object.entries(this.genderDistribution).forEach(([key, value]) => {
                     stats.push({

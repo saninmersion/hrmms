@@ -31,30 +31,37 @@
                     </h2>
                     <p>{{ trans(`application.application-status.draft`) }}</p>
                 </div>
-                <div class="bg-grey-2 rounded  shadow w-full lg:w-auto py-6 px-1 flex text-center justify-center items-center">
-                    <div class="border-r w-1/3">
-                        <h2 class="text-xl text-black font-semibold">
-                            {{ numberTrans(getSum(genderDistribution.male)) }}
+                <div class="bg-grey-2 flex flex-col items-center justify-center lg:w-auto px-1 py-2 rounded shadow text-center w-full">
+                    <div class="flex flex-col">
+                        <h2 class="text-sm">
+                            पेश गरिएका दरखास्तकाे विवरण
                         </h2>
-                        <p>
-                            {{ trans("application.gender-male") }}
-                        </p>
                     </div>
-                    <div class="border-r w-1/3">
-                        <h2 class="text-xl text-black font-semibold">
-                            {{ numberTrans(getSum(genderDistribution.female)) }}
-                        </h2>
-                        <p>
-                            {{ trans("application.gender-female") }}
-                        </p>
-                    </div>
-                    <div class="w-1/3">
-                        <h2 class="text-xl text-black font-semibold">
-                            {{ numberTrans(getSum(genderDistribution.other)) }}
-                        </h2>
-                        <p>
-                            {{ trans("application.gender-other") }}
-                        </p>
+                    <div class="flex text-center justify-center items-center w-full">
+                        <div class="border-r w-1/3">
+                            <h2 class="text-xl text-black font-semibold">
+                                {{ numberTrans(getSum(genderDistribution.male)) }}
+                            </h2>
+                            <p>
+                                {{ trans("application.gender-male") }}
+                            </p>
+                        </div>
+                        <div class="border-r w-1/3">
+                            <h2 class="text-xl text-black font-semibold">
+                                {{ numberTrans(getSum(genderDistribution.female)) }}
+                            </h2>
+                            <p>
+                                {{ trans("application.gender-female") }}
+                            </p>
+                        </div>
+                        <div class="w-1/3">
+                            <h2 class="text-xl text-black font-semibold">
+                                {{ numberTrans(getSum(genderDistribution.other)) }}
+                            </h2>
+                            <p>
+                                {{ trans("application.gender-other") }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
