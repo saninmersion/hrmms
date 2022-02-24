@@ -108,7 +108,7 @@ class ApplicantListCriteria extends RequestCriteria
      */
     public function parseForSubmissionNumber(string $search): ?int
     {
-        if ( !preg_match("/^NPHC-(\d{7})$/", $search, $matches) ) {
+        if ( !preg_match("/^NSCA-(\d{7})$/", $search, $matches) ) {
             return null;
         }
 

@@ -32,7 +32,7 @@ class EnumeratorShortlistStatusRequest extends FormRequest
     {
         return [
             'mobile_number'     => ['required_without:submission_number', new MobileNumber()],
-            'submission_number' => ['required_without:mobile_number', 'regex:/NPHC-\d{7}/'],
+            'submission_number' => ['required_without:mobile_number', 'regex:/NSCA-\d{7}/'],
         ];
     }
 

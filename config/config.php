@@ -31,6 +31,7 @@ return [
         'other'  => [18, 40],
     ],
 
+    'gtm_container_id'  => env('GTM_CONTAINER_ID', ''),
     'log_horizon'       => env('LOG_HORIZON', false),
     'slack_webhook_url' => env('LOG_SLACK_WEBHOOK_URL', ''),
     'slack_channel'     => env('LOG_SLACK_CHANNEL', ''),

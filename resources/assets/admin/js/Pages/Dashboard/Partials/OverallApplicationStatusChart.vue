@@ -2,6 +2,7 @@
     <chart-wrapper title="Overall Application Status">
         <bar-chart v-if="overallStats"
                    :chart-data="stats"
+                   :colors="['#00E396', '#FEB019']"
                    :labels="labels"/>
     </chart-wrapper>
 </template>
@@ -30,10 +31,7 @@
                 ]
             },
             stats() {
-                const stats = [
-                    { name: this.trans("application.application-status.draft"), data: [0, 0, 0] },
-                    { name: this.trans("application.application-status.submitted"), data: [0, 0, 0] },
-                ]
+                const stats = []
                 Object.entries(this.overallStats).forEach(([key, value]) => {
                     delete value.na
                     stats.push({

@@ -35,10 +35,10 @@ class ApplicantListTransformer extends TransformerAbstract
             'application_for'             => data_get($applicant, "application.application_for", ''),
             'gender'                      => data_get($applicant->details, 'gender', ''),
             'mobile_number'               => data_get($applicant, "mobile_number", ''),
-            'p1_district'                 => data_get($applicant, "application->first_priority_district", ''),
-            'p2_district'                 => data_get($applicant, "application->second_priority_district", ''),
-            'verification_status'         => data_get($applicant, "verification->verification_status", 'not_verified'),
-            'is_offline'                  => data_get($applicant, "application->is_offline", false),
+            'p1_district'                 => data_get($applicant, "application.first_priority_district", ''),
+            'p2_district'                 => data_get($applicant, "application.second_priority_district", ''),
+            'verification_status'         => data_get($applicant, "verification.verification_status", 'not_verified'),
+            'is_offline'                  => data_get($applicant, "application.is_offline", false),
         ];
     }
 
