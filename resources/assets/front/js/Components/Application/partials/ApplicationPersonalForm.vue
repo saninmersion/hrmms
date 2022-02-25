@@ -25,7 +25,7 @@
             <div>
                 <label-component :value="trans('application.fields.gender')"/>
                 <div class="w-full">
-                    <gender-input v-model="personal.gender" class="flex gap-4" name="gender"/>
+                    <gender-input v-model="personal.gender" :disabled="true" class="flex gap-4" name="gender"/>
                 </div>
                 <input-error v-if="validation().has('personal.gender')"
                              :message="validation().get('personal.gender')"/>

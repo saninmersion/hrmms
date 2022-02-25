@@ -145,9 +145,9 @@ class FrontFormTransformer extends TransformerAbstract
             'has_experience'                 => (bool) (data_get($applicant->details, "qualification.has_experience")),
             'experience_documents'           => data_get($applicant->details, "experience_documents", []),
             'experience'                     => [
-                'organization' => data_get($applicant->details, "qualification->experience->organization", ''),
-                'period_day'   => data_get($applicant->details, "qualification->experience->period_day", ''),
-                'period_month' => data_get($applicant->details, "qualification->experience->period_month", ''),
+                'organization' => data_get($applicant->details, "qualification.experience.organization", ''),
+                'period_day'   => data_get($applicant->details, "qualification.experience.period_day", ''),
+                'period_month' => data_get($applicant->details, "qualification.experience.period_month", ''),
             ],
         ];
     }
