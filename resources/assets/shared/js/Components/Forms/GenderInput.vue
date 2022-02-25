@@ -2,6 +2,7 @@
     <div class="radio-btn-group radio-btn-group--blue">
         <radio-input
             :checked="gender === 'male'"
+            :disabled="disabled && gender !== 'male'"
             :name="name"
             :target-id="`${name}-male`"
             :label="trans('application.gender-male')"
@@ -9,6 +10,7 @@
 
         <radio-input
             :checked="gender === 'female'"
+            :disabled="disabled && gender !== 'female'"
             :name="name"
             :target-id="`${name}-female`"
             :label="trans('application.gender-female')"
@@ -16,6 +18,7 @@
 
         <radio-input
             :checked="gender === 'other'"
+            :disabled="disabled && gender !== 'other'"
             :name="name"
             :target-id="`${name}-other`"
             :label="trans('application.gender-other')"
@@ -34,6 +37,7 @@
         props: {
             value: { type: String, required: false, default: null },
             name: { type: String, required: true },
+            disabled: { type: Boolean, default: false },
         },
 
         data: () => ({

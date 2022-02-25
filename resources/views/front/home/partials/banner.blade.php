@@ -11,9 +11,12 @@
                     </span>
                     <p class="text-sm">
                         {{trans('general.contact_person.name')}} |
-                        {{trans('general.contact_person.position')}} |
+                        {{trans('general.contact_person.position')}}
+                    </p>
+                    <p class="text-sm">
                         <a class="text-primary-500" href="mailto:{{trans('general.contact_person.email')}}">{{trans('general.contact_person.email')}}</a> |
-                        <a class="text-primary-500" href="tel:{{trans('general.contact_person.phone')}}">{{trans('general.contact_person.phone')}}</a>
+                        <a class="text-primary-500" href="tel:{{trans('general.contact_person.phone1')}}">{{trans('general.contact_person.phone1')}}</a> |
+                        <a class="text-primary-500" href="tel:{{trans('general.contact_person.phone2')}}">{{trans('general.contact_person.phone2')}}</a>
                     </p>
                 </div>
                 <div class="hidden items-center justify-between xlg:flex">

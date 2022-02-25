@@ -45,7 +45,7 @@
             value: { type: String, required: false, default: null },
             type: { type: String, required: false, default: "bs" },
             showLabels: { type: Boolean, required: false, default: true },
-            range: { type: Object, required: false, default: () => ({ ad: [1973, 2020], bs: [2030, 2077] }) },
+            range: { type: Object, required: false, default: () => ({ ad: [1973, 2021], bs: [2030, 2078] }) },
         },
 
         data: () => ({

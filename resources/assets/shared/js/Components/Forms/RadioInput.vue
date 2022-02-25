@@ -1,7 +1,7 @@
 <template>
     <div>
         <input :id="targetId"
-               :checked="checked"
+               v-bind="$attrs"
                type="radio"
                :name="name"
                @input="handleOnChange">
@@ -17,7 +17,6 @@
 
         props: {
             label: { type: String, required: false, default: "" },
-            checked: { type: Boolean, required: false, default: false },
             name: { type: String, required: true },
             targetId: { type: String, required: true },
         },

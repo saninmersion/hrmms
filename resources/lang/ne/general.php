@@ -136,6 +136,7 @@ return [
         "name"     => "राजु पोखरेल",
         "position" => "कम्प्युटर अधिकृत",
         "email"    => "rhlpokhrel2072@gmail.com",
-        "phone"    => "9841344090",
+        "phone1"   => "01-4245946",
+        "phone2"   => "01-4245947",
     ],
 ];
