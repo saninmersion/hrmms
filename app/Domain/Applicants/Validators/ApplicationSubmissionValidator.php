@@ -125,10 +125,10 @@ class ApplicationSubmissionValidator
                 'qualification.education.extra.major_subject'       => "nullable|in:{$majorSubjects}",
                 'qualification.education.extra.major_subject_other' => "required_if:qualification.education.extra.major_subject,".ApplicationConstants::MAJOR_SUBJECT_OTHERS,
 
-                'qualification.experience.organization' => "required_with:qualification.has_experience",
-                'qualification.experience.period_day'   => "required_with:qualification.has_experience",
-                'qualification.experience.period_month' => "required_with:qualification.has_experience",
-                'qualification.experience_documents'    => "required_with:qualification.has_experience",
+                'qualification.experience.organization' => "required_if:qualification.has_experience,".true,
+                'qualification.experience.period_day'   => "required_if:qualification.has_experience,".true,
+                'qualification.experience.period_month' => "required_if:qualification.has_experience,".true,
+                'qualification.experience_documents'    => "required_if:qualification.has_experience,".true,
             ]
         );
 
