@@ -28,6 +28,7 @@ use Staudenmeir\EloquentJsonRelations\HasJsonRelationships;
 
 /**
  * Class Applicant
+ *
  * @package App\Domain\Applicants\Models
  *
  * @property int                $id
@@ -274,6 +275,13 @@ class Applicant extends Model implements Auditable, Authenticatable
         $isSubmitted = $this->application->is_submitted ?? false;
         if ( $isSubmitted ) {
             return false;
+        }
+
+        $bonusStartDate = BikramSambat::bsToAd(config('config.bonus-editable-start-date'));
+        $bonusEndDate   = BikramSambat::bsToAd(config('config.bonus-editable-end-date'));
+
+        if ( today()->between($bonusStartDate, $bonusEndDate) ) {
+            return true;
         }
 
         $createdDate = $this->created_at->endOfDay();
