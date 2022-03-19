@@ -19,6 +19,8 @@ return [
     'application-stage'             => env('APPLICATION_STAGE', 'application'),
     'default-locale'                => env('APP_LOCALE'),
     'deadline'                      => env('APPLICATION_DEADLINE'),
+    'bonus-editable-start-date'     => env('BONUS_EDITABLE_START_DATE'),
+    'bonus-editable-end-date'       => env('BONUS_EDITABLE_END_DATE'),
     'editable-days'                 => env('EDITABLE_DAYS', 7),
     'number-of-assignments'         => env('NUMBER_OF_ASSIGNMENTS', 100),
     'offline-application-available' => env('OFFLINE_APPLICATION_AVAILABLE', false),
