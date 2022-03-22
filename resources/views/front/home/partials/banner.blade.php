@@ -37,13 +37,13 @@
                     @endif
                     @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::ENUMERATOR_SHORTLISTED || config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
                         <a href="{{route('front.results.enumerator')}}"
-                           class="btn btn--small  font-normal">
+                           class="btn btn--small mr-2 font-normal">
                             {{ trans('general.shortlist-enumerator-button') }}
                         </a>
                     @endif
                     @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
                         <a href="{{route('front.results.enumerator')}}"
-                           class="btn btn--small  font-normal">
+                           class="btn btn--small ml-2 font-normal">
                             {{ trans('general.shortlist-supervisor-button') }}
                         </a>
                     @endif
