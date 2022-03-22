@@ -87,7 +87,7 @@ class FormPreviewTransformer extends TransformerAbstract
                 'ward'         => ((int) ($applicant->temporary_address->ward ?? null)),
                 'tole'         => data_get($applicant, "temporary_address.tole", ''),
             ],
-            'has_current_address'         => (bool) ($applicant->details->has_current_address),
+            'has_current_address'         => (bool) (data_get($applicant->details, 'has_current_address')),
             'current_address'             => [
                 'district'     => ((int) ($applicant->current_address->district ?? null)),
                 'municipality' => ((int) ($applicant->current_address->municipality ?? null)),
@@ -127,7 +127,7 @@ class FormPreviewTransformer extends TransformerAbstract
     protected function getQualification(Applicant $applicant): array
     {
         return [
-            'has_education_qualification'    => (bool) ($applicant->details->qualification->has_education_qualification),
+            'has_education_qualification'    => (bool) (data_get($applicant->details, 'qualification.has_education_qualification')),
             'files_for_supervisor_education' => data_get($applicant->details, "files_for_supervisor_education", []),
             'files_for_enumerator_education' => data_get($applicant->details, "files_for_enumerator_education", []),
             'files_for_extra_education'      => data_get($applicant->details, "files_for_extra_education", []),
@@ -153,19 +153,12 @@ class FormPreviewTransformer extends TransformerAbstract
                     'major_subject_other' => data_get($applicant->details, "qualification.education.extra.major_subject_other", null),
                 ],
             ],
-            'has_training'                   => (bool) ($applicant->details->qualification->has_training ?? false),
-            'training_documents'             => $applicant->details->training_documents ?? [],
-            'training'                       => [
-                'institute' => $applicant->details->qualification->training->institute ?? '',
-                'period'    => $applicant->details->qualification->training->period ?? '',
-                'files'     => [],
-            ],
-            'has_experience'                 => (bool) ($applicant->details->qualification->has_experience ?? false),
-            'experience_documents'           => $applicant->details->experience_documents ?? [],
+            'has_experience'                 => (bool) (data_get($applicant->details, 'qualification.has_experience', false)),
+            'experience_documents'           => data_get($applicant->details, 'experience_documents', []),
             'experience'                     => [
-                'organization' => $applicant->details->qualification->experience->organization ?? '',
-                'period_day'   => $applicant->details->qualification->experience->period_day ?? '',
-                'period_month' => $applicant->details->qualification->experience->period_month ?? '',
+                'organization' => data_get($applicant->details, 'qualification.experience.organization', ''),
+                'period_day'   => data_get($applicant->details, 'qualification.experience.period_day', ''),
+                'period_month' => data_get($applicant->details, 'qualification.experience.period_month', ''),
                 'files'        => [],
             ],
         ];
