@@ -56,6 +56,7 @@ module.exports = {
             secondary: colors.black,
             tertiary: colors.purple,
             white: colors.white,
+            red: colors.red,
             warning: colors.yellow,
             success: colors.green,
             info: colors.blue,

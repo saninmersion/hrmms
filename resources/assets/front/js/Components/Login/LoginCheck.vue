@@ -1,5 +1,8 @@
 <template>
     <div>
+        <span v-if="hasDeadlinePassed" class="bg-red-100 block mb-4 px-4 py-2 text-sm text-black text-center rounded">
+            अनलाईन दरखास्त दिने म्याद समाप्त भएकाे छ।
+        </span>
         <div class="flex justify-between items-center flex-wrap gap-4">
             <h3 class="heading-primary">
                 {{ trans("application.application_check") }}
