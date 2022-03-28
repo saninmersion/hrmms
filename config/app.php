@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel Boilerplate'),
+    'name'    => env('APP_NAME', 'Laravel Boilerplate'),
+    'name_ne' => env('APP_NAME_NE', 'राष्ट्रिय कृषिगणना २०७८'),
 
     /*
     |--------------------------------------------------------------------------

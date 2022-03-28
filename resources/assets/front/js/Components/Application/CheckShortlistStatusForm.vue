@@ -6,20 +6,17 @@
             {{ textMessage }}
         </span>
         <span v-else class="bg-blue-100 block py-3 px-4 mb-8 text-sm text-black text-center rounded">
-            {{ checkRole === "enumerator" ? trans("application.help-text.check_enumerator_shortlist_status") : trans("application.help-text.check_supervisor_shortlist_status") }}
+            {{ trans("application.help-text.check_shortlist_status") }}
         </span>
 
         <div class="flex justify-between items-center flex-wrap gap-4">
-            <h3 v-if="checkRole === 'enumerator'" class="heading-primary">
-                {{ trans("application.check_enumerator_shortlist_status") }}
-            </h3>
-            <h3 v-if="checkRole === 'supervisor'" class="heading-primary">
-                {{ trans("application.check_supervisor_shortlist_status") }}
+            <h3 class="heading-primary">
+                {{ trans("application.check_shortlist_status") }}
             </h3>
         </div>
 
         <div class="form-group mt-8">
-            <label-component :value="`${trans('general.submission-number')} (उदाहरणको लागी NSCA-0120130)`"/>
+            <label-component :value="`${trans('general.submission-number')} (${trans('application.help-text.for_example')} NSCA-0120130)`"/>
             <input-component v-model="submission_number"
                              :disabled="disableSubmissionNumberInput"
                              :placeholder="trans('general.submission-number')"
@@ -68,7 +65,6 @@
 
         props: {
             checkRoute: { type: String, required: true },
-            checkRole: { type: String, required: true },
         },
 
         data: function() {
@@ -101,9 +97,7 @@
                 this.isChecking = true
 
                 try {
-                    const data = {
-                        role: this.checkRole,
-                    }
+                    const data = {}
 
                     if (!isEmpty(this.submission_number)) {
                         data.submission_number = this.submission_number
@@ -118,12 +112,14 @@
                     if (res.body) {
                         this.isShortListed = true
                         const applicant = res.body.data.applicant
+                        console.log(applicant)
 
                         const identification = isEmpty(this.submission_number) ? this.mobile_number : this.submission_number
                         const name = this.getFullName(applicant)
                         const ward = this.getWard(applicant)
+                        const role = this.getRole(applicant.role)
 
-                        this.textMessage = `${name} (${identification}) ${ward}, ${applicant.municipality.district.title_ne}, ${applicant.municipality.title_ne}को लागि सर्टलिस्ट गरिएको छ।`
+                        this.textMessage = `${name} (${identification}) ${ward}, ${applicant.municipality.district.title_ne}, ${applicant.municipality.title_ne}मा ${role}को लागि सर्टलिस्ट गरिएको छ।`
                     }
 
                     this.isChecking = false
@@ -151,6 +147,9 @@
                 return this.trans("application.preview.ward_no_", {
                     ":attr": this.numberTrans(this.getFromObject(applicant, "metadata.ward", "") ?? ""),
                 })
+            },
+            getRole(role) {
+                return this.trans(`application.preview.position-${role}`)
             },
 
             clear(key) {

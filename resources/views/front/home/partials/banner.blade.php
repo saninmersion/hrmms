@@ -42,7 +42,7 @@
                         </a>
                     @endif
                     @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
-                        <a href="{{route('front.results.enumerator')}}"
+                        <a href="{{route('front.results.supervisor')}}"
                            class="btn btn--small ml-2 font-normal">
                             {{ trans('general.shortlist-supervisor-button') }}
                         </a>

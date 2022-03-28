@@ -91,6 +91,7 @@ Route::post('/notifications/mark-as-read', [NotificationsController::class, 'mar
 
 // Artisan Commands
 Route::get('/console/applications/export', function () {
+    Artisan::queue('cbs:refresh:application-list');
     Artisan::queue('cbs:applications:export');
 
     return redirect()->back();

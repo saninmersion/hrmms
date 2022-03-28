@@ -17,12 +17,12 @@
     @endif
 
     @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::ENUMERATOR_SHORTLISTED)
-        <check-shortlist-status-form v-cloak check-route="{{route('front.applicant.check')}}" check-role="enumerator">
+        <check-shortlist-status-form v-cloak check-route="{{route('front.applicant.check')}}">
         </check-shortlist-status-form>
     @endif
 
     @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
-        <check-shortlist-status-form v-cloak check-route="{{route('front.applicant.check')}}" check-role="supervisor">
+        <check-shortlist-status-form v-cloak check-route="{{route('front.applicant.check')}}">
         </check-shortlist-status-form>
     @endif
 </div>
