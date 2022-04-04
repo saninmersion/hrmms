@@ -53,15 +53,15 @@
                         <div class="text-black !inline-flex w-full justify-center my-6">
                             <days-remaining deadline="{{$deadline}}"></days-remaining>
                         </div>
-                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
-                            <a href="{{route('front.results.supervisor')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
-                                सर्टलिष्ट गरिएकाका सुपरिवेक्षकको नामावली
+                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::ENUMERATOR_SHORTLISTED || config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
+                            <a href="{{route('front.results.enumerator')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
+                                {{ trans('general.shortlist-enumerator-button') }}
                             </a>
                         @endif
 
-                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::ENUMERATOR_SHORTLISTED)
-                            <a href="{{route('front.results.enumerator')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
-                                सर्टलिष्ट गरिएका गणकहरुको नामावली
+                        @if(config('config.application-stage') === App\Infrastructure\Constants\ApplicationStages::SUPERVISOR_SHORTLISTED)
+                            <a href="{{route('front.results.supervisor')}}" class="btn btn--icon mb-4 inline-flex justify-center !py-3 w-full">
+                                {{ trans('general.shortlist-supervisor-button') }}
                             </a>
                         @endif
                     </div>

@@ -39,7 +39,7 @@ class Policy implements InertiaDataSharable
                 'user'                   => in_array($role, [AuthRoles::ADMIN, AuthRoles::SUPER_ADMIN]),
                 'district_dashboard'     => in_array($role, [AuthRoles::ADMIN, AuthRoles::STAFFS, AuthRoles::SUPER_ADMIN]),
                 'applicants'             => in_array($role, [AuthRoles::ADMIN, AuthRoles::STAFFS, AuthRoles::SUPER_ADMIN]),
-                'shortlisting'           => config('config.shortlist-available') && in_array($role, [AuthRoles::SUPER_ADMIN]),
+                'shortlisting'           => false,
                 'district_shortlisting'  => config('config.shortlist-available') && in_array($role, [AuthRoles::SUPER_ADMIN, AuthRoles::DISTRICT_STAFFS]),
                 'export'                 => in_array($role, [AuthRoles::ADMIN, AuthRoles::SUPER_ADMIN]),
                 'monitoring'             => in_array($role, [AuthRoles::SUPERVISOR, AuthRoles::STAFFS, AuthRoles::MONITORING, AuthRoles::OPERATOR, AuthRoles::DISTRICT_STAFFS, AuthRoles::ADMIN, AuthRoles::SUPER_ADMIN]),

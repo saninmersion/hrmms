@@ -1,4 +1,4 @@
-@section('title', trans('general.page-title.results'))
+@section('title', config('app.name_ne'). 'को लागि सर्टलिष्ट भएका सुपरिवेक्षकहरुको नामावली')
 <x-front-layout>
     <main class="info-page">
         <div class="container">
@@ -12,7 +12,7 @@
                     </a>
                 </div>
                 <h1 class="heading-primary  !text-primary heading-primary--lg py-6 sm:py-8 lg:pt-10">
-                    राष्ट्रिय जनगणना २०७८ को लागि सर्टलिष्ट भएका सुपरिवेक्षकहरुको नामावली
+                    {{config('app.name_ne')}} को लागि सर्टलिष्ट भएका सुपरिवेक्षकहरुको नामावली
                 </h1>
                 <div class="text-center">
                     <a href="{{App\Infrastructure\Support\Helper::fileUrl('census_officers.pdf')}}" target="_blank" class="bg-primary-100 text-base flex inline-flex items-center leading-none p-2 px-4 py-3 rounded-full text-black hover:text-primary-500" role="alert">
@@ -26,7 +26,7 @@
                 <section class="!pt-0 sm:!pt-2">
                     <div class="grid sm:grid-cols-2">
                         @foreach ($districts as $district)
-                            <a href="{{App\Infrastructure\Support\Helper::fileUrl(sprintf('results/%s.pdf', str_replace([' ', '(', ')'], ['-', '', ''], $district['title_en'])))}}" target="_blank"
+                            <a href="{{App\Infrastructure\Support\Helper::fileUrl(sprintf('results/supervisor/%s.pdf', str_replace([' ', '(', ')'], ['-', '', ''], $district['title_en'])))}}" target="_blank"
                                class="results-link py-3">
                                 {{ data_get($district, 'title_'. App::currentLocale()) }}
                             </a>

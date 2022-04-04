@@ -106,7 +106,7 @@ class ApplicationController extends FrontController
     {
         $shortlistedApplicant = null;
 
-        $this->shortListedApplicantRepository->with(['municipality', 'municipality.district', 'applicant'])->byRole($request->get('role', ApplicationType::ENUMERATOR));
+        $this->shortListedApplicantRepository->with(['municipality', 'municipality.district', 'applicant']);
 
         if ( $request->has('submission_number') ) {
             $shortlistedApplicant = $this->shortListedApplicantRepository->isShortlistedBySubmissionNumber($request->get('submission_number'))->all()->first();
